@@ -1,0 +1,303 @@
+% Inspired by: http://jblevins.org/projects/cv-template/
+
+\documentclass[10pt,letterpaper]{article}
+%\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+
+% Fonts
+\usepackage[T1]{fontenc}
+\usepackage[urw-garamond]{mathdesign}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+	colorlinks = true,
+	urlcolor = black,
+	pdfauthor = {{ personal.name | lr_bracket }},
+	pdfkeywords = {{ personal.name | l_bracket }}, {{ personal.name_ascii }}, Curriculum Vitae, CV},
+	pdftitle = {{ personal.name | l_bracket }}: Curriculum Vitae},
+	pdfsubject = {Curriculum Vitae},
+	pdfpagemode = UseNone
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{{ personal.name | lr_bracket }}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\bfseries\large}
+\subsectionfont{\rmfamily\mdseries\itshape\normalsize}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+\newenvironment{datelist}{
+	\begin{list}{}{
+		\setlength{\parskip}{0pt}
+		\setlength{\itemsep}{4pt}
+		\setlength{\parsep}{0.3em}
+		\setlength{\leftmargin}{6em}
+		\setlength{\labelwidth}{6em}
+		\setlength{\labelsep}{1.5em}
+		}
+	}{
+\end{list}
+}
+
+\newcommand{\dateitem}[2][]{\item[{{ '#1' | lr_bracket }}] {{ '#2' | lr_bracket }}}
+\newcommand{\dateheader}[1]{\item{\hspace{-4.6em}\textbf{ {{ '#1' | lr_bracket }} }}}
+
+\newenvironment{infolist}{
+	\begin{list}{}{
+		\setlength{\parskip}{0pt}
+		\setlength{\itemsep}{4pt}
+		\setlength{\parsep}{0.3em}
+		\setlength{\leftmargin}{2.6em}
+		\setlength{\labelwidth}{0pt}
+		}
+	}{
+\end{list}
+}
+
+\newcommand{\infoitem}[1]{\item {{ '#1' | lr_bracket }}}
+
+\newenvironment{sublist}{
+	\begin{list}{}{
+		\setlength{\parskip}{0pt}
+		\setlength{\itemsep}{0pt}
+		\setlength{\parsep}{-0.25em}
+		\setlength{\topsep}{0.1em}
+		\setlength{\leftmargin}{2em}
+		\setlength{\labelwidth}{0pt}
+		}
+	}{
+\end{list}
+}
+
+\newcommand{\sublistitem}[1]{\begin{sublist}
+		\item {\footnotesize {{ '#1' | lr_bracket }}}
+	\end{sublist}}
+
+
+\begin{document}
+
+	{\huge \bf {{ personal.name }}}
+
+	\rule{\textwidth}{1pt}
+
+	\bigskip
+
+
+	\begin{minipage}[t]{0.495\textwidth}
+		{%- for line in personal.address %}
+		{{ line }}{% if not loop.last %} \\{% endif %}
+		{%- endfor %}
+	\end{minipage}
+	\begin{minipage}[t]{0.495\textwidth}
+		{{ personal.phone }} \\
+		\href{mailto:{{ personal.email }}}{\texttt{{ personal.email | lr_bracket }}} \\
+		\href{{ personal.website | lr_bracket }}{\texttt{{ personal.website | lr_bracket }}}
+	\end{minipage}
+
+	\bigskip
+
+
+	\section*{Current Position \& Affiliations}
+
+	\begin{infolist}
+		{%- for position in current_positions %}
+		\infoitem{{ position.title | l_bracket }}, {{ position.department | escape_latex }}, {{ position.organization }}.}
+		{%- endfor %}
+	\end{infolist}
+
+
+	\section*{Education}
+
+	\begin{datelist}
+		{%- for edu in education %}
+		{%- if edu.start %}
+		\dateitem[{{ edu.start }}--{{ edu.end }}]
+		{%- else %}
+		\dateitem[{{ edu.end }}]
+		{%- endif -%}
+		{{- edu.degree | l_bracket }}, {% if edu.subject %}{{ edu.subject }}, {% endif %}{{ edu.university }}.}
+		{%- endfor %}
+	\end{datelist}
+
+
+	\section*{Publications}
+
+	\begin{infolist}
+		{%- for paper in publications %}
+		\infoitem{
+		{%- if paper.url -%}
+			\href{{ paper.url | lr_bracket }}{{ paper.title | l_bracket }}}
+		{%- else -%}
+			{{ paper.title }}
+		{%- endif -%}
+
+		{%- if paper.coauthors -%}
+			,
+			\sublistitem{with
+			{%- for coa in paper.coauthors %}
+				{%- if loop.first -%}
+					{{ coa | l_space }}
+				{%- elif loop.last -%}
+					{{ " " }}and {{ coa }}
+				{%- else -%}
+					, {{ coa }}
+				{%- endif -%}
+			{%- endfor -%}
+			.}
+		{%- else -%}
+		.
+		{%- endif %}
+			\sublistitem{\textit{{ paper.journal | lr_bracket }}, {{ paper.year }}, {{ paper.volume }}({{ paper.number }}):{{ paper.page_start }}--{{ paper.page_end }}.}}
+		{%- endfor %}
+	\end{infolist}
+
+
+	\section*{Working Papers}
+
+	\begin{infolist}
+		{%- for paper in working_papers %}
+		\infoitem{
+		{%- if paper.url -%}
+			\href{{ paper.url | lr_bracket }}{{ paper.title | l_bracket }}}
+		{%- else -%}
+			{{ paper.title }}
+		{%- endif -%}
+
+		{%- if paper.coauthors -%}
+			,
+			\sublistitem{with
+			{%- for coa in paper.coauthors %}
+				{%- if loop.first -%}
+					{{ coa | l_space }}
+				{%- elif loop.last -%}
+					{{ " " }}and {{ coa }}
+				{%- else -%}
+					, {{ coa }}
+				{%- endif -%}
+			{%- endfor -%}
+			.}
+		{%- else -%}
+		.
+		{%- endif -%}
+		}
+		{%- endfor %}
+	\end{infolist}
+
+
+	\section*{Works in Progress}
+
+	\begin{infolist}
+		{%- for paper in works_in_progress %}
+		\infoitem{
+		{%- if paper.url -%}
+			\href{{ paper.url | lr_bracket }}{{ paper.title | l_bracket }}}
+		{%- else -%}
+			{{ paper.title }}
+		{%- endif -%}
+
+		{%- if paper.coauthors -%}
+			,
+			\sublistitem{with
+			{%- for coa in paper.coauthors %}
+				{%- if loop.first -%}
+					{{ coa | l_space }}
+				{%- elif loop.last -%}
+					{{ " " }}and {{ coa }}
+				{%- else -%}
+					, {{ coa }}
+				{%- endif -%}
+			{%- endfor -%}
+			.}
+		{%- else -%}
+		.
+		{%- endif -%}
+		}
+		{%- endfor %}
+	\end{infolist}
+
+
+	\section*{Grants, Fellowships \& Awards}
+
+	\begin{infolist}
+		{%- for grant in grants %}
+		\infoitem{{ grant.desc | l_bracket }}
+		{%- if grant.with -%}
+			,
+			\sublistitem{{ grant.with | l_bracket }}.}
+		{%- else -%}
+		.
+		{%- endif -%}
+		}
+		{%- endfor %}
+	\end{infolist}
+
+
+	\section*{Presentations}
+
+	\begin{datelist}
+		{%- set curr_year = [-1] -%}
+		{%- for pres in presentations %}
+		\dateitem
+		{%- if pres.when != curr_year[0] -%}
+		[{{ pres.when }}]
+		{%- set _ = curr_year.insert(0, pres.when) -%}
+		{%- endif -%}
+		{{ pres.what | l_bracket }}, {{ pres.where }}
+		{%- if pres.scheduled == true -%}
+			, scheduled.}
+		{%- else -%}
+			.}
+		{%- endif -%}
+		{%- endfor %}
+	\end{datelist}
+
+
+	\section*{Teaching Experience}
+
+	\begin{datelist}
+		{%- for uni in teaching %}
+		\dateheader{{ uni.university | lr_bracket }}
+		{%- for course in uni.courses %}
+		{%- if course.start %}
+		\dateitem[{{ course.start }}--{{ course.end }}]
+		{%- else %}
+		\dateitem[{{ course.end }}]
+		{%- endif -%}
+		{{- course.desc | l_bracket }}.}
+		{%- endfor %}
+		{%- endfor %}
+	\end{datelist}
+
+
+	\section*{Professional \& University Service}
+
+	\begin{infolist}
+		\infoitem{Reviewer for
+		{%- for ref in referee -%}
+		{{ ref.journal | l_space | escape_latex }}
+		{%- if ref.times -%}
+		{{ " " }}({{ ref.times }})
+		{%- endif -%}
+		{% if not loop.last %};{% endif %}
+		{%- endfor -%}
+		.}
+		{%- for s in service %}
+		\infoitem{{ s | l_bracket }}.}
+		{%- endfor %}
+	\end{infolist}
+
+
+	\bigskip
+	{\small Last updated \today.}
+
+\end{document}
