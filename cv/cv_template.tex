@@ -49,6 +49,19 @@
 \end{list}
 }
 
+\newenvironment{singledatelist}{
+	\begin{list}{}{
+		\setlength{\parskip}{0pt}
+		\setlength{\itemsep}{4pt}
+		\setlength{\parsep}{0.3em}
+		\setlength{\leftmargin}{5em}
+		\setlength{\labelwidth}{6em}
+		\setlength{\labelsep}{1.5em}
+		}
+	}{
+\end{list}
+}
+
 \newcommand{\dateitem}[2][]{\item[{{ '#1' | lr_bracket }}] {{ '#2' | lr_bracket }}}
 \newcommand{\dateheader}[1]{\item{\hspace{-4.6em}\textbf{ {{ '#1' | lr_bracket }} }}}
 
@@ -57,7 +70,7 @@
 		\setlength{\parskip}{0pt}
 		\setlength{\itemsep}{4pt}
 		\setlength{\parsep}{0.3em}
-		\setlength{\leftmargin}{2.6em}
+		\setlength{\leftmargin}{1.6em}
 		\setlength{\labelwidth}{0pt}
 		}
 	}{
@@ -111,9 +124,22 @@
 
 	\begin{infolist}
 		{%- for position in current_positions %}
-		\infoitem{{ position.title | l_bracket }}, {{ position.department | escape_latex }}, {{ position.organization }}.}
+		\infoitem{{ position.title | l_bracket }},
+		{%- if position.department %} {{ position.department | escape_latex }},{%- endif -%}
+		{{ position.organization | l_space }}.}
 		{%- endfor %}
 	\end{infolist}
+
+
+	\section*{Past Positions}
+
+	\begin{datelist}
+		{%- for position in previous_positions %}
+		\dateitem[{{ position.start }}--{{ position.end }}]{{ position.title | l_bracket }},
+		{%- if position.department %} {{ position.department | escape_latex }},{%- endif -%}
+		{{ position.organization | l_space }}.}
+		{%- endfor %}
+	\end{datelist}
 
 
 	\section*{Education}
@@ -194,6 +220,43 @@
 	\end{infolist}
 
 
+	\section*{Software}
+
+	\begin{infolist}
+		{%- for app in software %}
+		\infoitem{
+		{%- if app.url -%}
+			\href{{ app.url | lr_bracket }}{\texttt{{ app.title | lr_bracket }}}
+		{%- else -%}
+			\texttt{{ app.title | lr_bracket }}
+		{%- endif -%}
+		{%- if app.tagline -%}
+			: {{ app.tagline }}
+		{%- endif -%}
+
+		{%- if app.coauthors -%}
+			,
+			\sublistitem{with
+			{%- for coa in app.coauthors %}
+				{%- if loop.first -%}
+					{{ coa | l_space }}
+				{%- elif loop.last -%}
+					{{ " " }}and {{ coa }}
+				{%- else -%}
+					, {{ coa }}
+				{%- endif -%}
+			{%- endfor -%}
+			.}
+		{%- else -%}
+		.
+		{%- endif -%}
+		}
+		{%- endfor %}
+	\end{infolist}
+
+
+
+
 	\section*{Works in Progress}
 
 	\begin{infolist}
@@ -244,7 +307,7 @@
 
 	\section*{Presentations}
 
-	\begin{datelist}
+	\begin{singledatelist}
 		{%- set curr_year = [-1] -%}
 		{%- for pres in presentations %}
 		\dateitem
@@ -259,7 +322,7 @@
 			.}
 		{%- endif -%}
 		{%- endfor %}
-	\end{datelist}
+	\end{singledatelist}
 
 
 	\section*{Teaching Experience}
