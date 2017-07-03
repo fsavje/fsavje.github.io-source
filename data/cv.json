@@ -1,0 +1,379 @@
+{
+	"personal": {
+		"name": "Fredrik Sävje",
+		"name_ascii": "Fredrik Savje",
+		"address": [
+			"ISPS, Yale University",
+			"77 Prospect Street",
+			"New Haven, CT 06511"
+		],
+		"phone": "+1 (510) 833 4837",
+		"email": "fredrik.savje@yale.edu",
+		"persistent_email": "fred@savje.com",
+		"website": "https://fredriksavje.com",
+		"picture": "img/fredrik.jpg",
+		"cv_pdf": "fredrik-savje-cv.pdf"
+	},
+
+
+	"online": {
+		"orcid": "0000-0003-2544-8250",
+		"google_scholar": "O1TR2GcAAAAJ",
+		"github": "fsavje",
+		"arxiv": "savje_f_1",
+		"pgp_key": "fredrik-savje.asc",
+		"ssh_key": "fredrik-savje.pub"
+	},
+
+
+	"current_positions": [
+		{
+			"title": "Assistant Professor",
+			"department": "Department of Political Science",
+			"organization": "Yale University"
+		},
+		{
+			"title": "Resident Fellow",
+			"department": "Institution for Social and Policy Studies",
+			"organization": "Yale University"
+		},
+		{
+			"title": "Affiliated Researcher",
+			"department": "Uppsala Center for Labor Studies",
+			"organization": "Uppsala University"
+		}
+	],
+
+
+	"previous_positions": [
+		{
+			"start": 2015,
+			"end": 2017,
+			"title": "Post-doctoral Fellow",
+			"department": "Departments of Political Science & Statistics",
+			"organization": "UC Berkeley"
+		}
+	],
+
+
+	"education": [
+		{
+			"end": 2015,
+			"degree": "Ph.D.",
+			"subject": "Economics",
+			"university": "Uppsala University"
+		},
+		{
+			"start": 2013,
+			"end": 2014,
+			"degree": "Visiting Student Researcher",
+			"university": "UC Berkeley"
+		},
+		{
+			"end": 2013,
+			"degree": "Ph.Lic.",
+			"subject": "Economics",
+			"university": "Uppsala University"
+		},
+		{
+			"end": 2010,
+			"degree": "B.Sc.",
+			"subject": "Political Science",
+			"university": "Uppsala University"
+		}
+	],
+
+
+	"software": [
+		{
+			"title": "distances",
+			"tagline": "R package with tools for distance metrics",
+			"desc": "",
+			"url": "https://github.com/fsavje/distances"
+		},
+		{
+			"title": "quickmatch",
+			"tagline": "Quick Generalized Full Matching in R",
+			"desc": "",
+			"url": "https://github.com/fsavje/quickmatch"
+		},
+		{
+			"title": "quickblock",
+			"tagline": "Quick Threshold Blocking in R",
+			"desc": "",
+			"url": "https://github.com/fsavje/quickblock"
+		},
+		{
+			"title": "scclust",
+			"tagline": "C library for size-constrained clustering",
+			"desc": "",
+			"url": "https://github.com/fsavje/scclust"
+		}
+	],
+
+
+	"publications": [
+		{
+			"id": "Higgins2016Threshold",
+			"title": "Improving massive experiments with threshold blocking",
+			"coauthors": [ "Michael Higgins", "Jasjeet Sekhon" ],
+			"journal": "Proceedings of the National Academy of Sciences",
+			"year": 2016,
+			"volume": "113",
+			"number": "27",
+			"page_start": 7369,
+			"page_end": 7376,
+			"url": "http://www.pnas.org/content/113/27/7369.full.pdf",
+			"doi": "10.1073/pnas.1510504113",
+			"abstract": "Inferences from randomized experiments can be improved by blocking: assigning treatment in fixed proportions within groups of similar units. However, the use of the method is limited by the difficulty in deriving these groups. Current blocking methods are restricted to special cases or run in exponential time; are not sensitive to clustering of data points; and are often heuristic, providing an unsatisfactory solution in many common instances. We present an algorithm that implements a widely applicable class of blocking—threshold blocking—that solves these problems. Given a minimum required group size and a distance metric, we study the blocking problem of minimizing the maximum distance between any two units within the same group. We prove this is a nondeterministic polynomial-time hard problem and derive an approximation algorithm that yields a blocking where the maximum distance is guaranteed to be, at most, four times the optimal value. This algorithm runs in O(n log n) time with O(n) space complexity. This makes it, to our knowledge, the first blocking method with an ensured level of performance that works in massive experiments. Whereas many commonly used algorithms form pairs of units, our algorithm constructs the groups flexibly for any chosen minimum size. This facilitates complex experiments with several treatment arms and clustered data. A simulation study demonstrates the efficiency and efficacy of the algorithm; tens of millions of units can be blocked using a desktop computer in a few minutes."
+		}
+	],
+
+
+	"working_papers": [
+		{
+			"id": "Savje2017FullMatch",
+			"title": "Generalized Full Matching",
+			"coauthors": [ "Michael Higgins", "Jasjeet Sekhon" ],
+			"url": "https://arxiv.org/abs/1703.03882",
+			"abstract": "Matching methods are used to make units comparable on observed characteristics. Full matching can be used to derive optimal matches. However, the method has only been defined in the case of two treatment categories, it places unnecessary restrictions on the matched groups, and existing implementations are computationally intractable in large samples. As a result, the method has not been feasible in studies with large samples or complex designs. We introduce a generalization of full matching that inherits its optimality properties but allows the investigator to specify any desired structure of the matched groups over any number of treatment conditions. We also describe a new approximation algorithm to derive generalized full matchings. In the worst case, the maximum within-group dissimilarity produced by the algorithm is no worse than four times the optimal solution, but it typically performs close to on par with existing optimal algorithms when they exist. Despite its performance, the algorithm is fast and uses little memory: it terminates, on average, in linearithmic time using linear space. This enables investigators to derive well-performing matchings within minutes even in complex studies with samples of several million units."
+		},
+		{
+			"id": "Savje2015Threshold",
+			"title": "The performance and efficiency of threshold blocking",
+			"url": "https://arxiv.org/abs/1506.02824v2",
+			"abstract": "A common method to reduce the uncertainty of causal inferences from experiments is to assign treatments in fixed proportions within groups of similar units: blocking. Previous results indicate that one can expect substantial reductions in variance if these groups are formed so to contain exactly as many units as treatment conditions. This approach can be contrasted to threshold blocking which, instead of specifying a fixed size, requires that the groups contain a minimum number of units. In this paper, I investigate the advantages of respective method. In particular, I show that threshold blocking is superior to fixed-sized blocking in the sense that it always finds a weakly better grouping for any objective and sample. However, this does not necessarily hold when the objective function of the blocking problem is unknown, and a fixed-sized design can perform better in that case. I specifically examine the factors that govern how the methods perform in the common situation where the objective is to reduce the estimator's variance, but where groups are constructed based on covariates. This reveals that the relative performance of threshold blocking improves when the covariates become more predictive of the outcome."
+		},
+		{
+			"id": "Savje2015Incumbency",
+			"title": "Defining and Identifying Incumbency Effects",
+			"url": "https://fredriksavje.com/papers/incumbency.pdf",
+			"abstract": "Recent studies of the effects of political incumbency on election outcomes have almost exclusively used regression discontinuity designs. This shift from the past methods has provided credible identification, but only for a specific type of incumbency effect: the effect for parties. The other effects in the literature, most notably the personal incumbency effect, have largely been abandoned together with the methods previously used to estimate them. This study aims at connecting the new methodical strides with the effects discussed in the past literature. A causal model is first introduced which allows for formal definitions of several effects that previously only been discussed informally. The model also allows previous methods to be revisited and derive how their estimated effects are related. Several strategies are then introduced which, under suitable assumptions, can identify some of the newly defined effects. Last, using these strategies, the incumbency effects in Brazilian mayoral elections are investigated."
+		},
+		{
+			"id": "Bengtsson2015Iodine",
+			"title": "Fetal Iodine Deficiency and Schooling",
+			"coauthors": [ "Niklas Bengtsson", "Stefan Swartling Peterson" ],
+			"url": "https://fredriksavje.com/papers/iodine.pdf",
+			"abstract": "Scholars have theorized that congenital health endowment is a critical determinant of economic outcomes later in a person's life. In an important contribution, Field, Robles and Torero [American Economic Journal: Applied Economics, 1, 4 (2009)] use iodine supplementation programs in Tanzania to estimate the impact of fetal iodine deficiency on educational attainment. The study is one of the first validations of the fetal origins hypothesis. Based on their large estimated effects, the authors conclude that geographic variation in iodine deficiency plausibly accounts for a substantial share of the variation in educational attainment in the developing world. We revisit the Tanzanian iodine supplementation programs through a narrow and wide replication of Field, Robles and Torero's study. We are able to exactly replicate the original results, but we find that they rest on a set of undocumented and unmotivated specification choices and sample restrictions. With a better motivated specification, we cannot establish an effect of fetal iodine protection on educational attainment. The result is unchanged after we increase the sample size fourfold and improve the precision of the treatment variable by incorporating new institutional and medical insights. We conclude that the available data do not provide sufficient power to detect an eventual effect since treatment cannot be measured with sufficient precision."
+		}
+	],
+
+
+	"works_in_progress": [
+		{
+			"title": "Average treatment effects under unknown interference",
+			"coauthors": [ "Peter Aronow", "Michael Hudgens" ]
+		},
+		{
+			"title": "The get out of jail card: The effect of political office holding on court rulings",
+			"coauthors": [ "Sebastian Axbard" ]
+		},
+		{
+			"title": "Blocking estimators and inference under the Neyman-Rubin model",
+			"coauthors": [ "Michael Higgins", "Jasjeet Sekhon" ]
+		},
+		{
+			"title": "A two-factor approximation algorithm for paired threshold blocking"
+		},
+		{
+			"title": "Semi-blocking: Cross block dependence to improve inference"
+		},
+		{
+			"title": "Assumption-free permutation tests for the existence of unit fixed-effect"
+		},
+		{
+			"title": "Intuitive construction of distance matrices and metrics (software)"
+		},
+		{
+			"title": "Hypothesis testing with the Synthetic Control Method",
+			"coauthors": [ "Michihito Ando" ]
+		}
+	],
+
+
+	"grants": [
+		{
+			"desc": "Swedish International Development Cooperation Agency, 2013--2015, SEK 2,595,000",
+			"with": "with Niklas Bengtsson, Eva Mörk (PI) and Jonas Poulsen"
+		},
+		{
+			"desc": "The Jan Wallander and Tom Hedelius foundation, 2013--2014, SEK 321,000"
+		},
+		{
+			"desc": "NSF Conference Grant, PolMeth Summer Meeting, 2015"
+		},
+		{
+			"desc": "UK Causal Inference Meeting, 2015, conference grant"
+		},
+		{
+			"desc": "The Siamon foundation, 2013, conference grant"
+		}
+	],
+
+
+	"presentations": [
+		{
+			"what": "Society for Political Methodology",
+			"where": "University of Wisconsin-Madison",
+			"when": 2017,
+			"poster": true,
+			"scheduled": true
+		},
+		{
+			"what": "Atlantic Causal Inference Conference",
+			"where": "University of North Carolina",
+			"when": 2017
+		},
+		{
+			"what": "Midwest Political Science Association",
+			"where": "Chicago",
+			"when": 2017
+		},
+		{
+			"what": "Columbia Business School",
+			"where": "Columbia University",
+			"when": 2016
+		},
+		{
+			"what": "Sekhon Research Group",
+			"where": "UC Berkeley",
+			"when": 2016
+		},
+		{
+			"what": "Midwest Political Science Association",
+			"where": "Chicago",
+			"when": 2016
+		},
+		{
+			"what": "Department of Political Science",
+			"where": "Yale University",
+			"when": 2015
+		},
+		{
+			"what": "Society for Political Methodology",
+			"where": "University of Rochester",
+			"when": 2015,
+			"poster": true
+		},
+		{
+			"what": "Department of Statistics",
+			"where": "Uppsala University",
+			"when": 2015
+		},
+		{
+			"what": "Institute for International Economic Studies",
+			"where": "Stockholm University",
+			"when": 2015
+		},
+		{
+			"what": "UK Causal Inference Meeting",
+			"where": "University of Bristol",
+			"when": 2015,
+			"poster": true
+		},
+		{
+			"what": "Department of Economics",
+			"where": "Uppsala University",
+			"when": 2014
+		},
+		{
+			"what": "Quantitative Methodology in the Social Sciences Seminar",
+			"where": "UC Berkeley",
+			"when": 2014
+		},
+		{
+			"what": "7th Nordic Econometric Meeting",
+			"where": "Norwegian School of Economics",
+			"when": 2013
+		},
+		{
+			"what": "Department of Statistics",
+			"where": "Umeå School of Business and Economics",
+			"when": 2013
+		},
+		{
+			"what": "Uppsala Center for Labor Studies",
+			"where": "Uppsala University",
+			"when": 2013
+		},
+		{
+			"what": "Department of Economics",
+			"where": "Uppsala University",
+			"when": 2012
+		}
+	],
+
+
+	"teaching": [
+		{
+			"university": "Uppsala University",
+			"courses": [
+				{
+					"start": 2011,
+					"end": 2012,
+					"desc": "Teaching Assistant, Micro Theory I, PhD level"
+				},
+				{
+					"start": 2011,
+					"end": 2012,
+					"desc": "Teaching Assistant, Introductory Micro- and Macroeconomics, Basic level"
+				},
+				{
+					"end": 2011,
+					"desc": "Teaching Assistant, Micro Theory with Applications, Intermediate level"
+				}
+			]
+		}
+	],
+
+
+	"referee": [
+		{ "journal": "Journal of Causal Inference" },
+		{ "journal": "Journal of Economic Behavior & Organization" },
+		{ "journal": "Journal of the American Statistical Association" }
+	],
+
+
+	"service": [
+		"Member of the board, PhD Council for Social Sciences, 2011--2012",
+		"Co-founder and treasurer, Pareto: Uppsala Economic Association, 2010--2011",
+		"President, Uppsala Political Science Students, 2010"
+	],
+
+
+	"coauthors": [
+		{
+			"name": "Michihito Ando",
+			"website": "https://sites.google.com/site/michihito7ando/"
+		},
+		{
+			"name": "Peter Aronow",
+			"website": "http://aronow.research.yale.edu"
+		},
+		{
+			"name": "Sebastian Axbard",
+			"website": "http://www.axbard.com"
+		},
+		{
+			"name": "Niklas Bengtsson",
+			"website": "https://sites.google.com/site/nikbe825/"
+		},
+		{
+			"name": "Michael Higgins",
+			"website": "https://www.k-state.edu/stats/people/HigginsMichael.html"
+		},
+		{
+			"name": "Michael Hudgens",
+			"website": "http://www.bios.unc.edu/~mhudgens/"
+		},
+		{
+			"name": "Jasjeet Sekhon",
+			"website": "http://sekhon.berkeley.edu"
+		},
+		{
+			"name": "Stefan Swartling Peterson",
+			"website": "http://katalog.uu.se/empinfo/?languageId=1&id=N96-4476"
+		}
+	]
+}

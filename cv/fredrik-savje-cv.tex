@@ -1,0 +1,258 @@
+% Inspired by: http://jblevins.org/projects/cv-template/
+
+\documentclass[10pt,letterpaper]{article}
+%\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+
+% Fonts
+\usepackage[T1]{fontenc}
+\usepackage[urw-garamond]{mathdesign}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+	colorlinks = true,
+	urlcolor = black,
+	pdfauthor = {Fredrik Sävje},
+	pdfkeywords = {Fredrik Sävje, Fredrik Savje, Curriculum Vitae, CV},
+	pdftitle = {Fredrik Sävje: Curriculum Vitae},
+	pdfsubject = {Curriculum Vitae},
+	pdfpagemode = UseNone
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{Fredrik Sävje}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\bfseries\large}
+\subsectionfont{\rmfamily\mdseries\itshape\normalsize}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+\newenvironment{datelist}{
+	\begin{list}{}{
+		\setlength{\parskip}{0pt}
+		\setlength{\itemsep}{4pt}
+		\setlength{\parsep}{0.3em}
+		\setlength{\leftmargin}{6em}
+		\setlength{\labelwidth}{6em}
+		\setlength{\labelsep}{1.5em}
+		}
+	}{
+\end{list}
+}
+
+\newenvironment{singledatelist}{
+	\begin{list}{}{
+		\setlength{\parskip}{0pt}
+		\setlength{\itemsep}{4pt}
+		\setlength{\parsep}{0.3em}
+		\setlength{\leftmargin}{5em}
+		\setlength{\labelwidth}{6em}
+		\setlength{\labelsep}{1.5em}
+		}
+	}{
+\end{list}
+}
+
+\newcommand{\dateitem}[2][]{\item[{#1}] {#2}}
+\newcommand{\dateheader}[1]{\item{\hspace{-4.6em}\textbf{ {#1} }}}
+
+\newenvironment{infolist}{
+	\begin{list}{}{
+		\setlength{\parskip}{0pt}
+		\setlength{\itemsep}{4pt}
+		\setlength{\parsep}{0.3em}
+		\setlength{\leftmargin}{1.6em}
+		\setlength{\labelwidth}{0pt}
+		}
+	}{
+\end{list}
+}
+
+\newcommand{\infoitem}[1]{\item {#1}}
+
+\newenvironment{sublist}{
+	\begin{list}{}{
+		\setlength{\parskip}{0pt}
+		\setlength{\itemsep}{0pt}
+		\setlength{\parsep}{-0.25em}
+		\setlength{\topsep}{0.1em}
+		\setlength{\leftmargin}{2em}
+		\setlength{\labelwidth}{0pt}
+		}
+	}{
+\end{list}
+}
+
+\newcommand{\sublistitem}[1]{\begin{sublist}
+		\item {\footnotesize {#1}}
+	\end{sublist}}
+
+
+\begin{document}
+
+	{\huge \bf Fredrik Sävje}
+
+	\rule{\textwidth}{1pt}
+
+	\bigskip
+
+
+	\begin{minipage}[t]{0.495\textwidth}
+		ISPS, Yale University \\
+		77 Prospect Street \\
+		New Haven, CT 06511
+	\end{minipage}
+	\begin{minipage}[t]{0.495\textwidth}
+		+1 (510) 833 4837 \\
+		\href{mailto:fredrik.savje@yale.edu}{\texttt{fredrik.savje@yale.edu}} \\
+		\href{https://fredriksavje.com}{\texttt{https://fredriksavje.com}}
+	\end{minipage}
+
+	\bigskip
+
+
+	\section*{Current Position \& Affiliations}
+
+	\begin{infolist}
+		\infoitem{Assistant Professor, Department of Political Science, Yale University.}
+		\infoitem{Resident Fellow, Institution for Social and Policy Studies, Yale University.}
+		\infoitem{Affiliated Researcher, Uppsala Center for Labor Studies, Uppsala University.}
+	\end{infolist}
+
+
+	\section*{Past Positions}
+
+	\begin{datelist}
+		\dateitem[2015--2017]{Post-doctoral Fellow, Departments of Political Science \& Statistics, UC Berkeley.}
+	\end{datelist}
+
+
+	\section*{Education}
+
+	\begin{datelist}
+		\dateitem[2015]{Ph.D., Economics, Uppsala University.}
+		\dateitem[2013--2014]{Visiting Student Researcher, UC Berkeley.}
+		\dateitem[2013]{Ph.Lic., Economics, Uppsala University.}
+		\dateitem[2010]{B.Sc., Political Science, Uppsala University.}
+	\end{datelist}
+
+
+	\section*{Publications}
+
+	\begin{infolist}
+		\infoitem{\href{http://www.pnas.org/content/113/27/7369.full.pdf}{Improving massive experiments with threshold blocking},
+			\sublistitem{with Michael Higgins and Jasjeet Sekhon.}
+			\sublistitem{\textit{Proceedings of the National Academy of Sciences}, 2016, 113(27):7369--7376.}}
+	\end{infolist}
+
+
+	\section*{Working Papers}
+
+	\begin{infolist}
+		\infoitem{\href{https://arxiv.org/abs/1703.03882}{Generalized Full Matching},
+			\sublistitem{with Michael Higgins and Jasjeet Sekhon.}}
+		\infoitem{\href{https://arxiv.org/abs/1506.02824v2}{The performance and efficiency of threshold blocking}.}
+		\infoitem{\href{https://fredriksavje.com/papers/incumbency.pdf}{Defining and Identifying Incumbency Effects}.}
+		\infoitem{\href{https://fredriksavje.com/papers/iodine.pdf}{Fetal Iodine Deficiency and Schooling},
+			\sublistitem{with Niklas Bengtsson and Stefan Swartling Peterson.}}
+	\end{infolist}
+
+
+	\section*{Software}
+
+	\begin{infolist}
+		\infoitem{\href{https://github.com/fsavje/distances}{\texttt{distances}}: R package with tools for distance metrics.}
+		\infoitem{\href{https://github.com/fsavje/quickmatch}{\texttt{quickmatch}}: Quick Generalized Full Matching in R.}
+		\infoitem{\href{https://github.com/fsavje/quickblock}{\texttt{quickblock}}: Quick Threshold Blocking in R.}
+		\infoitem{\href{https://github.com/fsavje/scclust}{\texttt{scclust}}: C library for size-constrained clustering.}
+	\end{infolist}
+
+
+
+
+	\section*{Works in Progress}
+
+	\begin{infolist}
+		\infoitem{Average treatment effects under unknown interference,
+			\sublistitem{with Peter Aronow and Michael Hudgens.}}
+		\infoitem{The get out of jail card: The effect of political office holding on court rulings,
+			\sublistitem{with Sebastian Axbard.}}
+		\infoitem{Blocking estimators and inference under the Neyman-Rubin model,
+			\sublistitem{with Michael Higgins and Jasjeet Sekhon.}}
+		\infoitem{A two-factor approximation algorithm for paired threshold blocking.}
+		\infoitem{Semi-blocking: Cross block dependence to improve inference.}
+		\infoitem{Assumption-free permutation tests for the existence of unit fixed-effect.}
+		\infoitem{Intuitive construction of distance matrices and metrics (software).}
+		\infoitem{Hypothesis testing with the Synthetic Control Method,
+			\sublistitem{with Michihito Ando.}}
+	\end{infolist}
+
+
+	\section*{Grants, Fellowships \& Awards}
+
+	\begin{infolist}
+		\infoitem{Swedish International Development Cooperation Agency, 2013--2015, SEK 2,595,000,
+			\sublistitem{with Niklas Bengtsson, Eva Mörk (PI) and Jonas Poulsen.}}
+		\infoitem{The Jan Wallander and Tom Hedelius foundation, 2013--2014, SEK 321,000.}
+		\infoitem{NSF Conference Grant, PolMeth Summer Meeting, 2015.}
+		\infoitem{UK Causal Inference Meeting, 2015, conference grant.}
+		\infoitem{The Siamon foundation, 2013, conference grant.}
+	\end{infolist}
+
+
+	\section*{Presentations}
+
+	\begin{singledatelist}
+		\dateitem[2017]{Society for Political Methodology, University of Wisconsin-Madison, scheduled.}
+		\dateitem{Atlantic Causal Inference Conference, University of North Carolina.}
+		\dateitem{Midwest Political Science Association, Chicago.}
+		\dateitem[2016]{Columbia Business School, Columbia University.}
+		\dateitem{Sekhon Research Group, UC Berkeley.}
+		\dateitem{Midwest Political Science Association, Chicago.}
+		\dateitem[2015]{Department of Political Science, Yale University.}
+		\dateitem{Society for Political Methodology, University of Rochester.}
+		\dateitem{Department of Statistics, Uppsala University.}
+		\dateitem{Institute for International Economic Studies, Stockholm University.}
+		\dateitem{UK Causal Inference Meeting, University of Bristol.}
+		\dateitem[2014]{Department of Economics, Uppsala University.}
+		\dateitem{Quantitative Methodology in the Social Sciences Seminar, UC Berkeley.}
+		\dateitem[2013]{7th Nordic Econometric Meeting, Norwegian School of Economics.}
+		\dateitem{Department of Statistics, Umeå School of Business and Economics.}
+		\dateitem{Uppsala Center for Labor Studies, Uppsala University.}
+		\dateitem[2012]{Department of Economics, Uppsala University.}
+	\end{singledatelist}
+
+
+	\section*{Teaching Experience}
+
+	\begin{datelist}
+		\dateheader{Uppsala University}
+		\dateitem[2011--2012]{Teaching Assistant, Micro Theory I, PhD level.}
+		\dateitem[2011--2012]{Teaching Assistant, Introductory Micro- and Macroeconomics, Basic level.}
+		\dateitem[2011]{Teaching Assistant, Micro Theory with Applications, Intermediate level.}
+	\end{datelist}
+
+
+	\section*{Professional \& University Service}
+
+	\begin{infolist}
+		\infoitem{Reviewer for Journal of Causal Inference; Journal of Economic Behavior \& Organization; Journal of the American Statistical Association.}
+		\infoitem{Member of the board, PhD Council for Social Sciences, 2011--2012.}
+		\infoitem{Co-founder and treasurer, Pareto: Uppsala Economic Association, 2010--2011.}
+		\infoitem{President, Uppsala Political Science Students, 2010.}
+	\end{infolist}
+
+
+	\bigskip
+	{\small Last updated \today.}
+
+\end{document}
