@@ -1,2 +1,2 @@
 # fsavje.github.io-source
-Fredrik's website: [https://fredriksavje.com](https://fredriksavje.com)
+Fredrik's website: [http://fredriksavje.com](http://fredriksavje.com)

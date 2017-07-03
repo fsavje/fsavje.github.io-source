@@ -10,7 +10,7 @@
 		"phone": "+1 (510) 833 4837",
 		"email": "fredrik.savje@yale.edu",
 		"persistent_email": "fred@savje.com",
-		"website": "https://fredriksavje.com",
+		"website": "http://fredriksavje.com",
 		"picture": "img/fredrik.jpg",
 		"cv_pdf": "fredrik-savje-cv.pdf"
 	},
@@ -147,14 +147,14 @@
 		{
 			"id": "Savje2015Incumbency",
 			"title": "Defining and Identifying Incumbency Effects",
-			"url": "https://fredriksavje.com/papers/incumbency.pdf",
+			"url": "http://fredriksavje.com/papers/incumbency.pdf",
 			"abstract": "Recent studies of the effects of political incumbency on election outcomes have almost exclusively used regression discontinuity designs. This shift from the past methods has provided credible identification, but only for a specific type of incumbency effect: the effect for parties. The other effects in the literature, most notably the personal incumbency effect, have largely been abandoned together with the methods previously used to estimate them. This study aims at connecting the new methodical strides with the effects discussed in the past literature. A causal model is first introduced which allows for formal definitions of several effects that previously only been discussed informally. The model also allows previous methods to be revisited and derive how their estimated effects are related. Several strategies are then introduced which, under suitable assumptions, can identify some of the newly defined effects. Last, using these strategies, the incumbency effects in Brazilian mayoral elections are investigated."
 		},
 		{
 			"id": "Bengtsson2015Iodine",
 			"title": "Fetal Iodine Deficiency and Schooling",
 			"coauthors": [ "Niklas Bengtsson", "Stefan Swartling Peterson" ],
-			"url": "https://fredriksavje.com/papers/iodine.pdf",
+			"url": "http://fredriksavje.com/papers/iodine.pdf",
 			"abstract": "Scholars have theorized that congenital health endowment is a critical determinant of economic outcomes later in a person's life. In an important contribution, Field, Robles and Torero [American Economic Journal: Applied Economics, 1, 4 (2009)] use iodine supplementation programs in Tanzania to estimate the impact of fetal iodine deficiency on educational attainment. The study is one of the first validations of the fetal origins hypothesis. Based on their large estimated effects, the authors conclude that geographic variation in iodine deficiency plausibly accounts for a substantial share of the variation in educational attainment in the developing world. We revisit the Tanzanian iodine supplementation programs through a narrow and wide replication of Field, Robles and Torero's study. We are able to exactly replicate the original results, but we find that they rest on a set of undocumented and unmotivated specification choices and sample restrictions. With a better motivated specification, we cannot establish an effect of fetal iodine protection on educational attainment. The result is unchanged after we increase the sample size fourfold and improve the precision of the treatment variable by incorporating new institutional and medical insights. We conclude that the available data do not provide sufficient power to detect an eventual effect since treatment cannot be measured with sufficient precision."
 		}
 	],
