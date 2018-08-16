@@ -3,11 +3,12 @@
 		"name": "Fredrik Sävje",
 		"name_ascii": "Fredrik Savje",
 		"address": [
-			"ISPS, Yale University",
-			"77 Prospect Street",
+			"Rosenkranz Hall",
+			"125 Prospect Street",
 			"New Haven, CT 06511"
 		],
-		"phone": "+1 (510) 833 4837",
+		"office": "Rosenkranz Hall 226",
+		"phone": "+1 (203) 432 4672",
 		"email": "fredrik.savje@yale.edu",
 		"persistent_email": "fred@savje.com",
 		"website": "http://fredriksavje.com",
@@ -30,6 +31,11 @@
 		{
 			"title": "Assistant Professor",
 			"department": "Department of Political Science",
+			"organization": "Yale University"
+		},
+		{
+			"title": "Assistant Professor by courtesy",
+			"department": "Department of Statistics and Data Science",
 			"organization": "Yale University"
 		},
 		{
@@ -132,6 +138,13 @@
 
 	"working_papers": [
 		{
+			"id": "Savje2018EATE",
+			"title": "Average treatment effects in the presence of unknown interference",
+			"coauthors": [ "Peter Aronow", "Michael Hudgens" ],
+			"url": "https://arxiv.org/abs/1711.06399",
+			"abstract": "We investigate large-sample properties of treatment effect estimators under unknown interference in randomized experiments. The inferential target is a generalization of the average treatment effect estimand that marginalizes over potential spillover effects. We show that estimators commonly used to estimate treatment effects under no-interference are consistent for the generalized estimand for most experimental designs under limited but otherwise arbitrary and unknown interference. The rates of convergence depend on the rate at which the amount of interference grows and the degree to which it aligns with dependencies in treatment assignment. Importantly for practitioners, the results imply that if one erroneously assumes that units do not interfere in a setting with limited, or even moderate, interference, standard estimators are nevertheless likely to be close to an average treatment effect if the sample is sufficiently large."
+		},
+		{
 			"id": "Savje2017FullMatch",
 			"title": "Generalized Full Matching",
 			"coauthors": [ "Michael Higgins", "Jasjeet Sekhon" ],
@@ -162,8 +175,24 @@
 
 	"works_in_progress": [
 		{
-			"title": "Average treatment effects under unknown interference",
-			"coauthors": [ "Peter Aronow", "Michael Hudgens" ]
+			"title": "Improving convenience samples through shared questions: Survey evidence from the Quasi-ANES",
+			"coauthors": [ "Jonathon Baron", "Molly Offer-Westort", "Jun Won Park", "Peter Aronow" ]
+		},
+		{
+			"title": "On the power of regression discontinuity designs",
+			"coauthors": [ "Peter Aronow", "William Hunt", "Drew Stommes" ]
+		},
+		{
+			"title": "Are most experiments under-powered?",
+			"coauthors": [ "Gareth Nellis" ]
+		},
+		{
+			"title": "Purposeful case selection without bias",
+			"coauthors": [ "Consuelo Amat Matus", "Peter Aronow" ]
+		},
+		{
+			"title": "On the use of principal stratification to identify incumbency effects",
+			"coauthors": [ "Dylan O'Connell" ]
 		},
 		{
 			"title": "The get out of jail card: The effect of political office holding on court rulings",
@@ -183,11 +212,22 @@
 			"title": "Assumption-free permutation tests for the existence of unit fixed-effect"
 		},
 		{
-			"title": "Intuitive construction of distance matrices and metrics (software)"
+			"title": "Intuitive construction of distance matrices and metrics"
 		},
 		{
 			"title": "Hypothesis testing with the Synthetic Control Method",
 			"coauthors": [ "Michihito Ando" ]
+		}
+	],
+
+
+	"awards": [
+		{
+			"name": "The Gosnell Prize for Excellence in Political Methodology",
+			"year": 2018,
+			"desc": "Awarded for the best work in political methodology presented at any political science conference during the preceding year.",
+			"with": "with Peter Aronow and Michael Hudgens",
+			"url": "https://www.cambridge.org/core/membership/spm/about-us/awards/the-gosnell-prize"
 		}
 	],
 
@@ -212,135 +252,225 @@
 	],
 
 
-	"presentations": [
-		{
-			"what": "Society for Political Methodology",
-			"where": "University of Wisconsin-Madison",
-			"when": 2017,
-			"poster": true,
-			"scheduled": true
-		},
-		{
-			"what": "Atlantic Causal Inference Conference",
-			"where": "University of North Carolina",
-			"when": 2017
-		},
-		{
-			"what": "Midwest Political Science Association",
-			"where": "Chicago",
-			"when": 2017
-		},
-		{
-			"what": "Columbia Business School",
-			"where": "Columbia University",
-			"when": 2016
-		},
-		{
-			"what": "Sekhon Research Group",
-			"where": "UC Berkeley",
-			"when": 2016
-		},
-		{
-			"what": "Midwest Political Science Association",
-			"where": "Chicago",
-			"when": 2016
-		},
-		{
-			"what": "Department of Political Science",
-			"where": "Yale University",
-			"when": 2015
-		},
-		{
-			"what": "Society for Political Methodology",
-			"where": "University of Rochester",
-			"when": 2015,
-			"poster": true
-		},
-		{
-			"what": "Department of Statistics",
-			"where": "Uppsala University",
-			"when": 2015
-		},
-		{
-			"what": "Institute for International Economic Studies",
-			"where": "Stockholm University",
-			"when": 2015
-		},
-		{
-			"what": "UK Causal Inference Meeting",
-			"where": "University of Bristol",
-			"when": 2015,
-			"poster": true
-		},
-		{
-			"what": "Department of Economics",
-			"where": "Uppsala University",
-			"when": 2014
-		},
-		{
-			"what": "Quantitative Methodology in the Social Sciences Seminar",
-			"where": "UC Berkeley",
-			"when": 2014
-		},
-		{
-			"what": "7th Nordic Econometric Meeting",
-			"where": "Norwegian School of Economics",
-			"when": 2013
-		},
-		{
-			"what": "Department of Statistics",
-			"where": "Umeå School of Business and Economics",
-			"when": 2013
-		},
-		{
-			"what": "Uppsala Center for Labor Studies",
-			"where": "Uppsala University",
-			"when": 2013
-		},
-		{
-			"what": "Department of Economics",
-			"where": "Uppsala University",
-			"when": 2012
-		}
-	],
+	"presentations": {
+		"invited": [
+			{
+				"what": "Joint Statistical Meetings",
+				"where": "Vancouver",
+				"when": 2018
+			},
+			{
+				"what": "12th Yamakawa Kenjiro Lecture",
+				"where": "University of Tokyo",
+				"when": 2018
+			},
+			{
+				"what": "European Causal Inference Meeting",
+				"where": "University of Florence",
+				"when": 2018
+			},
+			{
+				"what": "Department of Political Science",
+				"where": "NYU",
+				"when": 2018
+			},
+			{
+				"what": "Department of Political Science",
+				"where": "MIT",
+				"when": 2018
+			},
+			{
+				"what": "Columbia Business School",
+				"where": "Columbia University",
+				"when": 2016
+			},
+			{
+				"what": "Department of Political Science",
+				"where": "Yale University",
+				"when": 2015
+			},
+			{
+				"what": "Department of Statistics",
+				"where": "Uppsala University",
+				"when": 2015
+			},
+			{
+				"what": "Institute for International Economic Studies",
+				"where": "Stockholm University",
+				"when": 2015
+			},
+			{
+				"what": "Department of Statistics",
+				"where": "Umeå School of Business and Economics",
+				"when": 2013
+			}
+		],
+		"contributed": [
+			{
+				"what": "APSA Annual Meeting",
+				"where": "Boston",
+				"when": 2018,
+				"scheduled": true
+			},
+			{
+				"what": "Society for Political Methodology",
+				"where": "University of Wisconsin-Madison",
+				"when": 2017
+			},
+			{
+				"what": "Atlantic Causal Inference Conference",
+				"where": "University of North Carolina",
+				"when": 2017
+			},
+			{
+				"what": "Midwest Political Science Association",
+				"where": "Chicago",
+				"when": 2017
+			},
+			{
+				"what": "Midwest Political Science Association",
+				"where": "Chicago",
+				"when": 2016
+			},
+			{
+				"what": "Society for Political Methodology",
+				"where": "University of Rochester",
+				"when": 2015,
+				"poster": true
+			},
+			{
+				"what": "UK Causal Inference Meeting",
+				"where": "University of Bristol",
+				"when": 2015,
+				"poster": true
+			},
+			{
+				"what": "7th Nordic Econometric Meeting",
+				"where": "Norwegian School of Economics",
+				"when": 2013
+			}
+		],
+		"internal": [
+			{
+				"what": "Sekhon Research Group Meeting",
+				"where": "UC Berkeley",
+				"when": 2016
+			},
+			{
+				"what": "Department of Economics",
+				"where": "Uppsala University",
+				"when": 2014
+			},
+			{
+				"what": "Quantitative Methodology in the Social Sciences Seminar",
+				"where": "UC Berkeley",
+				"when": 2014
+			},
+			{
+				"what": "Uppsala Center for Labor Studies",
+				"where": "Uppsala University",
+				"when": 2013
+			},
+			{
+				"what": "Department of Economics",
+				"where": "Uppsala University",
+				"when": 2012
+			}
+		],
+		"other": [ ]
+	},
 
 
 	"teaching": [
+		{
+			"university": "Yale University",
+			"courses": [
+				{
+					"start": 2018,
+					"end": 2019,
+					"desc": "Data Science for Politics and Policy, Undergraduate level"
+				},
+				{
+					"end": 2019,
+					"desc": "Foundations of Statistical Inference, Graduate level"
+				},
+				{
+					"start": 2017,
+					"end": 2018,
+					"desc": "Advanced Quantitative Methods, Graduate level"
+				},
+				{
+					"end": 2018,
+					"desc": "The Application of Quantitative Methods, Graduate level"
+				}
+			]
+		},
 		{
 			"university": "Uppsala University",
 			"courses": [
 				{
 					"start": 2011,
 					"end": 2012,
-					"desc": "Teaching Assistant, Micro Theory I, PhD level"
+					"desc": "Teaching Assistant, Micro Theory I, Graduate level"
 				},
 				{
 					"start": 2011,
 					"end": 2012,
-					"desc": "Teaching Assistant, Introductory Micro- and Macroeconomics, Basic level"
+					"desc": "Teaching Assistant, Introductory Micro- and Macroeconomics, Undergraduate level"
 				},
 				{
 					"end": 2011,
-					"desc": "Teaching Assistant, Micro Theory with Applications, Intermediate level"
+					"desc": "Teaching Assistant, Micro Theory with Applications, Undergraduate level"
 				}
 			]
 		}
 	],
 
 
-	"referee": [
-		{ "journal": "Journal of Causal Inference" },
-		{ "journal": "Journal of Economic Behavior & Organization" },
-		{ "journal": "Journal of the American Statistical Association" },
-		{ "journal": "Statistics & Probability Letters" },
-		{ "journal": "The American Statistician" }
+	"students": [
+		{
+			"role": "Committee Member",
+			"students": [
+				{
+					"name": "Molly Offer-Westort",
+					"url": "https://mollyow.github.io",
+					"department": "Political Science, Yale",
+					"current": true
+				}
+			]
+		}
 	],
 
 
 	"service": [
-		"Member of the board, PhD Council for Social Sciences, 2011--2012",
-		"Co-founder and treasurer, Pareto: Uppsala Economic Association, 2010--2011",
-		"President, Uppsala Political Science Students, 2010"
+		{
+			"type": "Yale University",
+			"service": [
+				"Organizer, MacMillan--CSAP Workshop on Quantitative Research Methods, 2018--2019",
+				"Member, Social Science--Data Science Search Committee, 2018"
+			]
+		},
+		{
+			"type": "Disciplinary Service",
+			"service": [
+				"Reviewer, American Statistical Association Biometrics Section Travel Awards, 2018"
+			]
+		}
+	],
+
+	"future-service": [
+		"Chair, Quantitative Methods General Exam Committee, 2019."
+	],
+
+
+	"referee": [
+		{ "journal": "The American Statistician" },
+		{ "journal": "Annals of Applied Statistics" },
+		{ "journal": "Journal of the American Statistical Association", "times": 2 },
+		{ "journal": "Journal of Causal Inference" },
+		{ "journal": "Journal of Economic Behavior & Organization" },
+		{ "journal": "Political Analysis", "times": 2 },
+		{ "journal": "Statistics & Probability Letters" }
 	],
 
 
