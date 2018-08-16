@@ -73,7 +73,6 @@
 }
 
 \newcommand{\dateitem}[2][]{\item[{{ '#1' | lr_bracket }}] {{ '#2' | lr_bracket }}}
-\newcommand{\dateheader}[1]{\item{\hspace{-4.6em}\textbf{ {{ '#1' | lr_bracket }} }}}
 
 \newenvironment{infolist}{
 	\begin{list}{}{
@@ -265,8 +264,6 @@
 	\end{infolist}
 
 
-
-
 	\section*{Works in Progress}
 
 	\begin{infolist}
@@ -299,7 +296,32 @@
 	\end{infolist}
 
 
-	\section*{Grants, Fellowships \& Awards}
+	\section*{Awards}
+
+	\begin{singledatelist}
+		{%- set curr_year = [-1] -%}
+		{%- for award in awards %}
+		\dateitem
+		{%- if award.year != curr_year[0] -%}
+		[{{ award.year }}]
+		{%- set _ = curr_year.insert(0, award.year) -%}
+		{%- endif -%}
+		{%- if award.url -%}
+			{\href{{ award.url | lr_bracket }}{{ award.name | l_bracket }}}
+		{%- else -%}
+			{{ award.name | l_bracket }}
+		{%- endif -%}
+		{%- if award.with -%}
+			,
+			\sublistitem{{ award.with | l_bracket }}.}}
+		{%- else -%}
+		.}
+		{%- endif -%}
+		{%- endfor %}
+	\end{singledatelist}
+
+
+	\section*{Grants \& Fellowships}
 
 	\begin{infolist}
 		{%- for grant in grants %}
@@ -317,9 +339,11 @@
 
 	\section*{Presentations}
 
+	\subsection*{Invited presentations}
+
 	\begin{singledatelist}
 		{%- set curr_year = [-1] -%}
-		{%- for pres in presentations %}
+		{%- for pres in presentations.invited %}
 		\dateitem
 		{%- if pres.when != curr_year[0] -%}
 		[{{ pres.when }}]
@@ -335,11 +359,32 @@
 	\end{singledatelist}
 
 
-	\section*{Teaching Experience}
+	\subsection*{Contributed presentations}
+
+	\begin{singledatelist}
+		{%- set curr_year = [-1] -%}
+		{%- for pres in presentations.contributed %}
+		\dateitem
+		{%- if pres.when != curr_year[0] -%}
+		[{{ pres.when }}]
+		{%- set _ = curr_year.insert(0, pres.when) -%}
+		{%- endif -%}
+		{{ pres.what | l_bracket }}, {{ pres.where }}
+		{%- if pres.scheduled == true -%}
+			, scheduled.}
+		{%- else -%}
+			.}
+		{%- endif -%}
+		{%- endfor %}
+	\end{singledatelist}
+
+
+	\section*{Teaching}
+	{%- for uni in teaching %}
+
+	\subsection*{{ uni.university | lr_bracket }}
 
 	\begin{datelist}
-		{%- for uni in teaching %}
-		\dateheader{{ uni.university | lr_bracket }}
 		{%- for course in uni.courses %}
 		{%- if course.start %}
 		\dateitem[{{ course.start }}--{{ course.end }}]
@@ -348,27 +393,63 @@
 		{%- endif -%}
 		{{- course.desc | l_bracket }}.}
 		{%- endfor %}
-		{%- endfor %}
 	\end{datelist}
+	{%- endfor %}
 
 
-	\section*{Professional \& University Service}
+	\section*{Students}
+	{%- for roletype in students %}
+
+	\subsection*{{ roletype.role | lr_bracket }}
+
+	\begin{singledatelist}
+		{%- set curr_year = [-2] -%}
+		{%- for student in roletype.students %}
+		\dateitem
+		{%- if student.current == true %}
+		{%- if curr_year[0] == -2 -%}
+		[Current]
+		{%- set curr_year = [-1] -%}
+		{%- endif -%}
+		{%- elif student.year != curr_year[0] -%}
+		[{{ student.when }}]
+		{%- set _ = curr_year.insert(0, pres.when) -%}
+		{%- endif -%}
+		{%- if student.url -%}
+			{\href{{ student.url | lr_bracket }}{{ student.name | lr_bracket }}, {{ student.department }}.}
+		{%- else -%}
+			{{ student.name | l_bracket }}, {{ student.department }}.}
+		{%- endif -%}
+		{%- endfor %}
+	\end{singledatelist}
+	{%- endfor %}
+
+
+	\section*{Service}
+	{%- for servicetype in service %}
+
+	\subsection*{{ servicetype.type | lr_bracket }}
 
 	\begin{infolist}
-		\infoitem{Reviewer for
-		{%- for ref in referee -%}
-		{{ ref.journal | l_space | escape_latex }}
-		{%- if ref.times -%}
-		{{ " " }}({{ ref.times }})
-		{%- endif -%}
-		{% if not loop.last %};{% endif %}
-		{%- endfor -%}
-		.}
-		{%- for s in service %}
+		{%- for s in servicetype.service %}
 		\infoitem{{ s | l_bracket }}.}
 		{%- endfor %}
 	\end{infolist}
+	{%- endfor %}
 
+	\subsection*{Reviewer}
+
+	\begin{infolist}
+		\infoitem{
+		{%- for ref in referee -%}
+		{{ ref.journal | escape_latex }}
+		{%- if ref.times -%}
+		{{ " " }}({{ ref.times }})
+		{%- endif -%}
+		{% if not loop.last %}; {% endif %}
+		{%- endfor -%}
+		.}
+	\end{infolist}
 
 	\bigskip
 	{\small Last updated \today.}
