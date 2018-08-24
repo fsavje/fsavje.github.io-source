@@ -2,12 +2,22 @@
 	"personal": {
 		"name": "Fredrik Sävje",
 		"name_ascii": "Fredrik Savje",
-		"address": [
+		"visitaddress": [
 			"Rosenkranz Hall",
 			"125 Prospect Street",
 			"New Haven, CT 06511"
 		],
-		"office": "Rosenkranz Hall 226",
+		"postaladdress": [
+			"Political Science",
+			"Yale University",
+			"PO Box 208301",
+			"New Haven, CT 06520-8301"
+		],
+		"office": [
+			"Room 226",
+			"Rosenkranz Hall",
+			"125 Prospect Street"
+		],
 		"phone": "+1 (203) 432 4672",
 		"email": "fredrik.savje@yale.edu",
 		"persistent_email": "fred@savje.com",
@@ -25,6 +35,14 @@
 		"pgp_key": "fredrik-savje.asc",
 		"ssh_key": "fredrik-savje.pub"
 	},
+
+
+	"main_position": [
+		"Assistant Professor",
+		"Department of Political Science",
+		"Department of Statistics and Data Science",
+		"Yale University"
+	],
 
 
 	"current_positions": [
@@ -175,7 +193,7 @@
 
 	"works_in_progress": [
 		{
-			"title": "Improving convenience samples through shared questions: Survey evidence from the Quasi-ANES",
+			"title": "Improving convenience samples through shared questions",
 			"coauthors": [ "Jonathon Baron", "Molly Offer-Westort", "Jun Won Park", "Peter Aronow" ]
 		},
 		{
@@ -474,6 +492,9 @@
 	],
 
 
+
+
+
 	"coauthors": [
 		{
 			"name": "Michihito Ando",
@@ -488,6 +509,10 @@
 			"website": "http://www.axbard.com"
 		},
 		{
+			"name": "Jonathon Baron",
+			"website": "https://jonathonbaron.github.io"
+		},
+		{
 			"name": "Niklas Bengtsson",
 			"website": "https://sites.google.com/site/nikbe825/"
 		},
@@ -498,6 +523,14 @@
 		{
 			"name": "Michael Hudgens",
 			"website": "http://www.bios.unc.edu/~mhudgens/"
+		},
+		{
+			"name": "Gareth Nellis",
+			"website": "http://www.garethnellis.com"
+		},
+		{
+			"name": "Molly Offer-Westort",
+			"website": "https://mollyow.github.io"
 		},
 		{
 			"name": "Jasjeet Sekhon",

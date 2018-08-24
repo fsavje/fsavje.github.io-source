@@ -1,4 +1,14 @@
-% Inspired by: http://jblevins.org/projects/cv-template/
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% Copyright (C) 2015-2017 Fredrik Savje
+% http://fredriksavje.com
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
 
 \documentclass[10pt,letterpaper]{article}
 %\documentclass[10pt,a4paper]{article}
@@ -63,7 +73,6 @@
 }
 
 \newcommand{\dateitem}[2][]{\item[{#1}] {#2}}
-\newcommand{\dateheader}[1]{\item{\hspace{-4.6em}\textbf{ {#1} }}}
 
 \newenvironment{infolist}{
 	\begin{list}{}{
@@ -107,12 +116,12 @@
 
 
 	\begin{minipage}[t]{0.495\textwidth}
-		ISPS, Yale University \\
-		77 Prospect Street \\
+		Rosenkranz Hall \\
+		125 Prospect Street \\
 		New Haven, CT 06511
 	\end{minipage}
 	\begin{minipage}[t]{0.495\textwidth}
-		+1 (510) 833 4837 \\
+		+1 (203) 432 4672 \\
 		\href{mailto:fredrik.savje@yale.edu}{\texttt{fredrik.savje@yale.edu}} \\
 		\href{http://fredriksavje.com}{\texttt{http://fredriksavje.com}}
 	\end{minipage}
@@ -124,6 +133,7 @@
 
 	\begin{infolist}
 		\infoitem{Assistant Professor, Department of Political Science, Yale University.}
+		\infoitem{Assistant Professor by courtesy, Department of Statistics and Data Science, Yale University.}
 		\infoitem{Resident Fellow, Institution for Social and Policy Studies, Yale University.}
 		\infoitem{Affiliated Researcher, Uppsala Center for Labor Studies, Uppsala University.}
 	\end{infolist}
@@ -158,6 +168,8 @@
 	\section*{Working Papers}
 
 	\begin{infolist}
+		\infoitem{\href{https://arxiv.org/abs/1711.06399}{Average treatment effects in the presence of unknown interference},
+			\sublistitem{with Peter Aronow and Michael Hudgens.}}
 		\infoitem{\href{https://arxiv.org/abs/1703.03882}{Generalized Full Matching},
 			\sublistitem{with Michael Higgins and Jasjeet Sekhon.}}
 		\infoitem{\href{https://arxiv.org/abs/1506.02824v2}{The performance and efficiency of threshold blocking}.}
@@ -177,13 +189,19 @@
 	\end{infolist}
 
 
-
-
 	\section*{Works in Progress}
 
 	\begin{infolist}
-		\infoitem{Average treatment effects under unknown interference,
-			\sublistitem{with Peter Aronow and Michael Hudgens.}}
+		\infoitem{Improving convenience samples through shared questions,
+			\sublistitem{with Jonathon Baron, Molly Offer-Westort, Jun Won Park and Peter Aronow.}}
+		\infoitem{On the power of regression discontinuity designs,
+			\sublistitem{with Peter Aronow, William Hunt and Drew Stommes.}}
+		\infoitem{Are most experiments under-powered?,
+			\sublistitem{with Gareth Nellis.}}
+		\infoitem{Purposeful case selection without bias,
+			\sublistitem{with Consuelo Amat Matus and Peter Aronow.}}
+		\infoitem{On the use of principal stratification to identify incumbency effects,
+			\sublistitem{with Dylan O'Connell.}}
 		\infoitem{The get out of jail card: The effect of political office holding on court rulings,
 			\sublistitem{with Sebastian Axbard.}}
 		\infoitem{Blocking estimators and inference under the Neyman-Rubin model,
@@ -191,13 +209,21 @@
 		\infoitem{A two-factor approximation algorithm for paired threshold blocking.}
 		\infoitem{Semi-blocking: Cross block dependence to improve inference.}
 		\infoitem{Assumption-free permutation tests for the existence of unit fixed-effect.}
-		\infoitem{Intuitive construction of distance matrices and metrics (software).}
+		\infoitem{Intuitive construction of distance matrices and metrics.}
 		\infoitem{Hypothesis testing with the Synthetic Control Method,
 			\sublistitem{with Michihito Ando.}}
 	\end{infolist}
 
 
-	\section*{Grants, Fellowships \& Awards}
+	\section*{Awards}
+
+	\begin{singledatelist}
+		\dateitem[2018]{\href{https://www.cambridge.org/core/membership/spm/about-us/awards/the-gosnell-prize}{The Gosnell Prize for Excellence in Political Methodology},
+			\sublistitem{with Peter Aronow and Michael Hudgens.}}
+	\end{singledatelist}
+
+
+	\section*{Grants \& Fellowships}
 
 	\begin{infolist}
 		\infoitem{Swedish International Development Cooperation Agency, 2013--2015, SEK 2,595,000,
@@ -211,46 +237,85 @@
 
 	\section*{Presentations}
 
+	\subsection*{Invited presentations}
+
 	\begin{singledatelist}
-		\dateitem[2017]{Society for Political Methodology, University of Wisconsin-Madison, scheduled.}
-		\dateitem{Atlantic Causal Inference Conference, University of North Carolina.}
-		\dateitem{Midwest Political Science Association, Chicago.}
+		\dateitem[2018]{Joint Statistical Meetings, Vancouver.}
+		\dateitem{12th Yamakawa Kenjiro Lecture, University of Tokyo.}
+		\dateitem{European Causal Inference Meeting, University of Florence.}
+		\dateitem{Department of Political Science, NYU.}
+		\dateitem{Department of Political Science, MIT.}
 		\dateitem[2016]{Columbia Business School, Columbia University.}
-		\dateitem{Sekhon Research Group, UC Berkeley.}
-		\dateitem{Midwest Political Science Association, Chicago.}
 		\dateitem[2015]{Department of Political Science, Yale University.}
-		\dateitem{Society for Political Methodology, University of Rochester.}
 		\dateitem{Department of Statistics, Uppsala University.}
 		\dateitem{Institute for International Economic Studies, Stockholm University.}
-		\dateitem{UK Causal Inference Meeting, University of Bristol.}
-		\dateitem[2014]{Department of Economics, Uppsala University.}
-		\dateitem{Quantitative Methodology in the Social Sciences Seminar, UC Berkeley.}
-		\dateitem[2013]{7th Nordic Econometric Meeting, Norwegian School of Economics.}
-		\dateitem{Department of Statistics, Umeå School of Business and Economics.}
-		\dateitem{Uppsala Center for Labor Studies, Uppsala University.}
-		\dateitem[2012]{Department of Economics, Uppsala University.}
+		\dateitem[2013]{Department of Statistics, Umeå School of Business and Economics.}
 	\end{singledatelist}
 
 
-	\section*{Teaching Experience}
+	\subsection*{Contributed presentations}
+
+	\begin{singledatelist}
+		\dateitem[2018]{APSA Annual Meeting, Boston, scheduled.}
+		\dateitem[2017]{Society for Political Methodology, University of Wisconsin-Madison.}
+		\dateitem{Atlantic Causal Inference Conference, University of North Carolina.}
+		\dateitem{Midwest Political Science Association, Chicago.}
+		\dateitem[2016]{Midwest Political Science Association, Chicago.}
+		\dateitem[2015]{Society for Political Methodology, University of Rochester.}
+		\dateitem{UK Causal Inference Meeting, University of Bristol.}
+		\dateitem[2013]{7th Nordic Econometric Meeting, Norwegian School of Economics.}
+	\end{singledatelist}
+
+
+	\section*{Teaching}
+
+	\subsection*{Yale University}
 
 	\begin{datelist}
-		\dateheader{Uppsala University}
-		\dateitem[2011--2012]{Teaching Assistant, Micro Theory I, PhD level.}
-		\dateitem[2011--2012]{Teaching Assistant, Introductory Micro- and Macroeconomics, Basic level.}
-		\dateitem[2011]{Teaching Assistant, Micro Theory with Applications, Intermediate level.}
+		\dateitem[2018--2019]{Data Science for Politics and Policy, Undergraduate level.}
+		\dateitem[2019]{Foundations of Statistical Inference, Graduate level.}
+		\dateitem[2017--2018]{Advanced Quantitative Methods, Graduate level.}
+		\dateitem[2018]{The Application of Quantitative Methods, Graduate level.}
+	\end{datelist}
+
+	\subsection*{Uppsala University}
+
+	\begin{datelist}
+		\dateitem[2011--2012]{Teaching Assistant, Micro Theory I, Graduate level.}
+		\dateitem[2011--2012]{Teaching Assistant, Introductory Micro- and Macroeconomics, Undergraduate level.}
+		\dateitem[2011]{Teaching Assistant, Micro Theory with Applications, Undergraduate level.}
 	\end{datelist}
 
 
-	\section*{Professional \& University Service}
+	\section*{Students}
+
+	\subsection*{Committee Member}
+
+	\begin{singledatelist}
+		\dateitem[Current]{\href{https://mollyow.github.io}{Molly Offer-Westort}, Political Science, Yale.}
+	\end{singledatelist}
+
+
+	\section*{Service}
+
+	\subsection*{Yale University}
 
 	\begin{infolist}
-		\infoitem{Reviewer for Journal of Causal Inference; Journal of Economic Behavior \& Organization; Journal of the American Statistical Association.}
-		\infoitem{Member of the board, PhD Council for Social Sciences, 2011--2012.}
-		\infoitem{Co-founder and treasurer, Pareto: Uppsala Economic Association, 2010--2011.}
-		\infoitem{President, Uppsala Political Science Students, 2010.}
+		\infoitem{Organizer, MacMillan--CSAP Workshop on Quantitative Research Methods, 2018--2019.}
+		\infoitem{Member, Social Science--Data Science Search Committee, 2018.}
 	\end{infolist}
 
+	\subsection*{Disciplinary Service}
+
+	\begin{infolist}
+		\infoitem{Reviewer, American Statistical Association Biometrics Section Travel Awards, 2018.}
+	\end{infolist}
+
+	\subsection*{Reviewer}
+
+	\begin{infolist}
+		\infoitem{The American Statistician; Annals of Applied Statistics; Journal of the American Statistical Association (2); Journal of Causal Inference; Journal of Economic Behavior \& Organization; Political Analysis (2); Statistics \& Probability Letters.}
+	\end{infolist}
 
 	\bigskip
 	{\small Last updated \today.}

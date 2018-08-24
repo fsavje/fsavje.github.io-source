@@ -44,7 +44,11 @@
 		<div class="hidden-sm hidden-md hidden-lg title">
 			<h1>{{ .Site.Data.cv.personal.name }}</h1>
 			<h1 style="display: none;">{{ .Site.Data.cv.personal.name_ascii }}</h1>
-			{{ with index .Site.Data.cv.current_positions 0 }}<p>{{ .title }}, {{ .department }}, {{ .organization }}.</p>{{ end }}
+			<ul>
+			{{- range .Site.Data.cv.main_position }}
+				<li>{{ . }}</li>
+			{{- end }}
+			</ul>
 		</div>
 
 		<img src="{{ .Site.Data.cv.personal.picture }}" class="img-responsive" alt="Picture of {{ .Site.Data.cv.personal.name }}">
@@ -60,22 +64,23 @@
 			<li><a href="{{ .Site.Data.cv.personal.cv_pdf }}" onclick="ga('send', 'event', 'download-cv', 'download-cv');">Curriculum Vitae</a></li>
 		</ul>
 
-		<h3>Contact me</h3>
+		<h3>Office</h3>
 
 		<address>
-			{{ delimit .Site.Data.cv.personal.address " <br>\n			" }}
+			{{ delimit .Site.Data.cv.personal.office " <br>\n			" }}
 		</address>
 
-		<address>
+		<h3>Contact me</h3>
+
+		<address class="contact">
+			{{ .Site.Data.cv.personal.phone }}<br>
 			<a href="mailto:{{ .Site.Data.cv.personal.email }}">{{ .Site.Data.cv.personal.email }}</a>
 		</address>
 
-		<!--
-		<ul class="link-keys">
+		<ul style="display: none;">
 			<li><a href="{{ .Site.Data.cv.online.pgp_key }}">PGP</a></li>
 			<li><a href="{{ .Site.Data.cv.online.ssh_key }}">SSH</a></li>
 		</ul>
-		-->
 
 	</div>
 
@@ -83,7 +88,12 @@
 
 		<div class="hidden-xs title">
 			<h1>{{ .Site.Data.cv.personal.name }}</h1>
-			{{ with index .Site.Data.cv.current_positions 0 }}<p>{{ .title }}, {{ .department }}, {{ .organization }}.</p>{{ end }}
+			<h1 style="display: none;">{{ .Site.Data.cv.personal.name_ascii }}</h1>
+			<ul>
+				{{- range .Site.Data.cv.main_position }}
+				<li>{{ . }}</li>
+				{{- end }}
+			</ul>
 		</div>
 
 
@@ -129,7 +139,6 @@
 		</ul>
 
 
-
 		<h2>Software</h2>
 
 		<ul class="paperlist software">
@@ -148,7 +157,6 @@
 			</li>
 		{{ end -}}
 		</ul>
-
 
 
 		<h2>Working papers</h2>
@@ -190,7 +198,6 @@
 			</li>
 		{{ end -}}
 		</ul>
-
 
 
 		<h2>Works in progress</h2>
