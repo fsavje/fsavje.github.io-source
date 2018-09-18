@@ -138,6 +138,16 @@
 
 	"publications": [
 		{
+			"id": "Bengtsson2018Iodine",
+			"title": "Fetal iodine deficiency and schooling",
+			"coauthors": [ "Niklas Bengtsson", "Stefan Swartling Peterson" ],
+			"journal": "Scandinavian Journal of Economics",
+			"year": 2018,
+			"inprint": true,
+			"url": "http://fredriksavje.com/papers/iodine.pdf",
+			"abstract": "Scholars have theorized that congenital health endowment is an important determinant of economic outcomes later in a person's life. Field, Robles and Torero [2009, American Economic Journal: Applied Economics, 1(4), 140--169] find large increases in educational attainment caused by a reduction of fetal iodine deficiency following a set of iodine supplementation programs in Tanzania. We revisit the Tanzanian iodine programs with a narrow and wide replication of the study by Field et al. We are able to exactly replicate the original results. We find, however, that the findings are sensitive to alternative specification choices and sample restrictions. We try to address some of these concerns in the wide replication; we increase the sample size fourfold and improve the precision of the treatment variable by incorporating new institutional and medical insights. Despite the improvements, no effect is found. We conclude that the available data do not provide sufficient power to detect a possible effect since treatment assignment cannot be measured with sufficient precision."
+		},
+		{
 			"id": "Higgins2016Threshold",
 			"title": "Improving massive experiments with threshold blocking",
 			"coauthors": [ "Michael Higgins", "Jasjeet Sekhon" ],
@@ -180,13 +190,6 @@
 			"title": "Defining and Identifying Incumbency Effects",
 			"url": "http://fredriksavje.com/papers/incumbency.pdf",
 			"abstract": "Recent studies of the effects of political incumbency on election outcomes have almost exclusively used regression discontinuity designs. This shift from the past methods has provided credible identification, but only for a specific type of incumbency effect: the effect for parties. The other effects in the literature, most notably the personal incumbency effect, have largely been abandoned together with the methods previously used to estimate them. This study aims at connecting the new methodical strides with the effects discussed in the past literature. A causal model is first introduced which allows for formal definitions of several effects that previously only been discussed informally. The model also allows previous methods to be revisited and derive how their estimated effects are related. Several strategies are then introduced which, under suitable assumptions, can identify some of the newly defined effects. Last, using these strategies, the incumbency effects in Brazilian mayoral elections are investigated."
-		},
-		{
-			"id": "Bengtsson2015Iodine",
-			"title": "Fetal Iodine Deficiency and Schooling",
-			"coauthors": [ "Niklas Bengtsson", "Stefan Swartling Peterson" ],
-			"url": "http://fredriksavje.com/papers/iodine.pdf",
-			"abstract": "Scholars have theorized that congenital health endowment is a critical determinant of economic outcomes later in a person's life. In an important contribution, Field, Robles and Torero [American Economic Journal: Applied Economics, 1, 4 (2009)] use iodine supplementation programs in Tanzania to estimate the impact of fetal iodine deficiency on educational attainment. The study is one of the first validations of the fetal origins hypothesis. Based on their large estimated effects, the authors conclude that geographic variation in iodine deficiency plausibly accounts for a substantial share of the variation in educational attainment in the developing world. We revisit the Tanzanian iodine supplementation programs through a narrow and wide replication of Field, Robles and Torero's study. We are able to exactly replicate the original results, but we find that they rest on a set of undocumented and unmotivated specification choices and sample restrictions. With a better motivated specification, we cannot establish an effect of fetal iodine protection on educational attainment. The result is unchanged after we increase the sample size fourfold and improve the precision of the treatment variable by incorporating new institutional and medical insights. We conclude that the available data do not provide sufficient power to detect an eventual effect since treatment cannot be measured with sufficient precision."
 		}
 	],
 

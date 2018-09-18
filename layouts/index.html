@@ -129,7 +129,11 @@
 					{{- end -}}
 					.</span></div>
 				{{- end }}
+				{{ if .inprint -}}
+				<div class="paperinfo"><span class="journalname">{{ .journal }}</span>, {{ .year }}, in print.</div>
+				{{- else -}}
 				<div class="paperinfo"><span class="journalname">{{ .journal }}</span>, {{ .year }}, {{ .volume }}({{ .number }}):{{ .page_start }}&ndash;{{ .page_end }}.</div>
+				{{- end }}
 				<div class="paperinfo"></div>
 				{{ if .abstract -}}
 					<div class="collapsecontainer"><div class="collapse" id="{{ .id }}_abstract"><div class="well well-sm abstract">{{ .abstract }}</div></div></div>
