@@ -281,7 +281,7 @@
 				"when": 2018
 			},
 			{
-				"what": "12th Yamakawa Kenjiro Lecture",
+				"what": "Yamakawa Kenjiro Lecture",
 				"where": "University of Tokyo",
 				"when": 2018
 			},
@@ -366,7 +366,7 @@
 				"poster": true
 			},
 			{
-				"what": "7th Nordic Econometric Meeting",
+				"what": "Nordic Econometric Meeting",
 				"where": "Norwegian School of Economics",
 				"when": 2013
 			}
@@ -457,6 +457,12 @@
 					"url": "https://mollyow.github.io",
 					"department": "Political Science, Yale",
 					"current": true
+				},
+				{
+					"name": "Kyle Peyton",
+					"url": "https://kylepeyton.github.io",
+					"department": "Political Science, Yale",
+					"current": true
 				}
 			]
 		}
@@ -491,11 +497,10 @@
 		{ "journal": "Journal of Causal Inference" },
 		{ "journal": "Journal of Economic Behavior & Organization" },
 		{ "journal": "Political Analysis", "times": 2 },
+		{ "journal": "Political Science Research and Methods" },
+		{ "journal": "The R Journal" },
 		{ "journal": "Statistics & Probability Letters" }
 	],
-
-
-
 
 
 	"coauthors": [
