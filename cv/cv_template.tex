@@ -167,8 +167,11 @@
 
 	\section*{Publications}
 
+	\subsection*{Peer-reviewed publications}
+
 	\begin{infolist}
-		{%- for paper in publications %}
+		{%- for paper in publications -%}
+		{%- if not paper.invited %}
 		\infoitem{
 		{%- if paper.url -%}
 			\href{{ paper.url | lr_bracket }}{{ paper.title | l_bracket }}}
@@ -197,6 +200,45 @@
 			{%- else -%}
 			\sublistitem{\textit{{ paper.journal | lr_bracket }}, {{ paper.year }}, {{ paper.volume }}({{ paper.number }}):{{ paper.page_start }}--{{ paper.page_end }}.}}
 			{%- endif %}
+		{%- endif %}
+		{%- endfor %}
+	\end{infolist}
+
+
+	\subsection*{Invited publications}
+
+	\begin{infolist}
+		{%- for paper in publications -%}
+		{%- if paper.invited %}
+		\infoitem{
+		{%- if paper.url -%}
+			\href{{ paper.url | lr_bracket }}{{ paper.title | l_bracket }}}
+		{%- else -%}
+			{{ paper.title }}
+		{%- endif -%}
+
+		{%- if paper.coauthors -%}
+			,
+			\sublistitem{with
+			{%- for coa in paper.coauthors %}
+				{%- if loop.first -%}
+					{{ coa | l_space }}
+				{%- elif loop.last -%}
+					{{ " " }}and {{ coa }}
+				{%- else -%}
+					, {{ coa }}
+				{%- endif -%}
+			{%- endfor -%}
+			.}
+		{%- else -%}
+		.
+		{%- endif %}
+			{% if paper.inprint -%}
+			\sublistitem{\textit{{ paper.journal | lr_bracket }}, {{ paper.year }}, in print.}}
+			{%- else -%}
+			\sublistitem{\textit{{ paper.journal | lr_bracket }}, {{ paper.year }}, {{ paper.volume }}({{ paper.number }}):{{ paper.page_start }}--{{ paper.page_end }}.}}
+			{%- endif %}
+		{%- endif %}
 		{%- endfor %}
 	\end{infolist}
 
@@ -268,36 +310,36 @@
 	\end{infolist}
 
 
-	\section*{Works in Progress}
-
-	\begin{infolist}
-		{%- for paper in works_in_progress %}
-		\infoitem{
-		{%- if paper.url -%}
-			\href{{ paper.url | lr_bracket }}{{ paper.title | l_bracket }}}
-		{%- else -%}
-			{{ paper.title }}
-		{%- endif -%}
-
-		{%- if paper.coauthors -%}
-			,
-			\sublistitem{with
-			{%- for coa in paper.coauthors %}
-				{%- if loop.first -%}
-					{{ coa | l_space }}
-				{%- elif loop.last -%}
-					{{ " " }}and {{ coa }}
-				{%- else -%}
-					, {{ coa }}
-				{%- endif -%}
-			{%- endfor -%}
-			.}
-		{%- else -%}
-		.
-		{%- endif -%}
-		}
-		{%- endfor %}
-	\end{infolist}
+%	\section*{Works in Progress}
+%
+%	\begin{infolist}
+%		{%- for paper in works_in_progress %}
+%		\infoitem{
+%		{%- if paper.url -%}
+%			\href{{ paper.url | lr_bracket }}{{ paper.title | l_bracket }}}
+%		{%- else -%}
+%			{{ paper.title }}
+%		{%- endif -%}
+%
+%		{%- if paper.coauthors -%}
+%			,
+%			\sublistitem{with
+%			{%- for coa in paper.coauthors %}
+%				{%- if loop.first -%}
+%					{{ coa | l_space }}
+%				{%- elif loop.last -%}
+%					{{ " " }}and {{ coa }}
+%				{%- else -%}
+%					, {{ coa }}
+%				{%- endif -%}
+%			{%- endfor -%}
+%			.}
+%		{%- else -%}
+%		.
+%		{%- endif -%}
+%		}
+%		{%- endfor %}
+%	\end{infolist}
 
 
 	\section*{Awards}
@@ -388,16 +430,17 @@
 
 	\subsection*{{ uni.university | lr_bracket }}
 
-	\begin{datelist}
+	\begin{singledatelist}
+		{%- set curr_year = [-1] -%}
 		{%- for course in uni.courses %}
-		{%- if course.start %}
-		\dateitem[{{ course.start }}--{{ course.end }}]
-		{%- else %}
-		\dateitem[{{ course.end }}]
+		\dateitem
+		{%- if course.when != curr_year[0] -%}
+		[{{ course.when }}]
+		{%- set _ = curr_year.insert(0, course.when) -%}
 		{%- endif -%}
-		{{- course.desc | l_bracket }}.}
+		{{ course.desc | l_bracket }}.}
 		{%- endfor %}
-	\end{datelist}
+	\end{singledatelist}
 	{%- endfor %}
 
 
