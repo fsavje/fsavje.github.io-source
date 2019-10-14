@@ -138,26 +138,45 @@
 
 	"publications": [
 		{
+			"id": "Savje2019LargeMatching",
+			"title": "Comment: Matching methods for observational studies derived from large administrative databases",
+			"authors": [ "Fredrik Sävje" ],
+			"journal": "Statistical Science",
+			"year": 2019,
+			"inprint": true,
+			"invited": true
+		},
+		{
+			"id": "Aronow2019BookOfWhy",
+			"title": "Review: The Book of Why",
+			"authors": [ "Peter Aronow", "Fredrik Sävje" ],
+			"journal": "Journal of the American Statistical Association",
+			"year": 2019,
+			"inprint": true,
+			"invited": true
+		},
+		{
 			"id": "Bengtsson2018Iodine",
 			"title": "Fetal iodine deficiency and schooling",
-			"coauthors": [ "Niklas Bengtsson", "Stefan Swartling Peterson" ],
+			"authors": [ "Niklas Bengtsson", "Fredrik Sävje", "Stefan Swartling Peterson" ],
 			"journal": "Scandinavian Journal of Economics",
-			"year": 2018,
+			"year": 2019,
 			"inprint": true,
-			"url": "http://fredriksavje.com/papers/iodine.pdf",
+			"url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/sjoe.12341",
+			"doi": "10.1111/sjoe.12341",
 			"abstract": "Scholars have theorized that congenital health endowment is an important determinant of economic outcomes later in a person's life. Field, Robles and Torero [2009, American Economic Journal: Applied Economics, 1(4), 140--169] find large increases in educational attainment caused by a reduction of fetal iodine deficiency following a set of iodine supplementation programs in Tanzania. We revisit the Tanzanian iodine programs with a narrow and wide replication of the study by Field et al. We are able to exactly replicate the original results. We find, however, that the findings are sensitive to alternative specification choices and sample restrictions. We try to address some of these concerns in the wide replication; we increase the sample size fourfold and improve the precision of the treatment variable by incorporating new institutional and medical insights. Despite the improvements, no effect is found. We conclude that the available data do not provide sufficient power to detect a possible effect since treatment assignment cannot be measured with sufficient precision."
 		},
 		{
 			"id": "Higgins2016Threshold",
 			"title": "Improving massive experiments with threshold blocking",
-			"coauthors": [ "Michael Higgins", "Jasjeet Sekhon" ],
+			"authors": [ "Michael Higgins", "Fredrik Sävje", "Jasjeet Sekhon" ],
 			"journal": "Proceedings of the National Academy of Sciences",
 			"year": 2016,
 			"volume": "113",
 			"number": "27",
 			"page_start": 7369,
 			"page_end": 7376,
-			"url": "http://www.pnas.org/content/113/27/7369.full.pdf",
+			"url": "https://www.pnas.org/content/113/27/7369",
 			"doi": "10.1073/pnas.1510504113",
 			"abstract": "Inferences from randomized experiments can be improved by blocking: assigning treatment in fixed proportions within groups of similar units. However, the use of the method is limited by the difficulty in deriving these groups. Current blocking methods are restricted to special cases or run in exponential time; are not sensitive to clustering of data points; and are often heuristic, providing an unsatisfactory solution in many common instances. We present an algorithm that implements a widely applicable class of blocking—threshold blocking—that solves these problems. Given a minimum required group size and a distance metric, we study the blocking problem of minimizing the maximum distance between any two units within the same group. We prove this is a nondeterministic polynomial-time hard problem and derive an approximation algorithm that yields a blocking where the maximum distance is guaranteed to be, at most, four times the optimal value. This algorithm runs in O(n log n) time with O(n) space complexity. This makes it, to our knowledge, the first blocking method with an ensured level of performance that works in massive experiments. Whereas many commonly used algorithms form pairs of units, our algorithm constructs the groups flexibly for any chosen minimum size. This facilitates complex experiments with several treatment arms and clustered data. A simulation study demonstrates the efficiency and efficacy of the algorithm; tens of millions of units can be blocked using a desktop computer in a few minutes."
 		}
@@ -166,30 +185,49 @@
 
 	"working_papers": [
 		{
+			"id": "Savje2019Misspecified",
+			"title": "Causal inference with misspecified exposure mappings",
+			"authors": [ "Fredrik Sävje" ]
+		},
+		{
+			"id": "Savje2019Matchingwithoutreplacement",
+			"title": "Consistency and matching without replacement",
+			"authors": [ "Fredrik Sävje" ],
+			"url": "https://arxiv.org/abs/1907.07288",
+			"abstract": "The paper demonstrates that the matching estimator is not generally consistent for the average treatment effect of the treated when the matching is done without replacement using propensity scores. To achieve consistency, practitioners must either assume that no unit exists with a propensity score greater than one-half or assume that there is no confounding among such units. Illustrations suggest that the result applies also to matching using other metrics as long as it is done without replacement."
+		},
+		{
 			"id": "Savje2018EATE",
 			"title": "Average treatment effects in the presence of unknown interference",
-			"coauthors": [ "Peter Aronow", "Michael Hudgens" ],
+			"authors": [ "Fredrik Sävje", "Peter Aronow", "Michael Hudgens" ],
 			"url": "https://arxiv.org/abs/1711.06399",
 			"abstract": "We investigate large-sample properties of treatment effect estimators under unknown interference in randomized experiments. The inferential target is a generalization of the average treatment effect estimand that marginalizes over potential spillover effects. We show that estimators commonly used to estimate treatment effects under no-interference are consistent for the generalized estimand for most experimental designs under limited but otherwise arbitrary and unknown interference. The rates of convergence depend on the rate at which the amount of interference grows and the degree to which it aligns with dependencies in treatment assignment. Importantly for practitioners, the results imply that if one erroneously assumes that units do not interfere in a setting with limited, or even moderate, interference, standard estimators are nevertheless likely to be close to an average treatment effect if the sample is sufficiently large."
 		},
 		{
 			"id": "Savje2017FullMatch",
 			"title": "Generalized Full Matching",
-			"coauthors": [ "Michael Higgins", "Jasjeet Sekhon" ],
+			"authors": [ "Michael Higgins", "Fredrik Sävje", "Jasjeet Sekhon" ],
 			"url": "https://arxiv.org/abs/1703.03882",
 			"abstract": "Matching methods are used to make units comparable on observed characteristics. Full matching can be used to derive optimal matches. However, the method has only been defined in the case of two treatment categories, it places unnecessary restrictions on the matched groups, and existing implementations are computationally intractable in large samples. As a result, the method has not been feasible in studies with large samples or complex designs. We introduce a generalization of full matching that inherits its optimality properties but allows the investigator to specify any desired structure of the matched groups over any number of treatment conditions. We also describe a new approximation algorithm to derive generalized full matchings. In the worst case, the maximum within-group dissimilarity produced by the algorithm is no worse than four times the optimal solution, but it typically performs close to on par with existing optimal algorithms when they exist. Despite its performance, the algorithm is fast and uses little memory: it terminates, on average, in linearithmic time using linear space. This enables investigators to derive well-performing matchings within minutes even in complex studies with samples of several million units."
 		},
 		{
 			"id": "Savje2015Threshold",
 			"title": "The performance and efficiency of threshold blocking",
+			"authors": [ "Fredrik Sävje" ],
 			"url": "https://arxiv.org/abs/1506.02824v2",
 			"abstract": "A common method to reduce the uncertainty of causal inferences from experiments is to assign treatments in fixed proportions within groups of similar units: blocking. Previous results indicate that one can expect substantial reductions in variance if these groups are formed so to contain exactly as many units as treatment conditions. This approach can be contrasted to threshold blocking which, instead of specifying a fixed size, requires that the groups contain a minimum number of units. In this paper, I investigate the advantages of respective method. In particular, I show that threshold blocking is superior to fixed-sized blocking in the sense that it always finds a weakly better grouping for any objective and sample. However, this does not necessarily hold when the objective function of the blocking problem is unknown, and a fixed-sized design can perform better in that case. I specifically examine the factors that govern how the methods perform in the common situation where the objective is to reduce the estimator's variance, but where groups are constructed based on covariates. This reveals that the relative performance of threshold blocking improves when the covariates become more predictive of the outcome."
 		},
 		{
 			"id": "Savje2015Incumbency",
 			"title": "Defining and Identifying Incumbency Effects",
+			"authors": [ "Fredrik Sävje" ],
 			"url": "http://fredriksavje.com/papers/incumbency.pdf",
 			"abstract": "Recent studies of the effects of political incumbency on election outcomes have almost exclusively used regression discontinuity designs. This shift from the past methods has provided credible identification, but only for a specific type of incumbency effect: the effect for parties. The other effects in the literature, most notably the personal incumbency effect, have largely been abandoned together with the methods previously used to estimate them. This study aims at connecting the new methodical strides with the effects discussed in the past literature. A causal model is first introduced which allows for formal definitions of several effects that previously only been discussed informally. The model also allows previous methods to be revisited and derive how their estimated effects are related. Several strategies are then introduced which, under suitable assumptions, can identify some of the newly defined effects. Last, using these strategies, the incumbency effects in Brazilian mayoral elections are investigated."
+		},
+		{
+			"id": "Ando2013SCM",
+			"title": "Hypothesis testing with the Synthetic Control Method",
+			"authors": [ "Michihito Ando", "Fredrik Sävje" ]
 		}
 	],
 
@@ -197,47 +235,43 @@
 	"works_in_progress": [
 		{
 			"title": "Improving convenience samples through shared questions",
-			"coauthors": [ "Jonathon Baron", "Molly Offer-Westort", "Jun Won Park", "Peter Aronow" ]
+			"authors": [ "Jonathon Baron", "Molly Offer-Westort", "Jun Won Park", "Fredrik Sävje", "Peter Aronow" ]
 		},
 		{
 			"title": "On the power of regression discontinuity designs",
-			"coauthors": [ "Peter Aronow", "William Hunt", "Drew Stommes" ]
-		},
-		{
-			"title": "Are most experiments under-powered?",
-			"coauthors": [ "Gareth Nellis" ]
-		},
-		{
-			"title": "Purposeful case selection without bias",
-			"coauthors": [ "Consuelo Amat Matus", "Peter Aronow" ]
+			"authors": [ "Peter Aronow", "William Hunt", "Fredrik Sävje", "Drew Stommes" ]
 		},
 		{
 			"title": "On the use of principal stratification to identify incumbency effects",
-			"coauthors": [ "Dylan O'Connell" ]
+			"authors": [ "Dylan O'Connell", "Fredrik Sävje" ]
 		},
 		{
 			"title": "The get out of jail card: The effect of political office holding on court rulings",
-			"coauthors": [ "Sebastian Axbard" ]
+			"authors": [ "Sebastian Axbard", "Fredrik Sävje" ]
 		},
 		{
 			"title": "Blocking estimators and inference under the Neyman-Rubin model",
-			"coauthors": [ "Michael Higgins", "Jasjeet Sekhon" ]
+			"authors": [ "Michael Higgins", "Fredrik Sävje", "Jasjeet Sekhon" ]
 		},
 		{
-			"title": "A two-factor approximation algorithm for paired threshold blocking"
+			"title": "A two-factor approximation algorithm for paired threshold blocking",
+			"authors": [ "Fredrik Sävje" ]
 		},
 		{
-			"title": "Semi-blocking: Cross block dependence to improve inference"
+			"title": "Semi-blocking: Cross block dependence to improve inference",
+			"authors": [ "Fredrik Sävje" ]
 		},
 		{
-			"title": "Assumption-free permutation tests for the existence of unit fixed-effect"
+			"title": "Assumption-free permutation tests for the existence of unit fixed-effect",
+			"authors": [ "Fredrik Sävje" ]
 		},
 		{
-			"title": "Intuitive construction of distance matrices and metrics"
+			"title": "Intuitive construction of distance matrices and metrics",
+			"authors": [ "Fredrik Sävje" ]
 		},
 		{
 			"title": "Hypothesis testing with the Synthetic Control Method",
-			"coauthors": [ "Michihito Ando" ]
+			"authors": [ "Michihito Ando", "Fredrik Sävje" ]
 		}
 	],
 
@@ -275,6 +309,11 @@
 
 	"presentations": {
 		"invited": [
+			{
+				"what": "Joint Statistical Meetings",
+				"where": "Denver",
+				"when": 2019
+			},
 			{
 				"what": "Joint Statistical Meetings",
 				"where": "Vancouver",
@@ -328,10 +367,19 @@
 		],
 		"contributed": [
 			{
+				"what": "Society for Political Methodology",
+				"where": "MIT",
+				"when": 2019
+			},
+			{
+				"what": "Atlantic Causal Inference Conference",
+				"where": "McGill University",
+				"when": 2019
+			},
+			{
 				"what": "APSA Annual Meeting",
 				"where": "Boston",
-				"when": 2018,
-				"scheduled": true
+				"when": 2018
 			},
 			{
 				"what": "Society for Political Methodology",
@@ -373,7 +421,12 @@
 		],
 		"internal": [
 			{
-				"what": "Sekhon Research Group Meeting",
+				"what": "Causal Inference Group",
+				"where": "Stanford University",
+				"when": 2019
+			},
+			{
+				"what": "Sekhon Research Group",
 				"where": "UC Berkeley",
 				"when": 2016
 			},
@@ -474,28 +527,49 @@
 			"type": "Yale University",
 			"service": [
 				"Organizer, MacMillan--CSAP Workshop on Quantitative Research Methods, 2018--2019",
-				"Member, Social Science--Data Science Search Committee, 2018"
+				"Member, Social Science--Data Science Search Committee, 2018",
+				"Chair, Quantitative Methods General Exam Committee, 2019"
 			]
 		},
 		{
 			"type": "Disciplinary Service",
 			"service": [
-				"Reviewer, American Statistical Association Biometrics Section Travel Awards, 2018"
+				"Reviewer, American Statistical Association Biometrics Section Travel Awards, 2018",
+				"Committee Member, Gosnell Prize for Excellence in Political Methodology, 2019"
 			]
 		}
 	],
 
 	"future-service": [
-		"Chair, Quantitative Methods General Exam Committee, 2019."
+		"Panel organizer JSM"
+	],
+
+
+	"discussant": [
+		{
+			"what": "Society for Political Methodology",
+			"where": "MIT",
+			"when": 2019
+		},
+		{
+			"what": "Midwest Political Science Association",
+			"where": "Chicago",
+			"when": 2017
+		}
 	],
 
 
 	"referee": [
+		{ "journal": "American Journal of Political Science" },
 		{ "journal": "The American Statistician" },
 		{ "journal": "Annals of Applied Statistics" },
 		{ "journal": "Journal of the American Statistical Association", "times": 2 },
 		{ "journal": "Journal of Causal Inference" },
 		{ "journal": "Journal of Economic Behavior & Organization" },
+		{ "journal": "Journal of Health Economics" },
+		{ "journal": "Journal of Machine Learning Research" },
+		{ "journal": "Journal of the Royal Statistical Society: Series A" },
+		{ "journal": "Journal of the Royal Statistical Society: Series B" },
 		{ "journal": "Political Analysis", "times": 2 },
 		{ "journal": "Political Science Research and Methods" },
 		{ "journal": "The R Journal" },
