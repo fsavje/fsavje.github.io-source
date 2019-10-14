@@ -4,7 +4,7 @@
 		"name_ascii": "Fredrik Savje",
 		"visitaddress": [
 			"Rosenkranz Hall",
-			"125 Prospect Street",
+			"115 Prospect Street",
 			"New Haven, CT 06511"
 		],
 		"postaladdress": [
@@ -156,7 +156,7 @@
 			"invited": true
 		},
 		{
-			"id": "Bengtsson2018Iodine",
+			"id": "Bengtsson2019Iodine",
 			"title": "Fetal iodine deficiency and schooling",
 			"authors": [ "Niklas Bengtsson", "Fredrik Sävje", "Stefan Swartling Peterson" ],
 			"journal": "Scandinavian Journal of Economics",

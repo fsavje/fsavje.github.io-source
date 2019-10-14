@@ -177,7 +177,7 @@
 			{%- if loop.first -%}
 				{{ author | remove_first_word }}
 			{%- elif loop.last -%}
-				{{ " " }}\& {{ author | remove_first_word }}
+				\ \& {{ author | remove_first_word }}
 			{%- else -%}
 				, {{ author | remove_first_word }}
 			{%- endif -%}
@@ -208,7 +208,7 @@
 			{%- if loop.first -%}
 				{{ author | remove_first_word }}
 			{%- elif loop.last -%}
-				{{ " " }}\& {{ author | remove_first_word }}
+				\ \& {{ author | remove_first_word }}
 			{%- else -%}
 				, {{ author | remove_first_word }}
 			{%- endif -%}
@@ -240,16 +240,20 @@
 			{{ paper.title }}
 		{%- endif -%}
 
-		{%- if paper.coauthors -%}
+		{%- if paper.authors|length > 1 -%}
 			,
 			\sublistitem{with
-			{%- for coa in paper.coauthors %}
-				{%- if loop.first -%}
-					{{ coa | l_space }}
-				{%- elif loop.last -%}
-					{{ " " }}and {{ coa }}
-				{%- else -%}
-					, {{ coa }}
+			{%- set author_count = [] -%}
+			{%- for author in paper.authors -%}
+				{%- if author != "Fredrik Sävje" -%}
+					{% set __ = author_count.append(1) %}
+					{%- if author_count|length == 1 -%}
+						\ {{ author }}
+					{%- elif author_count|length == loop.length - 1 -%}
+						\ and {{ author }}
+					{%- else -%}
+						, {{ author }}
+					{%- endif -%}
 				{%- endif -%}
 			{%- endfor -%}
 			.}
