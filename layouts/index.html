@@ -106,25 +106,29 @@
 					{{ if .url -}}
 						<a href="{{ .url }}" onclick="ga('send', 'event', 'paper', '{{ .id }}');">
 						{{- .title -}}
-						{{- if .coauthors }},{{ else }}.{{ end -}}
+						{{- if gt (len .authors) 1 }},{{ else }}.{{ end -}}
 						</a>
 					{{- else -}}
 						{{ .title }}
-						{{- if .coauthors }},{{ else }}.{{ end -}}
+						{{- if gt (len .authors) 1 }},{{ else }}.{{ end -}}
 					{{- end }}
 					{{ if .abstract -}}
 						<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#{{ .id }}_abstract" aria-expanded="false" aria-controls="#{{ .id }}_abstract">Abstract</button>
 					{{- end }}
 				</h4>
-				{{ if .coauthors -}}
+				{{ if gt (len .authors) 1 -}}
 					<div class="paperinfo"><span class="coauthors">
-					{{- $len_coauthors := len .coauthors -}}
-					{{- range $i, $e := .coauthors -}}
-					{{- if eq $i 0 }}with {{ else if eq $i (sub $len_coauthors 1) }} and {{ else }}, {{ end -}}
-					{{- with index (where $.Site.Data.cv.coauthors "name" $e) 0 -}}
+					{{- $len_coauthors := len .authors -}}
+					{{- $cur_coauthor := 0 -}}
+					{{- range .authors -}}
+					{{- if ne . "Fredrik Sävje" -}}
+					{{ $cur_coauthor = add $cur_coauthor 1 }}
+					{{- if eq $cur_coauthor 1 }}with {{ else if eq $cur_coauthor (sub $len_coauthors 1) }} and {{ else }}, {{ end -}}
+					{{- with index (where $.Site.Data.cv.coauthors "name" .) 0 -}}
 						<a href="{{ .website }}">{{ .name }}</a>
 					{{- else -}}
-						{{ $e }}
+						{{ . }}
+					{{- end -}}
 					{{- end -}}
 					{{- end -}}
 					.</span></div>
@@ -172,29 +176,33 @@
 					{{ if .url -}}
 						<a href="{{ .url }}" onclick="ga('send', 'event', 'paper', '{{ .id }}');">
 						{{- .title -}}
-						{{- if .coauthors }},{{ else }}.{{ end -}}
+						{{- if gt (len .authors) 1 }},{{ else }}.{{ end -}}
 						</a>
 					{{- else -}}
 						{{ .title }}
-						{{- if .coauthors }},{{ else }}.{{ end -}}
+						{{- if gt (len .authors) 1 }},{{ else }}.{{ end -}}
 					{{- end }}
 					{{ if .abstract -}}
 						<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#{{ .id }}_abstract" aria-expanded="false" aria-controls="#{{ .id }}_abstract">Abstract</button>
 					{{- end }}
 				</h4>
-				{{ if .coauthors -}}
+				{{ if gt (len .authors) 1 -}}
 					<div class="paperinfo"><span class="coauthors">
-					{{- $len_coauthors := len .coauthors -}}
-					{{- range $i, $e := .coauthors -}}
-					{{- if eq $i 0 }}with {{ else if eq $i (sub $len_coauthors 1) }} and {{ else }}, {{ end -}}
-					{{- with index (where $.Site.Data.cv.coauthors "name" $e) 0 -}}
+					{{- $len_coauthors := len .authors -}}
+					{{- $cur_coauthor := 0 -}}
+					{{- range .authors -}}
+					{{- if ne . "Fredrik Sävje" -}}
+					{{ $cur_coauthor = add $cur_coauthor 1 }}
+					{{- if eq $cur_coauthor 1 }}with {{ else if eq $cur_coauthor (sub $len_coauthors 1) }} and {{ else }}, {{ end -}}
+					{{- with index (where $.Site.Data.cv.coauthors "name" .) 0 -}}
 						<a href="{{ .website }}">{{ .name }}</a>
 					{{- else -}}
-						{{ $e }}
+						{{ . }}
+					{{- end -}}
 					{{- end -}}
 					{{- end -}}
 					.</span></div>
-				{{- end -}}
+				{{- end }}
 				<div class="paperinfo"></div>
 				{{ if .abstract -}}
 					<div class="collapsecontainer"><div class="collapse" id="{{ .id }}_abstract"><div class="well well-sm abstract">{{ .abstract }}</div></div></div>
