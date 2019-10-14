@@ -129,7 +129,7 @@
 	\bigskip
 
 
-	\section*{Current Position \& Affiliations}
+	\section*{Current Positions \& Affiliations}
 
 	\begin{infolist}
 		{%- for position in current_positions %}
@@ -153,16 +153,11 @@
 
 	\section*{Education}
 
-	\begin{datelist}
+	\begin{singledatelist}
 		{%- for edu in education %}
-		{%- if edu.start %}
-		\dateitem[{{ edu.start }}--{{ edu.end }}]
-		{%- else %}
-		\dateitem[{{ edu.end }}]
-		{%- endif -%}
-		{{- edu.degree | l_bracket }}, {% if edu.subject %}{{ edu.subject }}, {% endif %}{{ edu.university }}.}
+		\dateitem[{{ edu.year }}]{{- edu.degree | l_bracket }}, {% if edu.subject %}{{ edu.subject }}, {% endif %}{{ edu.university }}.}
 		{%- endfor %}
-	\end{datelist}
+	\end{singledatelist}
 
 
 	\section*{Publications}
