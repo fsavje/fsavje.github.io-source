@@ -173,33 +173,26 @@
 		{%- for paper in publications -%}
 		{%- if not paper.invited %}
 		\infoitem{
-		{%- if paper.url -%}
-			\href{{ paper.url | lr_bracket }}{{ paper.title | l_bracket }}}
-		{%- else -%}
-			{{ paper.title }}
-		{%- endif -%}
-
-		{%- if paper.coauthors -%}
-			,
-			\sublistitem{with
-			{%- for coa in paper.coauthors %}
-				{%- if loop.first -%}
-					{{ coa | l_space }}
-				{%- elif loop.last -%}
-					{{ " " }}and {{ coa }}
-				{%- else -%}
-					, {{ coa }}
-				{%- endif -%}
-			{%- endfor -%}
-			.}
-		{%- else -%}
-		.
-		{%- endif %}
-			{% if paper.inprint -%}
-			\sublistitem{\textit{{ paper.journal | lr_bracket }}, {{ paper.year }}, in print.}}
+		{%- for author in paper.authors -%}
+			{%- if loop.first -%}
+				{{ author | remove_first_word }}
+			{%- elif loop.last -%}
+				{{ " " }}\& {{ author | remove_first_word }}
 			{%- else -%}
-			\sublistitem{\textit{{ paper.journal | lr_bracket }}, {{ paper.year }}, {{ paper.volume }}({{ paper.number }}):{{ paper.page_start }}--{{ paper.page_end }}.}}
-			{%- endif %}
+				, {{ author | remove_first_word }}
+			{%- endif -%}
+		{%- endfor -%}
+		\ ({{ paper.year }}).
+		{%- if paper.url -%}
+			\ \href{{ paper.url | lr_bracket }}{{ paper.title | l_bracket }}}.
+		{%- else -%}
+			\ {{ paper.title }}.
+		{%- endif -%}
+		{% if paper.inprint -%}
+		\ \textit{{ paper.journal | lr_bracket }}, in print.}
+		{%- else -%}
+		\ \textit{{ paper.journal | lr_bracket }}, {{ paper.volume }}({{ paper.number }}), {{ paper.page_start }}--{{ paper.page_end }}.}
+		{%- endif %}
 		{%- endif %}
 		{%- endfor %}
 	\end{infolist}
@@ -211,33 +204,26 @@
 		{%- for paper in publications -%}
 		{%- if paper.invited %}
 		\infoitem{
-		{%- if paper.url -%}
-			\href{{ paper.url | lr_bracket }}{{ paper.title | l_bracket }}}
-		{%- else -%}
-			{{ paper.title }}
-		{%- endif -%}
-
-		{%- if paper.coauthors -%}
-			,
-			\sublistitem{with
-			{%- for coa in paper.coauthors %}
-				{%- if loop.first -%}
-					{{ coa | l_space }}
-				{%- elif loop.last -%}
-					{{ " " }}and {{ coa }}
-				{%- else -%}
-					, {{ coa }}
-				{%- endif -%}
-			{%- endfor -%}
-			.}
-		{%- else -%}
-		.
-		{%- endif %}
-			{% if paper.inprint -%}
-			\sublistitem{\textit{{ paper.journal | lr_bracket }}, {{ paper.year }}, in print.}}
+		{%- for author in paper.authors -%}
+			{%- if loop.first -%}
+				{{ author | remove_first_word }}
+			{%- elif loop.last -%}
+				{{ " " }}\& {{ author | remove_first_word }}
 			{%- else -%}
-			\sublistitem{\textit{{ paper.journal | lr_bracket }}, {{ paper.year }}, {{ paper.volume }}({{ paper.number }}):{{ paper.page_start }}--{{ paper.page_end }}.}}
-			{%- endif %}
+				, {{ author | remove_first_word }}
+			{%- endif -%}
+		{%- endfor -%}
+		\ ({{ paper.year }}).
+		{%- if paper.url -%}
+			\ \href{{ paper.url | lr_bracket }}{{ paper.title | l_bracket }}}.
+		{%- else -%}
+			\ {{ paper.title }}.
+		{%- endif -%}
+		{% if paper.inprint -%}
+		\ \textit{{ paper.journal | lr_bracket }}, in print.}
+		{%- else -%}
+		\ \textit{{ paper.journal | lr_bracket }}, {{ paper.volume }}({{ paper.number }}), {{ paper.page_start }}--{{ paper.page_end }}.}
+		{%- endif %}
 		{%- endif %}
 		{%- endfor %}
 	\end{infolist}
@@ -308,38 +294,6 @@
 		}
 		{%- endfor %}
 	\end{infolist}
-
-
-%	\section*{Works in Progress}
-%
-%	\begin{infolist}
-%		{%- for paper in works_in_progress %}
-%		\infoitem{
-%		{%- if paper.url -%}
-%			\href{{ paper.url | lr_bracket }}{{ paper.title | l_bracket }}}
-%		{%- else -%}
-%			{{ paper.title }}
-%		{%- endif -%}
-%
-%		{%- if paper.coauthors -%}
-%			,
-%			\sublistitem{with
-%			{%- for coa in paper.coauthors %}
-%				{%- if loop.first -%}
-%					{{ coa | l_space }}
-%				{%- elif loop.last -%}
-%					{{ " " }}and {{ coa }}
-%				{%- else -%}
-%					, {{ coa }}
-%				{%- endif -%}
-%			{%- endfor -%}
-%			.}
-%		{%- else -%}
-%		.
-%		{%- endif -%}
-%		}
-%		{%- endfor %}
-%	\end{infolist}
 
 
 	\section*{Awards}
