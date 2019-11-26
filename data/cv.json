@@ -52,8 +52,8 @@
 			"organization": "Yale University"
 		},
 		{
-			"title": "Assistant Professor by courtesy",
-			"department": "Department of Statistics and Data Science",
+			"title": "Assistant Professor",
+			"department": "Department of Statistics and Data Science (secondary)",
 			"organization": "Yale University"
 		},
 		{
@@ -71,10 +71,24 @@
 
 	"previous_positions": [
 		{
+			"start": 2019,
+			"end": 2020,
+			"title": "Visiting Scholar",
+			"department": "Department of Political Science & Graduate School of Business",
+			"organization": "Stanford University"
+		},
+		{
 			"start": 2015,
 			"end": 2017,
 			"title": "Post-doctoral Fellow",
-			"department": "Departments of Political Science & Statistics",
+			"department": "Department of Political Science & Department of Statistics",
+			"organization": "UC Berkeley"
+		},
+		{
+			"start": 2013,
+			"end": 2014,
+			"title": "Visiting Student Researcher",
+			"department": "Department of Economics",
 			"organization": "UC Berkeley"
 		}
 	],
@@ -82,25 +96,19 @@
 
 	"education": [
 		{
-			"end": 2015,
+			"year": 2015,
 			"degree": "Ph.D.",
 			"subject": "Economics",
 			"university": "Uppsala University"
 		},
 		{
-			"start": 2013,
-			"end": 2014,
-			"degree": "Visiting Student Researcher",
-			"university": "UC Berkeley"
-		},
-		{
-			"end": 2013,
+			"year": 2013,
 			"degree": "Ph.Lic.",
 			"subject": "Economics",
 			"university": "Uppsala University"
 		},
 		{
-			"end": 2010,
+			"year": 2010,
 			"degree": "B.Sc.",
 			"subject": "Political Science",
 			"university": "Uppsala University"
@@ -201,6 +209,7 @@
 			"title": "Average treatment effects in the presence of unknown interference",
 			"authors": [ "Fredrik Sävje", "Peter Aronow", "Michael Hudgens" ],
 			"url": "https://arxiv.org/abs/1711.06399",
+			"award": "Winner of the Gosnell Prize for Excellence in Political Methodology from the Society for Political Methodology",
 			"abstract": "We investigate large-sample properties of treatment effect estimators under unknown interference in randomized experiments. The inferential target is a generalization of the average treatment effect estimand that marginalizes over potential spillover effects. We show that estimators commonly used to estimate treatment effects under no-interference are consistent for the generalized estimand for most experimental designs under limited but otherwise arbitrary and unknown interference. The rates of convergence depend on the rate at which the amount of interference grows and the degree to which it aligns with dependencies in treatment assignment. Importantly for practitioners, the results imply that if one erroneously assumes that units do not interfere in a setting with limited, or even moderate, interference, standard estimators are nevertheless likely to be close to an average treatment effect if the sample is sufficiently large."
 		},
 		{
@@ -232,74 +241,27 @@
 	],
 
 
-	"works_in_progress": [
-		{
-			"title": "Improving convenience samples through shared questions",
-			"authors": [ "Jonathon Baron", "Molly Offer-Westort", "Jun Won Park", "Fredrik Sävje", "Peter Aronow" ]
-		},
-		{
-			"title": "On the power of regression discontinuity designs",
-			"authors": [ "Peter Aronow", "William Hunt", "Fredrik Sävje", "Drew Stommes" ]
-		},
-		{
-			"title": "On the use of principal stratification to identify incumbency effects",
-			"authors": [ "Dylan O'Connell", "Fredrik Sävje" ]
-		},
-		{
-			"title": "The get out of jail card: The effect of political office holding on court rulings",
-			"authors": [ "Sebastian Axbard", "Fredrik Sävje" ]
-		},
-		{
-			"title": "Blocking estimators and inference under the Neyman-Rubin model",
-			"authors": [ "Michael Higgins", "Fredrik Sävje", "Jasjeet Sekhon" ]
-		},
-		{
-			"title": "A two-factor approximation algorithm for paired threshold blocking",
-			"authors": [ "Fredrik Sävje" ]
-		},
-		{
-			"title": "Semi-blocking: Cross block dependence to improve inference",
-			"authors": [ "Fredrik Sävje" ]
-		},
-		{
-			"title": "Assumption-free permutation tests for the existence of unit fixed-effect",
-			"authors": [ "Fredrik Sävje" ]
-		},
-		{
-			"title": "Intuitive construction of distance matrices and metrics",
-			"authors": [ "Fredrik Sävje" ]
-		},
-		{
-			"title": "Hypothesis testing with the Synthetic Control Method",
-			"authors": [ "Michihito Ando", "Fredrik Sävje" ]
-		}
-	],
-
-
-	"awards": [
-		{
-			"name": "The Gosnell Prize for Excellence in Political Methodology",
-			"year": 2018,
-			"desc": "Awarded for the best work in political methodology presented at any political science conference during the preceding year.",
-			"with": "with Peter Aronow and Michael Hudgens",
-			"url": "https://www.cambridge.org/core/membership/spm/about-us/awards/the-gosnell-prize"
-		}
-	],
-
-
 	"grants": [
 		{
-			"desc": "Swedish International Development Cooperation Agency, 2013--2015, SEK 2,595,000",
-			"with": "with Niklas Bengtsson, Eva Mörk (PI) and Jonas Poulsen"
+			"desc": "Yale Junior Faculty Fellowship, 2019--2020"
 		},
 		{
-			"desc": "The Jan Wallander and Tom Hedelius foundation, 2013--2014, SEK 321,000"
+			"desc": "Gosnell Prize for Excellence in Political Methodology, 2018",
+			"with": "with Peter Aronow and Michael Hudgens",
+			"url": "https://www.cambridge.org/core/membership/spm/about-us/awards/the-gosnell-prize"
 		},
 		{
 			"desc": "NSF Conference Grant, PolMeth Summer Meeting, 2015"
 		},
 		{
 			"desc": "UK Causal Inference Meeting, 2015, conference grant"
+		},
+		{
+			"desc": "Swedish International Development Cooperation Agency, 2013--2015, SEK 2,595,000",
+			"with": "with Niklas Bengtsson, Eva Mörk and Jonas Poulsen"
+		},
+		{
+			"desc": "The Jan Wallander and Tom Hedelius foundation, 2013--2014, SEK 321,000"
 		},
 		{
 			"desc": "The Siamon foundation, 2013, conference grant"
@@ -309,6 +271,42 @@
 
 	"presentations": {
 		"invited": [
+			{
+				"what": "Causal Inference with Big Data",
+				"where": "BIRS, Banff",
+				"when": 2020,
+				"scheduled": true
+			},
+			{
+				"what": "Department of Political Science",
+				"where": "UC San Diego",
+				"when": 2020,
+				"scheduled": true
+			},
+			{
+				"what": "Interdisciplinary Seminar in Quantitative Methods",
+				"where": "University of Michigan",
+				"when": 2020,
+				"scheduled": true
+			},
+			{
+				"what": "Gillings School of Global Public Health",
+				"where": "UNC-Chapel Hill",
+				"when": 2020,
+				"scheduled": true
+			},
+			{
+				"what": "Department of Statistics",
+				"where": "UC Berkeley",
+				"when": 2020,
+				"scheduled": true
+			},
+			{
+				"what": "Causal Learning with Interactions Conference",
+				"where": "Cemmap, London",
+				"when": 2019,
+				"scheduled": true
+			},
 			{
 				"what": "Joint Statistical Meetings",
 				"where": "Denver",
@@ -460,41 +458,30 @@
 			"university": "Yale University",
 			"courses": [
 				{
-					"start": 2018,
-					"end": 2019,
-					"desc": "Data Science for Politics and Policy, Undergraduate level"
+					"desc": "Data Science for Politics and Policy (undergrad). Spring 2018, Spring 2019."
 				},
 				{
-					"end": 2019,
-					"desc": "Foundations of Statistical Inference, Graduate level"
+					"desc": "Foundations of Statistical Inference (grad). Spring 2019."
 				},
 				{
-					"start": 2017,
-					"end": 2018,
-					"desc": "Advanced Quantitative Methods, Graduate level"
+					"desc": "Advanced Quantitative Methods (grad). Fall 2017, Fall 2018."
 				},
 				{
-					"end": 2018,
-					"desc": "The Application of Quantitative Methods, Graduate level"
+					"desc": "The Application of Quantitative Methods (grad). Spring 2018."
 				}
 			]
 		},
 		{
-			"university": "Uppsala University",
+			"university": "Uppsala University (teaching assistant)",
 			"courses": [
 				{
-					"start": 2011,
-					"end": 2012,
-					"desc": "Teaching Assistant, Micro Theory I, Graduate level"
+					"desc": "Micro Theory I (grad). Fall 2012, Fall 2011."
 				},
 				{
-					"start": 2011,
-					"end": 2012,
-					"desc": "Teaching Assistant, Introductory Micro- and Macroeconomics, Undergraduate level"
+					"desc": "Intermediate Micro Theory with Applications (undergrad). Spring 2011."
 				},
 				{
-					"end": 2011,
-					"desc": "Teaching Assistant, Micro Theory with Applications, Undergraduate level"
+					"desc": "Introductory Micro- and Macroeconomics (undergrad). Fall 2011, Fall 2012."
 				}
 			]
 		}
@@ -503,19 +490,34 @@
 
 	"students": [
 		{
-			"role": "Committee Member",
+			"role": "Dissertation committee member",
 			"students": [
 				{
-					"name": "Molly Offer-Westort",
-					"url": "https://mollyow.github.io",
-					"department": "Political Science, Yale",
-					"current": true
+					"name": "Brandon Chow",
+					"department": "Statistics and Data Science, Yale",
+					"when": "2019--present"
 				},
 				{
 					"name": "Kyle Peyton",
 					"url": "https://kylepeyton.github.io",
 					"department": "Political Science, Yale",
-					"current": true
+					"when": "2018--present"
+				},
+				{
+					"name": "Molly Offer-Westort",
+					"url": "https://mollyow.github.io",
+					"department": "Political Science \\& Statistics and Data Science, Yale",
+					"when": "2017--present"
+				}
+			]
+		},
+		{
+			"role": "Dahl Research Scholar mentor",
+			"students": [
+				{
+					"name": "Akhil Rajan",
+					"department": "Political Science, Yale",
+					"when": "2018--2019"
 				}
 			]
 		}
@@ -526,22 +528,19 @@
 		{
 			"type": "Yale University",
 			"service": [
+				"Chair, Quantitative Methods General Exam Committee, 2019",
 				"Organizer, MacMillan--CSAP Workshop on Quantitative Research Methods, 2018--2019",
-				"Member, Social Science--Data Science Search Committee, 2018",
-				"Chair, Quantitative Methods General Exam Committee, 2019"
+				"Member, Social Science--Data Science Search Committee, 2018"
 			]
 		},
 		{
 			"type": "Disciplinary Service",
 			"service": [
+				"Committee member, Gosnell Prize for Excellence in Political Methodology, 2019",
 				"Reviewer, American Statistical Association Biometrics Section Travel Awards, 2018",
-				"Committee Member, Gosnell Prize for Excellence in Political Methodology, 2019"
+				"Session organizer, Joint Statistical Meetings, 2018"
 			]
 		}
-	],
-
-	"future-service": [
-		"Panel organizer JSM"
 	],
 
 

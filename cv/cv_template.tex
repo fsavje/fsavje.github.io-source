@@ -51,8 +51,8 @@
 		\setlength{\parskip}{0pt}
 		\setlength{\itemsep}{4pt}
 		\setlength{\parsep}{0.3em}
-		\setlength{\leftmargin}{6em}
-		\setlength{\labelwidth}{6em}
+		\setlength{\leftmargin}{5.85em}
+		\setlength{\labelwidth}{5.85em}
 		\setlength{\labelsep}{1.5em}
 		}
 	}{
@@ -64,8 +64,8 @@
 		\setlength{\parskip}{0pt}
 		\setlength{\itemsep}{4pt}
 		\setlength{\parsep}{0.3em}
-		\setlength{\leftmargin}{5em}
-		\setlength{\labelwidth}{6em}
+		\setlength{\leftmargin}{3.5em}
+		\setlength{\labelwidth}{3.5em}
 		\setlength{\labelsep}{1.5em}
 		}
 	}{
@@ -79,8 +79,8 @@
 		\setlength{\parskip}{0pt}
 		\setlength{\itemsep}{4pt}
 		\setlength{\parsep}{0.3em}
-		\setlength{\leftmargin}{1.6em}
-		\setlength{\labelwidth}{0pt}
+		\setlength{\leftmargin}{0em}
+		\setlength{\labelwidth}{0em}
 		}
 	}{
 \end{list}
@@ -126,10 +126,10 @@
 		\href{{ personal.website | lr_bracket }}{\texttt{{ personal.website | lr_bracket }}}
 	\end{minipage}
 
-	\bigskip
+	\vspace{0.3in}
 
 
-	\section*{Current Positions \& Affiliations}
+	\section*{Appointments \& affiliations}
 
 	\begin{infolist}
 		{%- for position in current_positions %}
@@ -140,7 +140,7 @@
 	\end{infolist}
 
 
-	\section*{Past Positions}
+	\section*{Past appointments, affiliations \& visits}
 
 	\begin{datelist}
 		{%- for position in previous_positions %}
@@ -224,42 +224,6 @@
 	\end{infolist}
 
 
-	\section*{Working Papers}
-
-	\begin{infolist}
-		{%- for paper in working_papers %}
-		\infoitem{
-		{%- if paper.url -%}
-			\href{{ paper.url | lr_bracket }}{{ paper.title | l_bracket }}}
-		{%- else -%}
-			{{ paper.title }}
-		{%- endif -%}
-
-		{%- if paper.authors|length > 1 -%}
-			,
-			\sublistitem{with
-			{%- set author_count = [] -%}
-			{%- for author in paper.authors -%}
-				{%- if author != "Fredrik Sävje" -%}
-					{% set __ = author_count.append(1) %}
-					{%- if author_count|length == 1 -%}
-						\ {{ author }}
-					{%- elif author_count|length == loop.length - 1 -%}
-						\ and {{ author }}
-					{%- else -%}
-						, {{ author }}
-					{%- endif -%}
-				{%- endif -%}
-			{%- endfor -%}
-			.}
-		{%- else -%}
-		.
-		{%- endif -%}
-		}
-		{%- endfor %}
-	\end{infolist}
-
-
 	\section*{Software}
 
 	\begin{infolist}
@@ -295,36 +259,15 @@
 	\end{infolist}
 
 
-	\section*{Awards}
-
-	\begin{singledatelist}
-		{%- set curr_year = [-1] -%}
-		{%- for award in awards %}
-		\dateitem
-		{%- if award.year != curr_year[0] -%}
-		[{{ award.year }}]
-		{%- set _ = curr_year.insert(0, award.year) -%}
-		{%- endif -%}
-		{%- if award.url -%}
-			{\href{{ award.url | lr_bracket }}{{ award.name | l_bracket }}}
-		{%- else -%}
-			{{ award.name | l_bracket }}
-		{%- endif -%}
-		{%- if award.with -%}
-			,
-			\sublistitem{{ award.with | l_bracket }}.}}
-		{%- else -%}
-		.}
-		{%- endif -%}
-		{%- endfor %}
-	\end{singledatelist}
-
-
-	\section*{Grants \& Fellowships}
+	\section*{Awards, grants \& fellowships}
 
 	\begin{infolist}
 		{%- for grant in grants %}
-		\infoitem{{ grant.desc | l_bracket }}
+		{%- if grant.url -%}
+			\infoitem{\href{{ grant.url | lr_bracket }}{{ grant.desc | l_bracket }}}
+		{%- else -%}
+			\infoitem{{ grant.desc | l_bracket }}
+		{%- endif -%}
 		{%- if grant.with -%}
 			,
 			\sublistitem{{ grant.with | l_bracket }}.}
@@ -383,17 +326,11 @@
 
 	\subsection*{{ uni.university | lr_bracket }}
 
-	\begin{singledatelist}
-		{%- set curr_year = [-1] -%}
+	\begin{infolist}
 		{%- for course in uni.courses %}
-		\dateitem
-		{%- if course.when != curr_year[0] -%}
-		[{{ course.when }}]
-		{%- set _ = curr_year.insert(0, course.when) -%}
-		{%- endif -%}
-		{{ course.desc | l_bracket }}.}
+		\infoitem{{ course.desc | l_bracket }}}
 		{%- endfor %}
-	\end{singledatelist}
+	\end{infolist}
 	{%- endfor %}
 
 
@@ -402,26 +339,16 @@
 
 	\subsection*{{ roletype.role | lr_bracket }}
 
-	\begin{singledatelist}
-		{%- set curr_year = [-2] -%}
+	\begin{infolist}
 		{%- for student in roletype.students %}
-		\dateitem
-		{%- if student.current == true %}
-		{%- if curr_year[0] == -2 -%}
-		[Current]
-		{%- set curr_year = [-1] -%}
-		{%- endif -%}
-		{%- elif student.year != curr_year[0] -%}
-		[{{ student.when }}]
-		{%- set _ = curr_year.insert(0, pres.when) -%}
-		{%- endif -%}
+		\infoitem
 		{%- if student.url -%}
-			{\href{{ student.url | lr_bracket }}{{ student.name | lr_bracket }}, {{ student.department }}.}
+			{\href{{ student.url | lr_bracket }}{{ student.name | lr_bracket }}, {{ student.department }}, {{ student.when }}.}
 		{%- else -%}
-			{{ student.name | l_bracket }}, {{ student.department }}.}
+			{{ student.name | l_bracket }}, {{ student.department }}, {{ student.when }}.}
 		{%- endif -%}
 		{%- endfor %}
-	\end{singledatelist}
+	\end{infolist}
 	{%- endfor %}
 
 
