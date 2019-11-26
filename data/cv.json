@@ -39,8 +39,7 @@
 
 	"main_position": [
 		"Assistant Professor",
-		"Department of Political Science",
-		"Department of Statistics and Data Science",
+		"Political Science & Statistics and Data Science",
 		"Yale University"
 	],
 
@@ -151,6 +150,7 @@
 			"authors": [ "Fredrik Sävje" ],
 			"journal": "Statistical Science",
 			"year": 2019,
+			"url": "https://www.e-publications.org/ims/submission/STS/user/submissionFile/41236?confirm=452fc878",
 			"inprint": true,
 			"invited": true
 		},
@@ -159,6 +159,7 @@
 			"title": "Review: The Book of Why",
 			"authors": [ "Peter Aronow", "Fredrik Sävje" ],
 			"journal": "Journal of the American Statistical Association",
+			"url": "http://fredriksavje.com/papers/TBOW-review.pdf",
 			"year": 2019,
 			"inprint": true,
 			"invited": true
@@ -193,9 +194,18 @@
 
 	"working_papers": [
 		{
+			"id": "Harshaw2019Balancing",
+			"title": "Balancing covariates in randomized experiments using the Gram-Schmidt walk",
+			"authors": [ "Christopher Harshaw", "Fredrik Sävje", "Daniel Spielman", "Peng Zhang" ],
+			"url": "https://arxiv.org/abs/1911.03071",
+			"abstract": "The paper introduces a class of experimental designs that allows experimenters to control the robustness and efficiency of their experiments. The designs build on a recently introduced algorithm in discrepancy theory, the Gram-Schmidt walk. We provide a tight analysis of this algorithm, allowing us to prove important properties of the designs it produces. These designs aim to simultaneously balance all linear functions of the covariates, and the variance of an estimator of the average treatment effect is shown to be bounded by a quantity that is proportional to the loss function of a ridge regression of the potential outcomes on the covariates. No regression is actually conducted, and one may see the procedure as regression adjustment by design. The class of designs is parameterized so to give experimenters control over the worse case performance of the treatment effect estimator. Greater covariate balance is attained by allowing for a less robust design in terms of worst case variance. We argue that the trade-off between robustness and efficiency is an inherent aspect of experimental design. Finally, we provide non-asymptotic tail bounds for the treatment effect estimator under the class of designs we describe."
+		},
+		{
 			"id": "Savje2019Misspecified",
 			"title": "Causal inference with misspecified exposure mappings",
-			"authors": [ "Fredrik Sävje" ]
+			"authors": [ "Fredrik Sävje" ],
+			"url": "http://fredriksavje.com/papers/misspecified-exposures.pdf",
+			"abstract": "Exposure mappings facilitate investigations of complex causal effects when units in- terfere in experiments. Current methods assume that the exposures are correctly specified. The assumption can, however, not be verified, and it is questionable in many settings. This paper investigates whether inferences about exposure effects can be drawn when the exposures are misspecified. The main result is a law of large numbers under weak conditions on the errors introduced by the misspecification. In particular, the rate of convergence is determined by the dependence between units’ specification errors, and consistency is achieved even when the errors are large as long as they are sufficiently independent. The limiting distribution of the estimator is also discussed. Asymptotic normality is achieved under stronger conditions than those needed for consistency. Similar conditions also facilitate conservative variance estimation."
 		},
 		{
 			"id": "Savje2019Matchingwithoutreplacement",
@@ -217,7 +227,7 @@
 			"title": "Generalized Full Matching",
 			"authors": [ "Michael Higgins", "Fredrik Sävje", "Jasjeet Sekhon" ],
 			"url": "https://arxiv.org/abs/1703.03882",
-			"abstract": "Matching methods are used to make units comparable on observed characteristics. Full matching can be used to derive optimal matches. However, the method has only been defined in the case of two treatment categories, it places unnecessary restrictions on the matched groups, and existing implementations are computationally intractable in large samples. As a result, the method has not been feasible in studies with large samples or complex designs. We introduce a generalization of full matching that inherits its optimality properties but allows the investigator to specify any desired structure of the matched groups over any number of treatment conditions. We also describe a new approximation algorithm to derive generalized full matchings. In the worst case, the maximum within-group dissimilarity produced by the algorithm is no worse than four times the optimal solution, but it typically performs close to on par with existing optimal algorithms when they exist. Despite its performance, the algorithm is fast and uses little memory: it terminates, on average, in linearithmic time using linear space. This enables investigators to derive well-performing matchings within minutes even in complex studies with samples of several million units."
+			"abstract": "Matching is an important tool in causal inference. The method provides a conceptually straightforward way to make groups of units comparable on observed characteristics. The use of the method is, however, limited to situations where the study design is fairly simple and the sample is moderately sized. We illustrate the issue by revisiting a large-scale voter mobilization experiment that took place in Michigan for the 2006 election. We ask what the causal effects would have been if the treatments in the experiment were scaled up to the full population. Matching could help us answer this question, but no existing matching method can accommodate the six treatment arms and the 6,762,701 observations involved in the study. To offer a solution this and similar empirical problems, we introduce a generalization of the full matching method and an associated algorithm. The method can be used with any number of treatment conditions, and it is shown to produce near-optimal matchings. The worst case maximum within-group dissimilarity is no worse than four times the optimal solution, and simulation results indicate that its performance is considerably closer to the optimal solution on average. Despite its performance, the algorithm is fast and uses little memory. It terminates, on average, in linearithmic time using linear space. This enables investigators to construct well-performing matchings within minutes even in complex studies with samples of several million units."
 		},
 		{
 			"id": "Savje2015Threshold",
@@ -232,11 +242,16 @@
 			"authors": [ "Fredrik Sävje" ],
 			"url": "http://fredriksavje.com/papers/incumbency.pdf",
 			"abstract": "Recent studies of the effects of political incumbency on election outcomes have almost exclusively used regression discontinuity designs. This shift from the past methods has provided credible identification, but only for a specific type of incumbency effect: the effect for parties. The other effects in the literature, most notably the personal incumbency effect, have largely been abandoned together with the methods previously used to estimate them. This study aims at connecting the new methodical strides with the effects discussed in the past literature. A causal model is first introduced which allows for formal definitions of several effects that previously only been discussed informally. The model also allows previous methods to be revisited and derive how their estimated effects are related. Several strategies are then introduced which, under suitable assumptions, can identify some of the newly defined effects. Last, using these strategies, the incumbency effects in Brazilian mayoral elections are investigated."
-		},
+		}
+	],
+
+
+	"abandoned_working_papers": [
 		{
 			"id": "Ando2013SCM",
 			"title": "Hypothesis testing with the Synthetic Control Method",
-			"authors": [ "Michihito Ando", "Fredrik Sävje" ]
+			"authors": [ "Michihito Ando", "Fredrik Sävje" ],
+			"url": "http://fredriksavje.com/papers/Ando_Savje_synth_130605.pdf"
 		}
 	],
 
@@ -583,7 +598,7 @@
 		},
 		{
 			"name": "Peter Aronow",
-			"website": "http://aronow.research.yale.edu"
+			"website": "https://peteraronow.github.io"
 		},
 		{
 			"name": "Sebastian Axbard",
@@ -598,8 +613,12 @@
 			"website": "https://sites.google.com/site/nikbe825/"
 		},
 		{
+			"name": "Christopher Harshaw",
+			"website": "http://www.chrisharshaw.com/?page_id=4"
+		},
+		{
 			"name": "Michael Higgins",
-			"website": "https://www.k-state.edu/stats/people/HigginsMichael.html"
+			"website": "http://www-personal.k-state.edu/~mikehiggins/"
 		},
 		{
 			"name": "Michael Hudgens",
@@ -618,8 +637,16 @@
 			"website": "http://sekhon.berkeley.edu"
 		},
 		{
+			"name": "Daniel Spielman",
+			"website": "http://www.cs.yale.edu/homes/spielman/"
+		},
+		{
 			"name": "Stefan Swartling Peterson",
-			"website": "http://katalog.uu.se/empinfo/?languageId=1&id=N96-4476"
+			"website": "https://www.unicef.org/media/experts/stefan-swartling-peterson"
+		},
+		{
+			"name": "Peng Zhang",
+			"website": "https://sites.google.com/site/pengzhang27182/"
 		}
 	]
 }

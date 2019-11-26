@@ -3,3 +3,4 @@ local/
 *.aux
 *.log
 *.out
+*.swp
