@@ -21,7 +21,7 @@
 		"phone": "+1 (203) 432 4672",
 		"email": "fredrik.savje@yale.edu",
 		"persistent_email": "fred@savje.com",
-		"website": "http://fredriksavje.com",
+		"website": "https://fredriksavje.com",
 		"picture": "img/fredrik.jpg",
 		"cv_pdf": "fredrik-savje-cv.pdf"
 	},
@@ -159,7 +159,7 @@
 			"title": "Review: The Book of Why",
 			"authors": [ "Peter Aronow", "Fredrik Sävje" ],
 			"journal": "Journal of the American Statistical Association",
-			"url": "http://fredriksavje.com/papers/TBOW-review.pdf",
+			"url": "https://fredriksavje.com/papers/TBOW-review.pdf",
 			"year": 2019,
 			"inprint": true,
 			"invited": true
@@ -204,7 +204,7 @@
 			"id": "Savje2019Misspecified",
 			"title": "Causal inference with misspecified exposure mappings",
 			"authors": [ "Fredrik Sävje" ],
-			"url": "http://fredriksavje.com/papers/misspecified-exposures.pdf",
+			"url": "https://fredriksavje.com/papers/misspecified-exposures.pdf",
 			"abstract": "Exposure mappings facilitate investigations of complex causal effects when units in- terfere in experiments. Current methods assume that the exposures are correctly specified. The assumption can, however, not be verified, and it is questionable in many settings. This paper investigates whether inferences about exposure effects can be drawn when the exposures are misspecified. The main result is a law of large numbers under weak conditions on the errors introduced by the misspecification. In particular, the rate of convergence is determined by the dependence between units’ specification errors, and consistency is achieved even when the errors are large as long as they are sufficiently independent. The limiting distribution of the estimator is also discussed. Asymptotic normality is achieved under stronger conditions than those needed for consistency. Similar conditions also facilitate conservative variance estimation."
 		},
 		{
@@ -240,7 +240,7 @@
 			"id": "Savje2015Incumbency",
 			"title": "Defining and Identifying Incumbency Effects",
 			"authors": [ "Fredrik Sävje" ],
-			"url": "http://fredriksavje.com/papers/incumbency.pdf",
+			"url": "https://fredriksavje.com/papers/incumbency.pdf",
 			"abstract": "Recent studies of the effects of political incumbency on election outcomes have almost exclusively used regression discontinuity designs. This shift from the past methods has provided credible identification, but only for a specific type of incumbency effect: the effect for parties. The other effects in the literature, most notably the personal incumbency effect, have largely been abandoned together with the methods previously used to estimate them. This study aims at connecting the new methodical strides with the effects discussed in the past literature. A causal model is first introduced which allows for formal definitions of several effects that previously only been discussed informally. The model also allows previous methods to be revisited and derive how their estimated effects are related. Several strategies are then introduced which, under suitable assumptions, can identify some of the newly defined effects. Last, using these strategies, the incumbency effects in Brazilian mayoral elections are investigated."
 		}
 	],
@@ -251,7 +251,7 @@
 			"id": "Ando2013SCM",
 			"title": "Hypothesis testing with the Synthetic Control Method",
 			"authors": [ "Michihito Ando", "Fredrik Sävje" ],
-			"url": "http://fredriksavje.com/papers/Ando_Savje_synth_130605.pdf"
+			"url": "https://fredriksavje.com/papers/Ando_Savje_synth_130605.pdf"
 		}
 	],
 
