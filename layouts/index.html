@@ -106,11 +106,9 @@
 					{{ if .url -}}
 						<a href="{{ .url }}" onclick="ga('send', 'event', 'paper', '{{ .id }}');">
 						{{- .title -}}
-						{{- if gt (len .authors) 1 }},{{ else }}.{{ end -}}
-						</a>
+						.</a>
 					{{- else -}}
-						{{ .title }}
-						{{- if gt (len .authors) 1 }},{{ else }}.{{ end -}}
+						{{ .title }}.
 					{{- end }}
 					{{ if .abstract -}}
 						<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#{{ .id }}_abstract" aria-expanded="false" aria-controls="#{{ .id }}_abstract">Abstract</button>
@@ -123,7 +121,7 @@
 					{{- range .authors -}}
 					{{- if ne . "Fredrik Sävje" -}}
 					{{ $cur_coauthor = add $cur_coauthor 1 }}
-					{{- if eq $cur_coauthor 1 }}with {{ else if eq $cur_coauthor (sub $len_coauthors 1) }} and {{ else }}, {{ end -}}
+					{{- if eq $cur_coauthor 1 }}Coauthored with {{ else if eq $cur_coauthor (sub $len_coauthors 1) }} and {{ else }}, {{ end -}}
 					{{- with index (where $.Site.Data.cv.coauthors "name" .) 0 -}}
 						<a href="{{ .website }}">{{ .name }}</a>
 					{{- else -}}
@@ -133,7 +131,6 @@
 					{{- end -}}
 					.</span></div>
 				{{- end }}
-				<div class="paperinfo"></div>
 				{{ if .abstract -}}
 					<div class="collapsecontainer"><div class="collapse" id="{{ .id }}_abstract"><div class="well well-sm abstract">{{ .abstract }}</div></div></div>
 				{{- end }}
@@ -151,11 +148,9 @@
 					{{ if .url -}}
 						<a href="{{ .url }}" onclick="ga('send', 'event', 'paper', '{{ .id }}');">
 						{{- .title -}}
-						{{- if gt (len .authors) 1 }},{{ else }}.{{ end -}}
-						</a>
+						.</a>
 					{{- else -}}
-						{{ .title }}
-						{{- if gt (len .authors) 1 }},{{ else }}.{{ end -}}
+						{{ .title }}.
 					{{- end }}
 					{{ if .abstract -}}
 						<button type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-target="#{{ .id }}_abstract" aria-expanded="false" aria-controls="#{{ .id }}_abstract">Abstract</button>
@@ -168,7 +163,7 @@
 					{{- range .authors -}}
 					{{- if ne . "Fredrik Sävje" -}}
 					{{ $cur_coauthor = add $cur_coauthor 1 }}
-					{{- if eq $cur_coauthor 1 }}with {{ else if eq $cur_coauthor (sub $len_coauthors 1) }} and {{ else }}, {{ end -}}
+					{{- if eq $cur_coauthor 1 }}Coauthored with {{ else if eq $cur_coauthor (sub $len_coauthors 1) }} and {{ else }}, {{ end -}}
 					{{- with index (where $.Site.Data.cv.coauthors "name" .) 0 -}}
 						<a href="{{ .website }}">{{ .name }}</a>
 					{{- else -}}
@@ -183,7 +178,6 @@
 				{{- else -}}
 				<div class="paperinfo"><span class="journalname">{{ .journal }}</span>, {{ .year }}, {{ .volume }}({{ .number }}):{{ .page_start }}&ndash;{{ .page_end }}.</div>
 				{{- end }}
-				<div class="paperinfo"></div>
 				{{ if .abstract -}}
 					<div class="collapsecontainer"><div class="collapse" id="{{ .id }}_abstract"><div class="well well-sm abstract">{{ .abstract }}</div></div></div>
 				{{- end }}
