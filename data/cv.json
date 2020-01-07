@@ -104,7 +104,7 @@
 		{
 			"year": 2010,
 			"degree": "B.Sc.",
-			"subject": "Political Science",
+			"subject": "Economics & Political Science",
 			"university": "Uppsala University"
 		}
 	],
@@ -324,8 +324,7 @@
 			{
 				"what": "Causal Learning with Interactions Conference",
 				"where": "Cemmap, London",
-				"when": 2019,
-				"scheduled": true
+				"when": 2019
 			},
 			{
 				"what": "Joint Statistical Meetings",
@@ -478,13 +477,13 @@
 			"university": "Yale University",
 			"courses": [
 				{
-					"desc": "Data Science for Politics and Policy (undergrad). Spring 2018, Spring 2019."
+					"desc": "Data Science for Politics and Policy (undergrad). Spring 2018, 2019."
 				},
 				{
 					"desc": "Foundations of Statistical Inference (grad). Spring 2019."
 				},
 				{
-					"desc": "Advanced Quantitative Methods (grad). Fall 2017, Fall 2018."
+					"desc": "Advanced Quantitative Methods (grad). Fall 2017, 2018."
 				},
 				{
 					"desc": "The Application of Quantitative Methods (grad). Spring 2018."
@@ -495,13 +494,13 @@
 			"university": "Uppsala University (teaching assistant)",
 			"courses": [
 				{
-					"desc": "Micro Theory I (grad). Fall 2012, Fall 2011."
+					"desc": "Micro Theory I (grad). Fall 2011, 2012."
 				},
 				{
 					"desc": "Intermediate Micro Theory with Applications (undergrad). Spring 2011."
 				},
 				{
-					"desc": "Introductory Micro- and Macroeconomics (undergrad). Fall 2011, Fall 2012."
+					"desc": "Introductory Micro- and Macroeconomics (undergrad). Fall 2011, 2012."
 				}
 			]
 		}
@@ -512,6 +511,12 @@
 		{
 			"role": "Dissertation committee member",
 			"students": [
+				{
+					"name": "Chris Harshaw",
+					"url": "http://www.chrisharshaw.com/?page_id=4",
+					"department": "Computer Science, Yale",
+					"when": "2020--present"
+				},
 				{
 					"name": "Brandon Chow",
 					"department": "Statistics and Data Science, Yale",
@@ -526,8 +531,8 @@
 				{
 					"name": "Molly Offer-Westort",
 					"url": "https://mollyow.github.io",
-					"department": "Political Science \\& Statistics and Data Science, Yale",
-					"when": "2017--present"
+					"department": "Political Science & Statistics and Data Science, Yale",
+					"when": "2017--2019"
 				}
 			]
 		},

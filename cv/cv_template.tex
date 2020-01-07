@@ -155,7 +155,7 @@
 
 	\begin{singledatelist}
 		{%- for edu in education %}
-		\dateitem[{{ edu.year }}]{{- edu.degree | l_bracket }}, {% if edu.subject %}{{ edu.subject }}, {% endif %}{{ edu.university }}.}
+		\dateitem[{{ edu.year }}]{{- edu.degree | l_bracket }}, {% if edu.subject %}{{ edu.subject | escape_latex }}, {% endif %}{{ edu.university }}.}
 		{%- endfor %}
 	\end{singledatelist}
 
@@ -343,9 +343,9 @@
 		{%- for student in roletype.students %}
 		\infoitem
 		{%- if student.url -%}
-			{\href{{ student.url | lr_bracket }}{{ student.name | lr_bracket }}, {{ student.department }}, {{ student.when }}.}
+			{\href{{ student.url | lr_bracket }}{{ student.name | lr_bracket }}, {{ student.department | escape_latex }}, {{ student.when }}.}
 		{%- else -%}
-			{{ student.name | l_bracket }}, {{ student.department }}, {{ student.when }}.}
+			{{ student.name | l_bracket }}, {{ student.department | escape_latex }}, {{ student.when }}.}
 		{%- endif -%}
 		{%- endfor %}
 	\end{infolist}
