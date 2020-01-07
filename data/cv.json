@@ -59,11 +59,6 @@
 			"title": "Resident Fellow",
 			"department": "Institution for Social and Policy Studies",
 			"organization": "Yale University"
-		},
-		{
-			"title": "Affiliated Researcher",
-			"department": "Uppsala Center for Labor Studies",
-			"organization": "Uppsala University"
 		}
 	],
 
@@ -144,6 +139,16 @@
 
 
 	"publications": [
+		{
+			"id": "Delevoye2019ConsistencyHT",
+			"title": "Consistency of the Horvitz-Thompson estimator under general sampling and experimental designs",
+			"authors": [ "Angèle Delevoye", "Fredrik Sävje" ],
+			"journal": "Journal of Statistical Planning and Inference",
+			"year": 2019,
+			"url": "https://fredriksavje.com/papers/ht-consistency.pdf",
+			"inprint": true,
+			"abstract": "We extend current concentration results for the Horvitz-Thompson estimator in finite population settings. The estimator is demonstrated to converge in quadratic mean to its target under weaker and more general conditions than previously known. Specifically, we do not require that the variables of interest nor the normalized inclusion probabilities are bounded. Rates of convergence are provided."
+		},
 		{
 			"id": "Savje2019LargeMatching",
 			"title": "Comment: Matching methods for observational studies derived from large administrative databases",
@@ -611,6 +616,10 @@
 		{
 			"name": "Niklas Bengtsson",
 			"website": "https://sites.google.com/site/nikbe825/"
+		},
+		{
+			"name": "Angèle Delevoye",
+			"website": "https://politicalscience.yale.edu/people/angele-delevoye"
 		},
 		{
 			"name": "Christopher Harshaw",
