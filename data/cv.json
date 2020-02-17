@@ -145,9 +145,11 @@
 			"authors": [ "Angèle Delevoye", "Fredrik Sävje" ],
 			"journal": "Journal of Statistical Planning and Inference",
 			"year": 2020,
+			"volume": "207",
+			"page_start": 190,
+			"page_end": 197,
 			"url": "https://www.sciencedirect.com/science/article/pii/S0378375819301211",
 			"doi": "10.1016/j.jspi.2019.12.002",
-			"inprint": true,
 			"abstract": "We extend current concentration results for the Horvitz-Thompson estimator in finite population settings. The estimator is demonstrated to converge in quadratic mean to its target under weaker and more general conditions than previously known. Specifically, we do not require that the variables of interest nor the normalized inclusion probabilities are bounded. Rates of convergence are provided."
 		},
 		{

@@ -121,7 +121,7 @@
 					{{- range .authors -}}
 					{{- if ne . "Fredrik Sävje" -}}
 					{{ $cur_coauthor = add $cur_coauthor 1 }}
-					{{- if eq $cur_coauthor 1 }}Coauthored with {{ else if eq $cur_coauthor (sub $len_coauthors 1) }} and {{ else }}, {{ end -}}
+					{{- if eq $cur_coauthor 1 }}With {{ else if eq $cur_coauthor (sub $len_coauthors 1) }} and {{ else }}, {{ end -}}
 					{{- with index (where $.Site.Data.cv.coauthors "name" .) 0 -}}
 						<a href="{{ .website }}">{{ .name }}</a>
 					{{- else -}}
@@ -163,7 +163,7 @@
 					{{- range .authors -}}
 					{{- if ne . "Fredrik Sävje" -}}
 					{{ $cur_coauthor = add $cur_coauthor 1 }}
-					{{- if eq $cur_coauthor 1 }}Coauthored with {{ else if eq $cur_coauthor (sub $len_coauthors 1) }} and {{ else }}, {{ end -}}
+					{{- if eq $cur_coauthor 1 }}With {{ else if eq $cur_coauthor (sub $len_coauthors 1) }} and {{ else }}, {{ end -}}
 					{{- with index (where $.Site.Data.cv.coauthors "name" .) 0 -}}
 						<a href="{{ .website }}">{{ .name }}</a>
 					{{- else -}}
@@ -174,9 +174,11 @@
 					.</span></div>
 				{{- end }}
 				{{ if .inprint -}}
-				<div class="paperinfo"><span class="journalname">{{ .journal }}</span>, {{ .year }}, in print.</div>
+				<div class="paperinfo"><span class="journalname">{{ .journal }}</span> ({{ .year }}), in print.</div>
 				{{- else -}}
-				<div class="paperinfo"><span class="journalname">{{ .journal }}</span>, {{ .year }}, {{ .volume }}({{ .number }}):{{ .page_start }}&ndash;{{ .page_end }}.</div>
+				<div class="paperinfo"><span class="journalname">{{ .journal }}</span> ({{ .year }}), {{ .volume }}
+				{{- if .number -}}({{ .number }}){{- end -}}
+				, {{ .page_start }}&ndash;{{ .page_end }}.</div>
 				{{- end }}
 				{{ if .abstract -}}
 					<div class="collapsecontainer"><div class="collapse" id="{{ .id }}_abstract"><div class="well well-sm abstract">{{ .abstract }}</div></div></div>
