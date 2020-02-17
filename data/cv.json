@@ -16,7 +16,7 @@
 		"office": [
 			"Room 226",
 			"Rosenkranz Hall",
-			"125 Prospect Street"
+			"115 Prospect Street"
 		],
 		"phone": "+1 (203) 432 4672",
 		"email": "fredrik.savje@yale.edu",
@@ -140,32 +140,34 @@
 
 	"publications": [
 		{
-			"id": "Delevoye2019ConsistencyHT",
+			"id": "Delevoye2020ConsistencyHT",
 			"title": "Consistency of the Horvitz-Thompson estimator under general sampling and experimental designs",
 			"authors": [ "Angèle Delevoye", "Fredrik Sävje" ],
 			"journal": "Journal of Statistical Planning and Inference",
-			"year": 2019,
-			"url": "https://fredriksavje.com/papers/ht-consistency.pdf",
+			"year": 2020,
+			"url": "https://www.sciencedirect.com/science/article/pii/S0378375819301211",
+			"doi": "10.1016/j.jspi.2019.12.002",
 			"inprint": true,
 			"abstract": "We extend current concentration results for the Horvitz-Thompson estimator in finite population settings. The estimator is demonstrated to converge in quadratic mean to its target under weaker and more general conditions than previously known. Specifically, we do not require that the variables of interest nor the normalized inclusion probabilities are bounded. Rates of convergence are provided."
 		},
 		{
-			"id": "Savje2019LargeMatching",
+			"id": "Savje2020LargeMatching",
 			"title": "Comment: Matching methods for observational studies derived from large administrative databases",
 			"authors": [ "Fredrik Sävje" ],
 			"journal": "Statistical Science",
-			"year": 2019,
+			"year": 2020,
 			"url": "https://www.e-publications.org/ims/submission/STS/user/submissionFile/41236?confirm=452fc878",
 			"inprint": true,
 			"invited": true
 		},
 		{
-			"id": "Aronow2019BookOfWhy",
+			"id": "Aronow2020BookOfWhy",
 			"title": "Review: The Book of Why",
 			"authors": [ "Peter Aronow", "Fredrik Sävje" ],
 			"journal": "Journal of the American Statistical Association",
-			"url": "https://fredriksavje.com/papers/TBOW-review.pdf",
-			"year": 2019,
+			"year": 2020,
+			"url": "https://www.tandfonline.com/doi/full/10.1080/01621459.2020.1721245",
+			"doi": "10.1080/01621459.2020.1721245",
 			"inprint": true,
 			"invited": true
 		},
@@ -235,13 +237,6 @@
 			"abstract": "Matching is an important tool in causal inference. The method provides a conceptually straightforward way to make groups of units comparable on observed characteristics. The use of the method is, however, limited to situations where the study design is fairly simple and the sample is moderately sized. We illustrate the issue by revisiting a large-scale voter mobilization experiment that took place in Michigan for the 2006 election. We ask what the causal effects would have been if the treatments in the experiment were scaled up to the full population. Matching could help us answer this question, but no existing matching method can accommodate the six treatment arms and the 6,762,701 observations involved in the study. To offer a solution this and similar empirical problems, we introduce a generalization of the full matching method and an associated algorithm. The method can be used with any number of treatment conditions, and it is shown to produce near-optimal matchings. The worst case maximum within-group dissimilarity is no worse than four times the optimal solution, and simulation results indicate that its performance is considerably closer to the optimal solution on average. Despite its performance, the algorithm is fast and uses little memory. It terminates, on average, in linearithmic time using linear space. This enables investigators to construct well-performing matchings within minutes even in complex studies with samples of several million units."
 		},
 		{
-			"id": "Savje2015Threshold",
-			"title": "The performance and efficiency of threshold blocking",
-			"authors": [ "Fredrik Sävje" ],
-			"url": "https://arxiv.org/abs/1506.02824v2",
-			"abstract": "A common method to reduce the uncertainty of causal inferences from experiments is to assign treatments in fixed proportions within groups of similar units: blocking. Previous results indicate that one can expect substantial reductions in variance if these groups are formed so to contain exactly as many units as treatment conditions. This approach can be contrasted to threshold blocking which, instead of specifying a fixed size, requires that the groups contain a minimum number of units. In this paper, I investigate the advantages of respective method. In particular, I show that threshold blocking is superior to fixed-sized blocking in the sense that it always finds a weakly better grouping for any objective and sample. However, this does not necessarily hold when the objective function of the blocking problem is unknown, and a fixed-sized design can perform better in that case. I specifically examine the factors that govern how the methods perform in the common situation where the objective is to reduce the estimator's variance, but where groups are constructed based on covariates. This reveals that the relative performance of threshold blocking improves when the covariates become more predictive of the outcome."
-		},
-		{
 			"id": "Savje2015Incumbency",
 			"title": "Defining and Identifying Incumbency Effects",
 			"authors": [ "Fredrik Sävje" ],
@@ -252,6 +247,13 @@
 
 
 	"abandoned_working_papers": [
+		{
+			"id": "Savje2015Threshold",
+			"title": "The performance and efficiency of threshold blocking",
+			"authors": [ "Fredrik Sävje" ],
+			"url": "https://arxiv.org/abs/1506.02824v2",
+			"abstract": "A common method to reduce the uncertainty of causal inferences from experiments is to assign treatments in fixed proportions within groups of similar units: blocking. Previous results indicate that one can expect substantial reductions in variance if these groups are formed so to contain exactly as many units as treatment conditions. This approach can be contrasted to threshold blocking which, instead of specifying a fixed size, requires that the groups contain a minimum number of units. In this paper, I investigate the advantages of respective method. In particular, I show that threshold blocking is superior to fixed-sized blocking in the sense that it always finds a weakly better grouping for any objective and sample. However, this does not necessarily hold when the objective function of the blocking problem is unknown, and a fixed-sized design can perform better in that case. I specifically examine the factors that govern how the methods perform in the common situation where the objective is to reduce the estimator's variance, but where groups are constructed based on covariates. This reveals that the relative performance of threshold blocking improves when the covariates become more predictive of the outcome."
+		},
 		{
 			"id": "Ando2013SCM",
 			"title": "Hypothesis testing with the Synthetic Control Method",
@@ -292,6 +294,12 @@
 	"presentations": {
 		"invited": [
 			{
+				"what": "CMStatistics",
+				"where": "King's College, London",
+				"when": 2020,
+				"scheduled": true
+			},
+			{
 				"what": "Causal Inference with Big Data",
 				"where": "BIRS, Banff",
 				"when": 2020,
@@ -311,19 +319,22 @@
 			},
 			{
 				"what": "Gillings School of Global Public Health",
-				"where": "UNC-Chapel Hill",
-				"when": 2020,
-				"scheduled": true
+				"where": "UNC Chapel Hill",
+				"when": 2020
 			},
 			{
-				"what": "Department of Statistics",
+				"what": "Causal Inference Group",
 				"where": "UC Berkeley",
-				"when": 2020,
-				"scheduled": true
+				"when": 2020
 			},
 			{
 				"what": "Causal Learning with Interactions Conference",
 				"where": "Cemmap, London",
+				"when": 2019
+			},
+			{
+				"what": "Causal Inference Group",
+				"where": "Stanford University",
 				"when": 2019
 			},
 			{
@@ -437,11 +448,6 @@
 			}
 		],
 		"internal": [
-			{
-				"what": "Causal Inference Group",
-				"where": "Stanford University",
-				"when": 2019
-			},
 			{
 				"what": "Sekhon Research Group",
 				"where": "UC Berkeley",
@@ -593,7 +599,7 @@
 		{ "journal": "Journal of Health Economics" },
 		{ "journal": "Journal of Machine Learning Research" },
 		{ "journal": "Journal of the Royal Statistical Society: Series A" },
-		{ "journal": "Journal of the Royal Statistical Society: Series B" },
+		{ "journal": "Journal of the Royal Statistical Society: Series B", "times": 2 },
 		{ "journal": "Political Analysis", "times": 2 },
 		{ "journal": "Political Science Research and Methods" },
 		{ "journal": "The R Journal" },
