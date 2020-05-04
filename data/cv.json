@@ -140,6 +140,27 @@
 
 	"publications": [
 		{
+			"id": "Savje2018EATE",
+			"title": "Average treatment effects in the presence of unknown interference",
+			"authors": [ "Fredrik Sävje", "Peter Aronow", "Michael Hudgens" ],
+			"journal": "Annals of Statistics",
+			"year": 2020,
+			"url": "https://www.e-publications.org/ims/submission/AOS/user/submissionFile/43142?confirm=f03828f2",
+			"inprint": true,
+			"award": "Winner of the Gosnell Prize for Excellence in Political Methodology from the Society for Political Methodology",
+			"abstract": "We investigate large-sample properties of treatment effect estimators under unknown interference in randomized experiments. The inferential target is a generalization of the average treatment effect estimand that marginalizes over potential spillover effects. We show that estimators commonly used to estimate treatment effects under no-interference are consistent for the generalized estimand for most experimental designs under limited but otherwise arbitrary and unknown interference. The rates of convergence depend on the rate at which the amount of interference grows and the degree to which it aligns with dependencies in treatment assignment. Importantly for practitioners, the results imply that if one erroneously assumes that units do not interfere in a setting with limited, or even moderate, interference, standard estimators are nevertheless likely to be close to an average treatment effect if the sample is sufficiently large."
+		},
+		{
+			"id": "Savje2020LargeMatching",
+			"title": "Comment: Matching methods for observational studies derived from large administrative databases",
+			"authors": [ "Fredrik Sävje" ],
+			"journal": "Statistical Science",
+			"year": 2020,
+			"url": "https://www.e-publications.org/ims/submission/STS/user/submissionFile/41236?confirm=452fc878",
+			"inprint": true,
+			"invited": true
+		},
+		{
 			"id": "Delevoye2020ConsistencyHT",
 			"title": "Consistency of the Horvitz-Thompson estimator under general sampling and experimental designs",
 			"authors": [ "Angèle Delevoye", "Fredrik Sävje" ],
@@ -153,14 +174,18 @@
 			"abstract": "We extend current concentration results for the Horvitz-Thompson estimator in finite population settings. The estimator is demonstrated to converge in quadratic mean to its target under weaker and more general conditions than previously known. Specifically, we do not require that the variables of interest nor the normalized inclusion probabilities are bounded. Rates of convergence are provided."
 		},
 		{
-			"id": "Savje2020LargeMatching",
-			"title": "Comment: Matching methods for observational studies derived from large administrative databases",
-			"authors": [ "Fredrik Sävje" ],
-			"journal": "Statistical Science",
+			"id": "Bengtsson2019Iodine",
+			"title": "Fetal iodine deficiency and schooling",
+			"authors": [ "Niklas Bengtsson", "Fredrik Sävje", "Stefan Swartling Peterson" ],
+			"journal": "Scandinavian Journal of Economics",
 			"year": 2020,
-			"url": "https://www.e-publications.org/ims/submission/STS/user/submissionFile/41236?confirm=452fc878",
-			"inprint": true,
-			"invited": true
+			"volume": "122",
+			"number": "2",
+			"page_start": 582,
+			"page_end": 621,
+			"url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/sjoe.12341",
+			"doi": "10.1111/sjoe.12341",
+			"abstract": "Scholars have theorized that congenital health endowment is an important determinant of economic outcomes later in a person's life. Field, Robles and Torero [2009, American Economic Journal: Applied Economics, 1(4), 140--169] find large increases in educational attainment caused by a reduction of fetal iodine deficiency following a set of iodine supplementation programs in Tanzania. We revisit the Tanzanian iodine programs with a narrow and wide replication of the study by Field et al. We are able to exactly replicate the original results. We find, however, that the findings are sensitive to alternative specification choices and sample restrictions. We try to address some of these concerns in the wide replication; we increase the sample size fourfold and improve the precision of the treatment variable by incorporating new institutional and medical insights. Despite the improvements, no effect is found. We conclude that the available data do not provide sufficient power to detect a possible effect since treatment assignment cannot be measured with sufficient precision."
 		},
 		{
 			"id": "Aronow2020BookOfWhy",
@@ -168,21 +193,13 @@
 			"authors": [ "Peter Aronow", "Fredrik Sävje" ],
 			"journal": "Journal of the American Statistical Association",
 			"year": 2020,
+			"volume": "115",
+			"number": "529",
+			"page_start": 482,
+			"page_end": 485,
 			"url": "https://www.tandfonline.com/doi/full/10.1080/01621459.2020.1721245",
 			"doi": "10.1080/01621459.2020.1721245",
-			"inprint": true,
 			"invited": true
-		},
-		{
-			"id": "Bengtsson2019Iodine",
-			"title": "Fetal iodine deficiency and schooling",
-			"authors": [ "Niklas Bengtsson", "Fredrik Sävje", "Stefan Swartling Peterson" ],
-			"journal": "Scandinavian Journal of Economics",
-			"year": 2019,
-			"inprint": true,
-			"url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/sjoe.12341",
-			"doi": "10.1111/sjoe.12341",
-			"abstract": "Scholars have theorized that congenital health endowment is an important determinant of economic outcomes later in a person's life. Field, Robles and Torero [2009, American Economic Journal: Applied Economics, 1(4), 140--169] find large increases in educational attainment caused by a reduction of fetal iodine deficiency following a set of iodine supplementation programs in Tanzania. We revisit the Tanzanian iodine programs with a narrow and wide replication of the study by Field et al. We are able to exactly replicate the original results. We find, however, that the findings are sensitive to alternative specification choices and sample restrictions. We try to address some of these concerns in the wide replication; we increase the sample size fourfold and improve the precision of the treatment variable by incorporating new institutional and medical insights. Despite the improvements, no effect is found. We conclude that the available data do not provide sufficient power to detect a possible effect since treatment assignment cannot be measured with sufficient precision."
 		},
 		{
 			"id": "Higgins2016Threshold",
@@ -222,14 +239,6 @@
 			"authors": [ "Fredrik Sävje" ],
 			"url": "https://arxiv.org/abs/1907.07288",
 			"abstract": "The paper demonstrates that the matching estimator is not generally consistent for the average treatment effect of the treated when the matching is done without replacement using propensity scores. To achieve consistency, practitioners must either assume that no unit exists with a propensity score greater than one-half or assume that there is no confounding among such units. Illustrations suggest that the result applies also to matching using other metrics as long as it is done without replacement."
-		},
-		{
-			"id": "Savje2018EATE",
-			"title": "Average treatment effects in the presence of unknown interference",
-			"authors": [ "Fredrik Sävje", "Peter Aronow", "Michael Hudgens" ],
-			"url": "https://arxiv.org/abs/1711.06399",
-			"award": "Winner of the Gosnell Prize for Excellence in Political Methodology from the Society for Political Methodology",
-			"abstract": "We investigate large-sample properties of treatment effect estimators under unknown interference in randomized experiments. The inferential target is a generalization of the average treatment effect estimand that marginalizes over potential spillover effects. We show that estimators commonly used to estimate treatment effects under no-interference are consistent for the generalized estimand for most experimental designs under limited but otherwise arbitrary and unknown interference. The rates of convergence depend on the rate at which the amount of interference grows and the degree to which it aligns with dependencies in treatment assignment. Importantly for practitioners, the results imply that if one erroneously assumes that units do not interfere in a setting with limited, or even moderate, interference, standard estimators are nevertheless likely to be close to an average treatment effect if the sample is sufficiently large."
 		},
 		{
 			"id": "Savje2017FullMatch",
@@ -310,14 +319,12 @@
 			{
 				"what": "Department of Political Science",
 				"where": "UC San Diego",
-				"when": 2020,
-				"scheduled": true
+				"when": 2020
 			},
 			{
 				"what": "Interdisciplinary Seminar in Quantitative Methods",
 				"where": "University of Michigan",
-				"when": 2020,
-				"scheduled": true
+				"when": 2020
 			},
 			{
 				"what": "Gillings School of Global Public Health",
@@ -396,6 +403,12 @@
 			}
 		],
 		"contributed": [
+			{
+				"what": "Society for Political Methodology",
+				"where": "Online",
+				"when": 2020,
+				"scheduled": true
+			},
 			{
 				"what": "Society for Political Methodology",
 				"where": "MIT",
@@ -592,7 +605,7 @@
 
 
 	"referee": [
-		{ "journal": "American Journal of Political Science" },
+		{ "journal": "American Journal of Political Science", "times": 2 },
 		{ "journal": "The American Statistician" },
 		{ "journal": "Annals of Applied Statistics" },
 		{ "journal": "Journal of the American Statistical Association", "times": 2 },
@@ -636,7 +649,7 @@
 		},
 		{
 			"name": "Christopher Harshaw",
-			"website": "http://www.chrisharshaw.com/?page_id=4"
+			"website": "http://www.chrisharshaw.com"
 		},
 		{
 			"name": "Michael Higgins",
