@@ -166,7 +166,7 @@
 			"authors": [ "Fredrik Sävje" ],
 			"journal": "Statistical Science",
 			"year": 2020,
-			"url": "https://www.e-publications.org/ims/submission/STS/user/submissionFile/41236?confirm=452fc878",
+			"url": "https://projecteuclid.org/euclid.ss/1599789689",
 			"inprint": true,
 			"invited": true
 		},
@@ -314,9 +314,9 @@
 				"scheduled": true
 			},
 			{
-				"what": "CMStatistics",
-				"where": "King's College, London",
-				"when": 2020,
+				"what": "Online Causal Inference Seminar",
+				"where": "Stanford",
+				"when": 2021,
 				"scheduled": true
 			},
 			{
@@ -500,10 +500,13 @@
 			"university": "Yale University",
 			"courses": [
 				{
-					"desc": "Data Science for Politics and Policy (undergrad). Spring 2018, 2019."
+					"desc": "Data Science for Politics and Policy (undergrad). Spring 2018, 2019, 2021."
 				},
 				{
-					"desc": "Foundations of Statistical Inference (grad). Spring 2019."
+					"desc": "Causal Inference and Research Design (grad). Spring 2021."
+				},
+				{
+					"desc": "Foundations of Statistical Inference (grad). Spring 2019, Fall 2020."
 				},
 				{
 					"desc": "Advanced Quantitative Methods (grad). Fall 2017, 2018."
@@ -576,7 +579,7 @@
 		{
 			"type": "Yale University",
 			"service": [
-				"Graduate Admissions Committee, 2020-2021",
+				"Graduate Admissions Committee, 2020--2021",
 				"Quantitative Methods General Exam Committee, 2019, 2020",
 				"Organizer, MacMillan--CSAP Workshop on Quantitative Research Methods, 2018--2019",
 				"Social Science--Data Science Search Committee, 2018"
