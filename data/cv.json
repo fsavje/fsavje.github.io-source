@@ -563,6 +563,11 @@
 			"role": "Dissertation committee member",
 			"students": [
 				{
+					"name": "Robin Wang",
+					"department": "Political Science, Yale",
+					"when": "2021--present"
+				},
+				{
 					"name": "Chris Harshaw",
 					"url": "http://www.chrisharshaw.com/",
 					"department": "Computer Science, Yale",
