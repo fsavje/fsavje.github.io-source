@@ -257,13 +257,6 @@
 			"abstract": "Exposure mappings facilitate investigations of complex causal effects when units in- terfere in experiments. Current methods assume that the exposures are correctly specified. The assumption can, however, not be verified, and it is questionable in many settings. This paper investigates whether inferences about exposure effects can be drawn when the exposures are misspecified. The main result is a law of large numbers under weak conditions on the errors introduced by the misspecification. In particular, the rate of convergence is determined by the dependence between units’ specification errors, and consistency is achieved even when the errors are large as long as they are sufficiently independent. The limiting distribution of the estimator is also discussed. Asymptotic normality is achieved under stronger conditions than those needed for consistency. Similar conditions also facilitate conservative variance estimation."
 		},
 		{
-			"id": "Savje2019Matchingwithoutreplacement",
-			"title": "Consistency and matching without replacement",
-			"authors": [ "Fredrik Sävje" ],
-			"url": "https://arxiv.org/abs/1907.07288",
-			"abstract": "The paper demonstrates that the matching estimator is not generally consistent for the average treatment effect of the treated when the matching is done without replacement using propensity scores. To achieve consistency, practitioners must either assume that no unit exists with a propensity score greater than one-half or assume that there is no confounding among such units. Illustrations suggest that the result applies also to matching using other metrics as long as it is done without replacement."
-		},
-		{
 			"id": "Savje2015Incumbency",
 			"title": "Defining and Identifying Incumbency Effects",
 			"authors": [ "Fredrik Sävje" ],
