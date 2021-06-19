@@ -174,13 +174,17 @@
 			"abstract": "We investigate large-sample properties of treatment effect estimators under unknown interference in randomized experiments. The inferential target is a generalization of the average treatment effect estimand that marginalizes over potential spillover effects. We show that estimators commonly used to estimate treatment effects under no interference are consistent for the generalized estimand for several common experimental designs under limited but otherwise arbitrary and unknown interference. The rates of convergence depend on the growth rate of the unit-average amount of interference and the degree to which the interference aligns with dependencies in treatment assignment. Importantly for practitioners, the results imply that even if one erroneously assumes that units do not interfere in a setting with moderate interference, standard estimators are nevertheless likely to be close to an average treatment effect if the sample is sufficiently large. Conventional confidence statements may, however, not be accurate."
 		},
 		{
-			"id": "Savje2020LargeMatching",
-			"title": "Comment: Matching methods for observational studies derived from large administrative databases",
+			"id": "Savje2020Matching",
+			"title": "Comment: Matching Methods for Observational Studies Derived from Large Administrative Databases",
 			"authors": [ "Fredrik Sävje" ],
 			"journal": "Statistical Science",
 			"year": 2020,
-			"url": "https://projecteuclid.org/euclid.ss/1599789689",
-			"inprint": true,
+			"volume": "35",
+			"number": "3",
+			"page_start": 356,
+			"page_end": 360,
+			"url": "https://projecteuclid.org/journals/statistical-science/volume-35/issue-3/Comment--Matching-Methods-for-Observational-Studies-Derived-from-Large/10.1214/19-STS739.short",
+			"doi": "10.1214/19-STS739",
 			"invited": true
 		},
 		{
