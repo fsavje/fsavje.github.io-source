@@ -140,6 +140,16 @@
 
 	"publications": [
 		{
+			"id": "Savje2019Matchingwithoutreplacement",
+			"title": "On the inconsistency of matching without replacement",
+			"authors": [ "Fredrik Sävje" ],
+			"journal": "Biometrika",
+			"year": 2021,
+			"url": "https://arxiv.org/abs/1907.07288",
+			"inprint": true,
+			"abstract": "The paper shows that matching without replacement on propensity scores produces estimators that generally are inconsistent for the average treatment effect of the treated. To achieve consistency, practitioners must either assume that no units exist with propensity scores greater than one-half or assume that there is no confounding among such units. The result is not driven by the use of propensity scores, and similar artifacts arise when matching on other scores as long as it is without replacement."
+		},
+		{
 			"id": "Savje2017FullMatch",
 			"title": "Generalized Full Matching",
 			"authors": [ "Fredrik Sävje", "Michael Higgins", "Jasjeet Sekhon" ],
