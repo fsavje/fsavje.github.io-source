@@ -314,16 +314,19 @@
 	"presentations": {
 		"invited": [
 			{
-				"what": "Causal Inference with Big Data",
-				"where": "BIRS, Banff",
-				"when": 2021,
-				"scheduled": true
+				"what": "Department of Statistics",
+				"where": "Stanford",
+				"when": 2021
+			},
+			{
+				"what": "Cowles Foundation",
+				"where": "New Haven",
+				"when": 2021
 			},
 			{
 				"what": "Online Causal Inference Seminar",
 				"where": "Stanford",
-				"when": 2021,
-				"scheduled": true
+				"when": 2021
 			},
 			{
 				"what": "Department of Political Science",
@@ -413,8 +416,20 @@
 		],
 		"contributed": [
 			{
+				"what": "APSA Annual Meeting",
+				"where": "Seattle",
+				"when": 2021,
+				"scheduled": true
+			},
+			{
 				"what": "Society for Political Methodology",
-				"where": "Online",
+				"where": "New York University",
+				"when": 2021,
+				"scheduled": true
+			},
+			{
+				"what": "Society for Political Methodology",
+				"where": "University of Toronto",
 				"when": 2020
 			},
 			{
@@ -545,26 +560,28 @@
 			"students": [
 				{
 					"name": "Chris Harshaw",
-					"url": "http://www.chrisharshaw.com/?page_id=4",
+					"url": "http://www.chrisharshaw.com/",
 					"department": "Computer Science, Yale",
 					"when": "2020--present"
 				},
 				{
 					"name": "Brandon Chow",
-					"department": "Statistics and Data Science, Yale",
+					"department": "Statistics & Data Science, Yale",
 					"when": "2019--present"
 				},
 				{
 					"name": "Kyle Peyton",
 					"url": "https://kylepeyton.github.io",
 					"department": "Political Science, Yale",
-					"when": "2018--present"
+					"when": "2018--2020",
+					"placement": ""
 				},
 				{
 					"name": "Molly Offer-Westort",
 					"url": "https://mollyow.github.io",
-					"department": "Political Science & Statistics and Data Science, Yale",
-					"when": "2017--2019"
+					"department": "Political Science and Statistics & Data Science, Yale",
+					"when": "2017--2019",
+					"placement": ""
 				}
 			]
 		},
@@ -586,7 +603,7 @@
 			"type": "Yale University",
 			"service": [
 				"Graduate Admissions Committee, 2020--2021",
-				"Quantitative Methods General Exam Committee, 2019, 2020",
+				"Quantitative Methods General Exam Committee, 2019, 2020, 2021",
 				"Organizer, MacMillan--CSAP Workshop on Quantitative Research Methods, 2018--2019",
 				"Social Science--Data Science Search Committee, 2018"
 			]
@@ -604,8 +621,13 @@
 
 	"discussant": [
 		{
+			"what": "Online Causal Inference Seminar",
+			"where": "Stanford",
+			"when": 2021
+		},
+		{
 			"what": "Society for Political Methodology",
-			"where": "Online",
+			"where": "University of Toronto",
 			"when": 2020
 		},
 		{
@@ -622,20 +644,23 @@
 
 
 	"referee": [
-		{ "journal": "American Journal of Political Science", "times": 2 },
+		{ "journal": "American Journal of Political Science" },
+		{ "journal": "American Political Science Review" },
 		{ "journal": "The American Statistician" },
 		{ "journal": "Annals of Applied Statistics" },
 		{ "journal": "Annals of Statistics" },
+		{ "journal": "Biometrika" },
+		{ "journal": "Canadian Journal of Statistics" },
 		{ "journal": "Communications in Statistics - Theory and Methods" },
 		{ "journal": "Econometrica" },
-		{ "journal": "Journal of the American Statistical Association", "times": 3 },
+		{ "journal": "Journal of the American Statistical Association" },
 		{ "journal": "Journal of Causal Inference" },
 		{ "journal": "Journal of Economic Behavior & Organization" },
 		{ "journal": "Journal of Health Economics" },
-		{ "journal": "Journal of Machine Learning Research", "times": 2 },
+		{ "journal": "Journal of Machine Learning Research" },
 		{ "journal": "Journal of the Royal Statistical Society: Series A" },
-		{ "journal": "Journal of the Royal Statistical Society: Series B", "times": 2 },
-		{ "journal": "Political Analysis", "times": 2 },
+		{ "journal": "Journal of the Royal Statistical Society: Series B" },
+		{ "journal": "Political Analysis" },
 		{ "journal": "Political Science Research and Methods" },
 		{ "journal": "The R Journal" },
 		{ "journal": "Statistics & Probability Letters" },
