@@ -150,15 +150,18 @@
 			"abstract": "Matching is a conceptually straightforward method to make groups of units comparable on observed characteristics. The method is, however, limited to settings where the study design is simple and the sample is moderately sized. We illustrate these limitations by asking what the causal effects would have been if a large-scale voter mobilization experiment that took place in Michigan for the 2006 election were scaled up to the full population. Matching could help us answer this question, but no existing matching method can accommodate the six treatment arms and the 6,762,701 observations involved in the study. To offer a solution this and similar empirical problems, we introduce a generalization of the full matching method. The associated algorithm produces near-optimal matchings and can be used with any number of treatment conditions. The worst-case maximum within-group dissimilarity is no worse than four times the optimal solution, and simulation results indicate that it on average comes considerably closer to the optimal solution. Despite its ability to balance the treatment groups, the algorithm is fast and uses little memory. It terminates in linearithmic time using linear space. This enables investigators to construct well-performing matchings within minutes even in complex studies with samples of several million units."
 		},
 		{
-			"id": "Savje2018EATE",
+			"id": "Savje2021Average",
 			"title": "Average treatment effects in the presence of unknown interference",
 			"authors": [ "Fredrik Sävje", "Peter Aronow", "Michael Hudgens" ],
 			"journal": "Annals of Statistics",
-			"year": 2020,
-			"url": "https://www.e-publications.org/ims/submission/AOS/user/submissionFile/43142?confirm=f03828f2",
-			"inprint": true,
-			"award": "Winner of the Gosnell Prize for Excellence in Political Methodology from the Society for Political Methodology",
-			"abstract": "We investigate large-sample properties of treatment effect estimators under unknown interference in randomized experiments. The inferential target is a generalization of the average treatment effect estimand that marginalizes over potential spillover effects. We show that estimators commonly used to estimate treatment effects under no-interference are consistent for the generalized estimand for most experimental designs under limited but otherwise arbitrary and unknown interference. The rates of convergence depend on the rate at which the amount of interference grows and the degree to which it aligns with dependencies in treatment assignment. Importantly for practitioners, the results imply that if one erroneously assumes that units do not interfere in a setting with limited, or even moderate, interference, standard estimators are nevertheless likely to be close to an average treatment effect if the sample is sufficiently large."
+			"year": 2021,
+			"volume": "49",
+			"number": "2",
+			"page_start": 673,
+			"page_end": 701,
+			"url": "https://projecteuclid.org/journals/annals-of-statistics/volume-49/issue-2/Average-treatment-effects-in-the-presence-of-unknown-interference/10.1214/20-AOS1973.short",
+			"doi": "10.1214/20-AOS1973",
+			"abstract": "We investigate large-sample properties of treatment effect estimators under unknown interference in randomized experiments. The inferential target is a generalization of the average treatment effect estimand that marginalizes over potential spillover effects. We show that estimators commonly used to estimate treatment effects under no interference are consistent for the generalized estimand for several common experimental designs under limited but otherwise arbitrary and unknown interference. The rates of convergence depend on the growth rate of the unit-average amount of interference and the degree to which the interference aligns with dependencies in treatment assignment. Importantly for practitioners, the results imply that even if one erroneously assumes that units do not interfere in a setting with moderate interference, standard estimators are nevertheless likely to be close to an average treatment effect if the sample is sufficiently large. Conventional confidence statements may, however, not be accurate."
 		},
 		{
 			"id": "Savje2020LargeMatching",
