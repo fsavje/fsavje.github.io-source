@@ -39,7 +39,7 @@
 
 	"main_position": [
 		"Assistant Professor",
-		"Political Science & Statistics and Data Science",
+		"Political Science and Statistics & Data Science",
 		"Yale University"
 	],
 
@@ -52,12 +52,12 @@
 		},
 		{
 			"title": "Assistant Professor",
-			"department": "Department of Statistics and Data Science (secondary)",
+			"department": "Department of Statistics & Data Science (secondary)",
 			"organization": "Yale University"
 		},
 		{
 			"title": "Resident Fellow",
-			"department": "Institution for Social and Policy Studies",
+			"department": "Institution for Social & Policy Studies",
 			"organization": "Yale University"
 		}
 	],
@@ -68,14 +68,14 @@
 			"start": 2019,
 			"end": 2020,
 			"title": "Visiting Scholar",
-			"department": "Department of Political Science & Graduate School of Business",
+			"department": "Department of Political Science and Graduate School of Business",
 			"organization": "Stanford University"
 		},
 		{
 			"start": 2015,
 			"end": 2017,
 			"title": "Post-doctoral Fellow",
-			"department": "Department of Political Science & Department of Statistics",
+			"department": "Department of Political Science and Department of Statistics",
 			"organization": "UC Berkeley"
 		},
 		{
