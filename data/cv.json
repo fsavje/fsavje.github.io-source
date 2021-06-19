@@ -154,7 +154,7 @@
 			"title": "Generalized Full Matching",
 			"authors": [ "Fredrik Sävje", "Michael Higgins", "Jasjeet Sekhon" ],
 			"journal": "Political Analysis",
-			"year": 2020,
+			"year": 2021,
 			"url": "https://arxiv.org/abs/1703.03882",
 			"inprint": true,
 			"abstract": "Matching is a conceptually straightforward method to make groups of units comparable on observed characteristics. The method is, however, limited to settings where the study design is simple and the sample is moderately sized. We illustrate these limitations by asking what the causal effects would have been if a large-scale voter mobilization experiment that took place in Michigan for the 2006 election were scaled up to the full population. Matching could help us answer this question, but no existing matching method can accommodate the six treatment arms and the 6,762,701 observations involved in the study. To offer a solution this and similar empirical problems, we introduce a generalization of the full matching method. The associated algorithm produces near-optimal matchings and can be used with any number of treatment conditions. The worst-case maximum within-group dissimilarity is no worse than four times the optimal solution, and simulation results indicate that it on average comes considerably closer to the optimal solution. Despite its ability to balance the treatment groups, the algorithm is fast and uses little memory. It terminates in linearithmic time using linear space. This enables investigators to construct well-performing matchings within minutes even in complex studies with samples of several million units."
