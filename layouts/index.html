@@ -139,10 +139,11 @@
 		</ul>
 
 
-		<h2>Publications</h2>
+		<h2>Recent publications</h2>
 
 		<ul class="paperlist pubs">
-		{{- range .Site.Data.cv.publications }}
+		{{- range .Site.Data.cv.publications -}}
+			{{- if .selected }}
 			<li>
 				<h4>
 					{{ if .url -}}
@@ -184,7 +185,8 @@
 					<div class="collapsecontainer"><div class="collapse" id="{{ .id }}_abstract"><div class="well well-sm abstract">{{ .abstract }}</div></div></div>
 				{{- end }}
 			</li>
-		{{ end -}}
+			{{ end -}}
+		{{- end -}}
 		</ul>
 
 
