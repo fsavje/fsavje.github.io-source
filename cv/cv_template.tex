@@ -162,11 +162,11 @@
 
 	\section*{Publications}
 
-	\subsection*{Peer-reviewed publications}
+	\subsection*{Peer-reviewed journal publications}
 
 	\begin{infolist}
 		{%- for paper in publications -%}
-		{%- if not paper.invited %}
+		{%- if not paper.other %}
 		\infoitem{
 		{%- for author in paper.authors -%}
 			{%- if loop.first -%}
@@ -197,11 +197,11 @@
 	\end{infolist}
 
 
-	\subsection*{Invited publications}
+	\subsection*{Other publications}
 
 	\begin{infolist}
 		{%- for paper in publications -%}
-		{%- if paper.invited %}
+		{%- if paper.other %}
 		\infoitem{
 		{%- for author in paper.authors -%}
 			{%- if loop.first -%}
@@ -220,6 +220,8 @@
 		{%- endif -%}
 		{% if paper.inprint -%}
 		\ \textit{{ paper.journal | lr_bracket }}, in print.}
+		{% elif paper.nojournal -%}
+		\ \textit{{ paper.nojournal | lr_bracket }}.}
 		{%- else -%}
 		\ \textit{{ paper.journal | lr_bracket }}, {{ paper.volume }}
 		{%- if paper.number -%}
