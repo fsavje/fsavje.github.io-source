@@ -4,3 +4,5 @@ local/
 *.log
 *.out
 *.swp
+*.fls
+*.fdb_latexmk
