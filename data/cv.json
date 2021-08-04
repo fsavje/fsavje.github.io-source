@@ -112,6 +112,12 @@
 
 	"software": [
 		{
+			"title": "GSWDesign.jl",
+			"tagline": "Julia package with a fast implementation of the Gram-Schmidt Walk for balancing covariates in randomized experiments (also R wrapper)",
+			"desc": "",
+			"url": "https://github.com/crharshaw/GSWDesign.jl"
+		},
+		{
 			"title": "distances",
 			"tagline": "R package with tools for distance metrics",
 			"desc": "",
@@ -140,6 +146,16 @@
 
 	"publications": [
 		{
+			"id": "Savje2021RandomizationUnconfoundedness",
+			"title": "Randomization does not imply unconfoundedness",
+			"authors": [ "Fredrik Sävje" ],
+			"nojournal": "Workshop on the Neglected Assumptions in Causal Inference at ICML 2021",
+			"year": 2021,
+			"url": "https://arxiv.org/abs/2107.14197",
+			"other": true,
+			"abstract": "A common assumption in causal inference is that random treatment assignment ensures that potential outcomes are independent of treatment, or in one word, unconfoundedness. This paper highlights that randomization and unconfoundedness are separate properties, and neither implies the other. A study with random treatment assignment does not have to be unconfounded, and a study with deterministic assignment can still be unconfounded. A corollary is that a propensity score is not the same thing as a treatment assignment probability. These facts should not be taken as arguments against randomization. The moral of this paper is that randomization is useful only when investigators know or can reconstruct the assignment process."
+		},
+		{
 			"id": "Savje2019Matchingwithoutreplacement",
 			"title": "On the inconsistency of matching without replacement",
 			"authors": [ "Fredrik Sävje" ],
@@ -147,6 +163,7 @@
 			"year": 2021,
 			"url": "https://arxiv.org/abs/1907.07288",
 			"inprint": true,
+			"selected": true,
 			"abstract": "The paper shows that matching without replacement on propensity scores produces estimators that generally are inconsistent for the average treatment effect of the treated. To achieve consistency, practitioners must either assume that no units exist with propensity scores greater than one-half or assume that there is no confounding among such units. The result is not driven by the use of propensity scores, and similar artifacts arise when matching on other scores as long as it is without replacement."
 		},
 		{
@@ -157,6 +174,7 @@
 			"year": 2021,
 			"url": "https://arxiv.org/abs/1703.03882",
 			"inprint": true,
+			"selected": true,
 			"abstract": "Matching is a conceptually straightforward method to make groups of units comparable on observed characteristics. The method is, however, limited to settings where the study design is simple and the sample is moderately sized. We illustrate these limitations by asking what the causal effects would have been if a large-scale voter mobilization experiment that took place in Michigan for the 2006 election were scaled up to the full population. Matching could help us answer this question, but no existing matching method can accommodate the six treatment arms and the 6,762,701 observations involved in the study. To offer a solution this and similar empirical problems, we introduce a generalization of the full matching method. The associated algorithm produces near-optimal matchings and can be used with any number of treatment conditions. The worst-case maximum within-group dissimilarity is no worse than four times the optimal solution, and simulation results indicate that it on average comes considerably closer to the optimal solution. Despite its ability to balance the treatment groups, the algorithm is fast and uses little memory. It terminates in linearithmic time using linear space. This enables investigators to construct well-performing matchings within minutes even in complex studies with samples of several million units."
 		},
 		{
@@ -169,6 +187,7 @@
 			"number": "2",
 			"page_start": 673,
 			"page_end": 701,
+			"selected": true,
 			"url": "https://projecteuclid.org/journals/annals-of-statistics/volume-49/issue-2/Average-treatment-effects-in-the-presence-of-unknown-interference/10.1214/20-AOS1973.short",
 			"doi": "10.1214/20-AOS1973",
 			"abstract": "We investigate large-sample properties of treatment effect estimators under unknown interference in randomized experiments. The inferential target is a generalization of the average treatment effect estimand that marginalizes over potential spillover effects. We show that estimators commonly used to estimate treatment effects under no interference are consistent for the generalized estimand for several common experimental designs under limited but otherwise arbitrary and unknown interference. The rates of convergence depend on the growth rate of the unit-average amount of interference and the degree to which the interference aligns with dependencies in treatment assignment. Importantly for practitioners, the results imply that even if one erroneously assumes that units do not interfere in a setting with moderate interference, standard estimators are nevertheless likely to be close to an average treatment effect if the sample is sufficiently large. Conventional confidence statements may, however, not be accurate."
@@ -183,9 +202,10 @@
 			"number": "3",
 			"page_start": 356,
 			"page_end": 360,
+			"selected": true,
 			"url": "https://projecteuclid.org/journals/statistical-science/volume-35/issue-3/Comment--Matching-Methods-for-Observational-Studies-Derived-from-Large/10.1214/19-STS739.short",
 			"doi": "10.1214/19-STS739",
-			"invited": true
+			"other": true
 		},
 		{
 			"id": "Delevoye2020ConsistencyHT",
@@ -196,6 +216,7 @@
 			"volume": "207",
 			"page_start": 190,
 			"page_end": 197,
+			"selected": true,
 			"url": "https://www.sciencedirect.com/science/article/pii/S0378375819301211",
 			"doi": "10.1016/j.jspi.2019.12.002",
 			"abstract": "We extend current concentration results for the Horvitz-Thompson estimator in finite population settings. The estimator is demonstrated to converge in quadratic mean to its target under weaker and more general conditions than previously known. Specifically, we do not require that the variables of interest nor the normalized inclusion probabilities are bounded. Rates of convergence are provided."
@@ -224,9 +245,10 @@
 			"number": "529",
 			"page_start": 482,
 			"page_end": 485,
+			"selected": true,
 			"url": "https://www.tandfonline.com/doi/full/10.1080/01621459.2020.1721245",
 			"doi": "10.1080/01621459.2020.1721245",
-			"invited": true
+			"other": true
 		},
 		{
 			"id": "Higgins2016Threshold",
@@ -246,6 +268,13 @@
 
 
 	"working_papers": [
+		{
+			"id": "Harshaw2021Design",
+			"title": "Design and analysis of bipartite experiments under a linear exposure-response model",
+			"authors": [ "Christopher Harshaw", "Fredrik Sävje", "David Eisenstat", "Vahab Mirrokni", "Jean Pouget-Abadie" ],
+			"url": "https://arxiv.org/abs/2103.06392",
+			"abstract": "In a bipartite experiment, units that are assigned treatments differ from the units for which we measure outcomes. The two groups of units are connected by a bipartite graph, governing how the treated units can affect the outcome units. Often motivated by experiments in marketplaces, the bipartite experimental framework has been used for example to investigate the causal effects of supply-side changes on demand-side behavior. In this paper, we consider the problem of estimating the average total treatment effect in the bipartite experimental framework under a linear exposure-response model. We introduce the Exposure Reweighted Linear (ERL) Estimator, an unbiased linear estimator of the average treatment effect in this setting. We show that the estimator is consistent and asymptotically normal, provided that the bipartite graph is sufficiently sparse. We derive a variance estimator which facilitates confidence intervals based on a normal approximation. In addition, we introduce Exposure-Design, a cluster-based design which aims to increase the precision of the ERL estimator by realizing desirable exposure distributions. Finally, we demonstrate the effectiveness of the described estimator and design with an application using a publicly available Amazon user-item review graph."
+		},
 		{
 			"id": "Harshaw2019Balancing",
 			"title": "Balancing covariates in randomized experiments using the Gram-Schmidt walk",
@@ -428,8 +457,7 @@
 			{
 				"what": "Society for Political Methodology",
 				"where": "New York University",
-				"when": 2021,
-				"scheduled": true
+				"when": 2021
 			},
 			{
 				"what": "Society for Political Methodology",
@@ -528,10 +556,10 @@
 					"desc": "Data Science for Politics and Policy (undergrad). Spring 2018, 2019, 2021."
 				},
 				{
-					"desc": "Causal Inference and Research Design (grad). Spring 2021."
+					"desc": "Causal Inference and Research Design (grad). Spring 2021, Fall 2021."
 				},
 				{
-					"desc": "Foundations of Statistical Inference (grad). Spring 2019, Fall 2020."
+					"desc": "Foundations of Statistical Inference (grad). Spring 2019, Fall 2020, 2021."
 				},
 				{
 					"desc": "Advanced Quantitative Methods (grad). Fall 2017, 2018."
@@ -655,12 +683,13 @@
 	"referee": [
 		{ "journal": "American Journal of Political Science" },
 		{ "journal": "American Political Science Review" },
-		{ "journal": "The American Statistician" },
+		{ "journal": "American Statistician" },
 		{ "journal": "Annals of Applied Statistics" },
 		{ "journal": "Annals of Statistics" },
+		{ "journal": "Biometrics" },
 		{ "journal": "Biometrika" },
 		{ "journal": "Canadian Journal of Statistics" },
-		{ "journal": "Communications in Statistics - Theory and Methods" },
+		{ "journal": "Communications in Statistics - Theory & Methods" },
 		{ "journal": "Econometrica" },
 		{ "journal": "Journal of the American Statistical Association" },
 		{ "journal": "Journal of Causal Inference" },
@@ -670,7 +699,7 @@
 		{ "journal": "Journal of the Royal Statistical Society: Series A" },
 		{ "journal": "Journal of the Royal Statistical Society: Series B" },
 		{ "journal": "Political Analysis" },
-		{ "journal": "Political Science Research and Methods" },
+		{ "journal": "Political Science Research & Methods" },
 		{ "journal": "The R Journal" },
 		{ "journal": "Statistics & Probability Letters" },
 		{ "journal": "Statistics & Public Policy" }
@@ -703,6 +732,10 @@
 			"website": "https://politicalscience.yale.edu/people/angele-delevoye"
 		},
 		{
+			"name": "David Eisenstat",
+			"website": "https://www.davideisenstat.com"
+		},
+		{
 			"name": "Christopher Harshaw",
 			"website": "http://www.chrisharshaw.com"
 		},
@@ -715,12 +748,20 @@
 			"website": "http://www.bios.unc.edu/~mhudgens/"
 		},
 		{
+			"name": "Vahab Mirrokni",
+			"website": "https://research.google/people/mirrokni/"
+		},
+		{
 			"name": "Gareth Nellis",
 			"website": "http://www.garethnellis.com"
 		},
 		{
 			"name": "Molly Offer-Westort",
 			"website": "https://mollyow.github.io"
+		},
+		{
+			"name": "Jean Pouget-Abadie",
+			"website": "https://jean.pouget-abadie.com"
 		},
 		{
 			"name": "Jasjeet Sekhon",
