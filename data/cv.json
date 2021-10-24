@@ -167,15 +167,19 @@
 			"abstract": "The paper shows that matching without replacement on propensity scores produces estimators that generally are inconsistent for the average treatment effect of the treated. To achieve consistency, practitioners must either assume that no units exist with propensity scores greater than one-half or assume that there is no confounding among such units. The result is not driven by the use of propensity scores, and similar artifacts arise when matching on other scores as long as it is without replacement."
 		},
 		{
-			"id": "Savje2017FullMatch",
+			"id": "Savje2021Generalized",
 			"title": "Generalized Full Matching",
 			"authors": [ "Fredrik Sävje", "Michael Higgins", "Jasjeet Sekhon" ],
 			"journal": "Political Analysis",
 			"year": 2021,
-			"url": "https://arxiv.org/abs/1703.03882",
-			"inprint": true,
+			"volume": "29",
+			"number": "4",
+			"page_start": 423,
+			"page_end": 447,
 			"selected": true,
-			"abstract": "Matching is a conceptually straightforward method to make groups of units comparable on observed characteristics. The method is, however, limited to settings where the study design is simple and the sample is moderately sized. We illustrate these limitations by asking what the causal effects would have been if a large-scale voter mobilization experiment that took place in Michigan for the 2006 election were scaled up to the full population. Matching could help us answer this question, but no existing matching method can accommodate the six treatment arms and the 6,762,701 observations involved in the study. To offer a solution this and similar empirical problems, we introduce a generalization of the full matching method. The associated algorithm produces near-optimal matchings and can be used with any number of treatment conditions. The worst-case maximum within-group dissimilarity is no worse than four times the optimal solution, and simulation results indicate that it on average comes considerably closer to the optimal solution. Despite its ability to balance the treatment groups, the algorithm is fast and uses little memory. It terminates in linearithmic time using linear space. This enables investigators to construct well-performing matchings within minutes even in complex studies with samples of several million units."
+			"url": "https://doi.org/10.1017/pan.2020.32",
+			"doi": "10.1017/pan.2020.32",
+			"abstract": "Matching is a conceptually straightforward method to make groups of units comparable on observed characteristics. The method is, however, limited to settings where the study design is simple and the sample is moderately sized. We illustrate these limitations by asking what the causal effects would have been if a large-scale voter mobilization experiment that took place in Michigan for the 2006 election were scaled up to the full population of registered voters. Matching could help us answer this question, but no existing matching method can accommodate the six treatment arms and the 6,762,701 observations involved in the study. To offer a solution for this and similar empirical problems, we introduce a generalization of the full matching method that can be used with any number of treatment conditions and complex compositional constraints. The associated algorithm produces near-optimal matchings; the worst-case maximum within-group dissimilarity is guaranteed to be no more than four times greater than the optimal solution, and simulation results indicate that it comes considerably closer to the optimal solution on average. The algorithm’s ability to balance the treatment groups does not sacrifice speed, and it uses little memory, terminating in linearithmic time using linear space. This enables investigators to construct well-performing matchings within minutes even in complex studies with samples of several million units."
 		},
 		{
 			"id": "Savje2021Average",
@@ -269,6 +273,20 @@
 
 	"working_papers": [
 		{
+			"id": "Stommes2021Reliability",
+			"title": "On the reliability of published findings using the regression discontinuity design in political science",
+			"authors": [ "Drew Stommes", "P. M. Aronow,", "Fredrik Sävje" ],
+			"url": "https://arxiv.org/abs/2109.14526",
+			"abstract": "The regression discontinuity (RD) design offers identification of causal effects under weak assumptions, earning it the position as a standard method in modern political science research. But identification does not necessarily imply that the causal effects can be estimated accurately with limited data. In this paper, we highlight that estimation is particularly challenging with the RD design and investigate how these challenges manifest themselves in the empirical literature. We collect all RD-based findings published in top political science journals from 2009--2018. The findings exhibit pathological features; estimates tend to bunch just above the conventional level of statistical significance. A reanalysis of all studies with available data suggests that researcher's discretion is not a major driver of these pathological features, but researchers tend to use inappropriate methods for inference, rendering standard errors artificially small. A retrospective power analysis reveals that most of these studies were underpowered to detect all but large effects. The issues we uncover, combined with well-documented selection pressures in academic publishing, cause concern that many published findings using the RD design are exaggerated, if not entirely spurious."
+		},
+		{
+			"id": "Aronow2021Nonparametric",
+			"title": "Nonparametric identification is not enough, but randomized controlled trials are",
+			"authors": [ "P. Aronow", "James Robins", "Theo Saarinen", "Fredrik Sävje", "Jasjeet Sekhon" ],
+			"url": "https://arxiv.org/abs/2108.11342",
+			"abstract": "We argue that randomized controlled trials (RCTs) are special even among settings where average treatment effects are identified by a nonparametric unconfoundedness assumption. This claim follows from two results of Robins and Ritov (1997): (1) with at least one continuous covariate control, no estimator of the average treatment effect exists which is uniformly consistent without further assumptions, (2) knowledge of the propensity score yields a uniformly consistent estimator and honest confidence intervals that shrink at parametric rates with increasing sample size, regardless of how complicated the propensity score function is. We emphasize the latter point, and note that successfully-conducted RCTs provide knowledge of the propensity score to the researcher. We discuss modern developments in covariate adjustment for RCTs, noting that statistical models and machine learning methods can be used to improve efficiency while preserving finite sample unbiasedness. We conclude that statistical inference has the potential to be fundamentally more difficult in observational settings than it is in RCTs, even when all confounders are measured."
+		},
+		{
 			"id": "Harshaw2021Design",
 			"title": "Design and analysis of bipartite experiments under a linear exposure-response model",
 			"authors": [ "Christopher Harshaw", "Fredrik Sävje", "David Eisenstat", "Vahab Mirrokni", "Jean Pouget-Abadie" ],
@@ -286,8 +304,8 @@
 			"id": "Savje2019Misspecified",
 			"title": "Causal inference with misspecified exposure mappings",
 			"authors": [ "Fredrik Sävje" ],
-			"url": "https://fredriksavje.com/papers/misspecified-exposures.pdf",
-			"abstract": "Exposure mappings facilitate investigations of complex causal effects when units in- terfere in experiments. Current methods assume that the exposures are correctly specified. The assumption can, however, not be verified, and it is questionable in many settings. This paper investigates whether inferences about exposure effects can be drawn when the exposures are misspecified. The main result is a law of large numbers under weak conditions on the errors introduced by the misspecification. In particular, the rate of convergence is determined by the dependence between units’ specification errors, and consistency is achieved even when the errors are large as long as they are sufficiently independent. The limiting distribution of the estimator is also discussed. Asymptotic normality is achieved under stronger conditions than those needed for consistency. Similar conditions also facilitate conservative variance estimation."
+			"url": "https://arxiv.org/abs/2103.06471",
+			"abstract": "Exposure mappings facilitate investigations of complex causal effects when units interact in experiments. Current methods assume that the exposures are correctly specified, but such an assumption cannot be verified, and its validity is often questionable. This paper describes conditions under which one can draw inferences about exposure effects when the exposures are misspecified. The main result is a proof of consistency under mild conditions on the errors introduced by the misspecification. The rate of convergence is determined by the dependence between units' specification errors, and consistency is achieved even if the errors are large as long as they are sufficiently weakly dependent. In other words, exposure effects can be precisely estimated also under misspecification as long as the units' exposures are not misspecified in the same way. The limiting distribution of the estimator is discussed. Asymptotic normality is achieved under stronger conditions than those needed for consistency. Similar conditions also facilitate conservative variance estimation."
 		},
 		{
 			"id": "Savje2015Incumbency",
@@ -346,6 +364,23 @@
 
 	"presentations": {
 		"invited": [
+			{
+				"what": "Department of Economics",
+				"where": "Rutgers University",
+				"when": 2021,
+				"scheduled": true
+			},
+			{
+				"what": "Econometrics and Statistics Colloquium",
+				"where": "University of Chicago Booth School of Business",
+				"when": 2021,
+				"scheduled": true
+			},
+			{
+				"what": "Department of Political Science",
+				"where": "NYU",
+				"when": 2021
+			},
 			{
 				"what": "Department of Statistics",
 				"where": "Stanford",
@@ -451,8 +486,7 @@
 			{
 				"what": "APSA Annual Meeting",
 				"where": "Seattle",
-				"when": 2021,
-				"scheduled": true
+				"when": 2021
 			},
 			{
 				"what": "Society for Political Methodology",
@@ -641,7 +675,7 @@
 			"service": [
 				"Graduate Admissions Committee, 2020--2021",
 				"Quantitative Methods General Exam Committee, 2019, 2020, 2021",
-				"Organizer, MacMillan--CSAP Workshop on Quantitative Research Methods, 2018--2019",
+				"Organizer, MacMillan--CSAP Workshop on Quantitative Research Methods, 2018--2019, 2021--2022",
 				"Social Science--Data Science Search Committee, 2018"
 			]
 		},
