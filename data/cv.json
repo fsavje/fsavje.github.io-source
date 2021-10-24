@@ -184,7 +184,7 @@
 		{
 			"id": "Savje2021Average",
 			"title": "Average treatment effects in the presence of unknown interference",
-			"authors": [ "Fredrik Sävje", "Peter Aronow", "Michael Hudgens" ],
+			"authors": [ "Fredrik Sävje", "P.M. Aronow", "Michael Hudgens" ],
 			"journal": "Annals of Statistics",
 			"year": 2021,
 			"volume": "49",
@@ -242,7 +242,7 @@
 		{
 			"id": "Aronow2020BookOfWhy",
 			"title": "Review: The Book of Why",
-			"authors": [ "Peter Aronow", "Fredrik Sävje" ],
+			"authors": [ "P.M. Aronow", "Fredrik Sävje" ],
 			"journal": "Journal of the American Statistical Association",
 			"year": 2020,
 			"volume": "115",
@@ -275,14 +275,14 @@
 		{
 			"id": "Stommes2021Reliability",
 			"title": "On the reliability of published findings using the regression discontinuity design in political science",
-			"authors": [ "Drew Stommes", "P. M. Aronow,", "Fredrik Sävje" ],
+			"authors": [ "Drew Stommes", "P.M. Aronow", "Fredrik Sävje" ],
 			"url": "https://arxiv.org/abs/2109.14526",
 			"abstract": "The regression discontinuity (RD) design offers identification of causal effects under weak assumptions, earning it the position as a standard method in modern political science research. But identification does not necessarily imply that the causal effects can be estimated accurately with limited data. In this paper, we highlight that estimation is particularly challenging with the RD design and investigate how these challenges manifest themselves in the empirical literature. We collect all RD-based findings published in top political science journals from 2009--2018. The findings exhibit pathological features; estimates tend to bunch just above the conventional level of statistical significance. A reanalysis of all studies with available data suggests that researcher's discretion is not a major driver of these pathological features, but researchers tend to use inappropriate methods for inference, rendering standard errors artificially small. A retrospective power analysis reveals that most of these studies were underpowered to detect all but large effects. The issues we uncover, combined with well-documented selection pressures in academic publishing, cause concern that many published findings using the RD design are exaggerated, if not entirely spurious."
 		},
 		{
 			"id": "Aronow2021Nonparametric",
 			"title": "Nonparametric identification is not enough, but randomized controlled trials are",
-			"authors": [ "P. Aronow", "James Robins", "Theo Saarinen", "Fredrik Sävje", "Jasjeet Sekhon" ],
+			"authors": [ "P.M. Aronow", "James Robins", "Theo Saarinen", "Fredrik Sävje", "Jasjeet Sekhon" ],
 			"url": "https://arxiv.org/abs/2108.11342",
 			"abstract": "We argue that randomized controlled trials (RCTs) are special even among settings where average treatment effects are identified by a nonparametric unconfoundedness assumption. This claim follows from two results of Robins and Ritov (1997): (1) with at least one continuous covariate control, no estimator of the average treatment effect exists which is uniformly consistent without further assumptions, (2) knowledge of the propensity score yields a uniformly consistent estimator and honest confidence intervals that shrink at parametric rates with increasing sample size, regardless of how complicated the propensity score function is. We emphasize the latter point, and note that successfully-conducted RCTs provide knowledge of the propensity score to the researcher. We discuss modern developments in covariate adjustment for RCTs, noting that statistical models and machine learning methods can be used to improve efficiency while preserving finite sample unbiasedness. We conclude that statistical inference has the potential to be fundamentally more difficult in observational settings than it is in RCTs, even when all confounders are measured."
 		},
@@ -340,7 +340,7 @@
 		},
 		{
 			"desc": "Gosnell Prize for Excellence in Political Methodology, 2018",
-			"with": "with Peter Aronow and Michael Hudgens",
+			"with": "with P.M. Aronow and Michael Hudgens",
 			"url": "https://www.cambridge.org/core/membership/spm/about-us/awards/the-gosnell-prize"
 		},
 		{
@@ -746,8 +746,8 @@
 			"website": "https://sites.google.com/site/michihito7ando/"
 		},
 		{
-			"name": "Peter Aronow",
-			"website": "https://peteraronow.github.io"
+			"name": "P.M. Aronow",
+			"website": "https://pmaronow.github.io"
 		},
 		{
 			"name": "Sebastian Axbard",
@@ -798,12 +798,24 @@
 			"website": "https://jean.pouget-abadie.com"
 		},
 		{
+			"name": "James Robins",
+			"website": "https://www.hsph.harvard.edu/james-robins/"
+		},
+		{
+			"name": "Theo Saarinen",
+			"website": "https://statistics.berkeley.edu/people/theo-saarinen"
+		},
+		{
 			"name": "Jasjeet Sekhon",
 			"website": "http://sekhon.berkeley.edu"
 		},
 		{
 			"name": "Daniel Spielman",
 			"website": "http://www.cs.yale.edu/homes/spielman/"
+		},
+		{
+			"name": "Drew Stommes",
+			"website": "https://politicalscience.yale.edu/people/drew-stommes"
 		},
 		{
 			"name": "Stefan Swartling Peterson",
