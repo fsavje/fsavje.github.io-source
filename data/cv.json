@@ -273,6 +273,13 @@
 
 	"working_papers": [
 		{
+			"id": "Harshaw2021Optimized",
+			"title": "Optimized variance estimation under interference and complex experimental designs",
+			"authors": [ "Christopher Harshaw", "Joel Middleton", "Fredrik Sävje" ],
+			"url": "https://arxiv.org/abs/2112.01709",
+			"abstract": "Unbiased and consistent variance estimators generally do not exist for design-based treatment effect estimators because experimenters never observe more than one potential outcome for any unit. The problem is exacerbated by interference and complex experimental designs. In this paper, we consider variance estimation for linear treatment effect estimators under interference and arbitrary experimental designs. Experimenters must accept conservative estimators in this setting, but they can strive to minimize the conservativeness. We show that this task can be interpreted as an optimization problem in which one aims to find the lowest estimable upper bound of the true variance given one's risk preference and knowledge of the potential outcomes. We characterize the set of admissible bounds in the class of quadratic forms, and we demonstrate that the optimization problem is a convex program for many natural objectives. This allows experimenters to construct less conservative variance estimators, making inferences about treatment effects more informative. The resulting estimators are guaranteed to be conservative regardless of whether the background knowledge used to construct the bound is correct, but the estimators are less conservative if the knowledge is reasonably accurate."
+		},
+		{
 			"id": "Stommes2021Reliability",
 			"title": "On the reliability of published findings using the regression discontinuity design in political science",
 			"authors": [ "Drew Stommes", "P.M. Aronow", "Fredrik Sävje" ],
@@ -780,6 +787,10 @@
 		{
 			"name": "Michael Hudgens",
 			"website": "http://www.bios.unc.edu/~mhudgens/"
+		},
+		{
+			"name": "Joel Middleton",
+			"website": "https://joelmidd.github.io/"
 		},
 		{
 			"name": "Vahab Mirrokni",
