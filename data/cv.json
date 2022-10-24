@@ -59,6 +59,11 @@
 			"title": "Resident Fellow",
 			"department": "Institution for Social & Policy Studies",
 			"organization": "Yale University"
+		},
+		{
+			"title": "Docent (non-stipendiary Reader)",
+			"department": "Department of Economics",
+			"organization": "Uppsala University"
 		}
 	],
 
@@ -272,6 +277,13 @@
 
 
 	"working_papers": [
+		{
+			"id": "Harshaw2022DesignBased",
+			"title": "A Design-Based Riesz Representation Framework for Randomized Experiments",
+			"authors": [ "Christopher Harshaw", "Fredrik Sävje", "Yitan Wang" ],
+			"url": "https://arxiv.org/abs/2210.08698",
+			"abstract": "We describe a new design-based framework for drawing causal inference in randomized experiments. Causal effects in the framework are defined as linear functionals evaluated at potential outcome functions. Knowledge and assumptions about the potential outcome functions are encoded as function spaces. This makes the framework expressive, allowing experimenters to formulate and investigate a wide range of causal questions. We describe a class of estimators for estimands defined using the framework and investigate their properties. The construction of the estimators is based on the Riesz representation theorem. We provide necessary and sufficient conditions for unbiasedness and consistency. Finally, we provide conditions under which the estimators are asymptotically normal, and describe a conservative variance estimator to facilitate the construction of confidence intervals for the estimands."
+		},
 		{
 			"id": "Harshaw2021Optimized",
 			"title": "Optimized variance estimation under interference and complex experimental designs",
@@ -489,6 +501,7 @@
 				"when": 2013
 			}
 		],
+
 		"contributed": [
 			{
 				"what": "APSA Annual Meeting",
@@ -558,6 +571,7 @@
 				"when": 2013
 			}
 		],
+
 		"internal": [
 			{
 				"what": "Sekhon Research Group",
@@ -585,6 +599,7 @@
 				"when": 2012
 			}
 		],
+		
 		"other": [ ]
 	},
 
@@ -732,6 +747,7 @@
 		{ "journal": "Canadian Journal of Statistics" },
 		{ "journal": "Communications in Statistics - Theory & Methods" },
 		{ "journal": "Econometrica" },
+		{ "journal": "Electronic Journal of Statistics" },
 		{ "journal": "Journal of the American Statistical Association" },
 		{ "journal": "Journal of Causal Inference" },
 		{ "journal": "Journal of Economic Behavior & Organization" },
@@ -739,9 +755,11 @@
 		{ "journal": "Journal of Machine Learning Research" },
 		{ "journal": "Journal of the Royal Statistical Society: Series A" },
 		{ "journal": "Journal of the Royal Statistical Society: Series B" },
+		{ "journal": "National Science Foundation" },
 		{ "journal": "Political Analysis" },
 		{ "journal": "Political Science Research & Methods" },
 		{ "journal": "The R Journal" },
+		{ "journal": "Review of Economic Studies" },
 		{ "journal": "Statistics & Probability Letters" },
 		{ "journal": "Statistics & Public Policy" }
 	],
@@ -831,6 +849,10 @@
 		{
 			"name": "Stefan Swartling Peterson",
 			"website": "https://www.unicef.org/media/experts/stefan-swartling-peterson"
+		},
+		{
+			"name": "Yitan Wang",
+			"website": "https://statistics.yale.edu/people/yitan-wang"
 		},
 		{
 			"name": "Peng Zhang",
