@@ -184,9 +184,9 @@
 			\ {{ paper.title }}.
 		{%- endif -%}
 		{% if paper.inprint -%}
-		\ \textit{{ paper.journal | lr_bracket }}, in print.}
+		\ \textit{{ paper.journal | escape_latex | lr_bracket }}, in print.}
 		{%- else -%}
-		\ \textit{{ paper.journal | lr_bracket }}, {{ paper.volume }}
+		\ \textit{{ paper.journal | escape_latex | lr_bracket }}, {{ paper.volume }}
 		{%- if paper.number -%}
 		({{ paper.number }})
 		{%- endif -%}
