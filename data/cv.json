@@ -236,7 +236,6 @@
 			"number": "4",
 			"page_start": 423,
 			"page_end": 447,
-			"selected": true,
 			"url": "https://doi.org/10.1017/pan.2020.32",
 			"doi": "10.1017/pan.2020.32",
 			"abstract": "Matching is a conceptually straightforward method to make groups of units comparable on observed characteristics. The method is, however, limited to settings where the study design is simple and the sample is moderately sized. We illustrate these limitations by asking what the causal effects would have been if a large-scale voter mobilization experiment that took place in Michigan for the 2006 election were scaled up to the full population of registered voters. Matching could help us answer this question, but no existing matching method can accommodate the six treatment arms and the 6,762,701 observations involved in the study. To offer a solution for this and similar empirical problems, we introduce a generalization of the full matching method that can be used with any number of treatment conditions and complex compositional constraints. The associated algorithm produces near-optimal matchings; the worst-case maximum within-group dissimilarity is guaranteed to be no more than four times greater than the optimal solution, and simulation results indicate that it comes considerably closer to the optimal solution on average. The algorithm’s ability to balance the treatment groups does not sacrifice speed, and it uses little memory, terminating in linearithmic time using linear space. This enables investigators to construct well-performing matchings within minutes even in complex studies with samples of several million units."
@@ -266,7 +265,6 @@
 			"number": "3",
 			"page_start": 356,
 			"page_end": 360,
-			"selected": true,
 			"url": "https://projecteuclid.org/journals/statistical-science/volume-35/issue-3/Comment--Matching-Methods-for-Observational-Studies-Derived-from-Large/10.1214/19-STS739.short",
 			"doi": "10.1214/19-STS739",
 			"other": true
@@ -280,7 +278,6 @@
 			"volume": "207",
 			"page_start": 190,
 			"page_end": 197,
-			"selected": true,
 			"url": "https://www.sciencedirect.com/science/article/pii/S0378375819301211",
 			"doi": "10.1016/j.jspi.2019.12.002",
 			"abstract": "We extend current concentration results for the Horvitz-Thompson estimator in finite population settings. The estimator is demonstrated to converge in quadratic mean to its target under weaker and more general conditions than previously known. Specifically, we do not require that the variables of interest nor the normalized inclusion probabilities are bounded. Rates of convergence are provided."
@@ -309,7 +306,6 @@
 			"number": "529",
 			"page_start": 482,
 			"page_end": 485,
-			"selected": true,
 			"url": "https://www.tandfonline.com/doi/full/10.1080/01621459.2020.1721245",
 			"doi": "10.1080/01621459.2020.1721245",
 			"other": true
