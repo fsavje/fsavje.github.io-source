@@ -581,7 +581,7 @@
 			},
 			{
 				"what": "Latin American PolMeth",
-				"where": "Universidad de San Andr{\'e}s",
+				"where": "University of San Andrés",
 				"when": 2022
 			},
 			{
@@ -761,12 +761,12 @@
 					"name": "Chris Harshaw",
 					"url": "http://www.chrisharshaw.com/",
 					"department": "Computer Science, Yale",
-					"when": "2020--present"
+					"when": "2020--2022"
 				},
 				{
 					"name": "Brandon Chow",
 					"department": "Statistics & Data Science, Yale",
-					"when": "2019--present"
+					"when": "2019--2023"
 				},
 				{
 					"name": "Kyle Peyton",
