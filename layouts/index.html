@@ -179,7 +179,8 @@
 				{{- else -}}
 				<div class="paperinfo"><span class="journalname">{{ .journal }}</span> ({{ .year }}), {{ .volume }}
 				{{- if .number -}}({{ .number }}){{- end -}}
-				, {{ .page_start }}&ndash;{{ .page_end }}.</div>
+				{{- if .page_start -}}, {{ .page_start }}&ndash;{{ .page_end }}{{- end -}}
+				.</div>
 				{{- end }}
 				{{ if .abstract -}}
 					<div class="collapsecontainer"><div class="collapse" id="{{ .id }}_abstract"><div class="well well-sm abstract">{{ .abstract }}</div></div></div>
