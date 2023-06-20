@@ -190,7 +190,10 @@
 		{%- if paper.number -%}
 		({{ paper.number }})
 		{%- endif -%}
-		, {{ paper.page_start }}--{{ paper.page_end }}.}
+		{%- if paper.page_start -%}
+		, {{ paper.page_start }}--{{ paper.page_end }}
+		{%- endif -%}
+		.}
 		{%- endif %}
 		{%- endif %}
 		{%- endfor %}
