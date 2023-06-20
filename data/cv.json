@@ -38,7 +38,7 @@
 
 
 	"main_position": [
-		"Assistant Professor",
+		"Associate Professor",
 		"Political Science and Statistics & Data Science",
 		"Yale University"
 	],
@@ -46,18 +46,23 @@
 
 	"current_positions": [
 		{
-			"title": "Assistant Professor",
+			"title": "Associate Professor (untenured)",
 			"department": "Department of Political Science",
 			"organization": "Yale University"
 		},
 		{
-			"title": "Assistant Professor",
+			"title": "Associate Professor (untenured)",
 			"department": "Department of Statistics & Data Science (secondary)",
 			"organization": "Yale University"
 		},
 		{
 			"title": "Resident Fellow",
 			"department": "Institution for Social & Policy Studies",
+			"organization": "Yale University"
+		},
+		{
+			"title": "Fellow",
+			"department": "Institute for the Foundations of Data Science",
 			"organization": "Yale University"
 		},
 		{
@@ -69,6 +74,13 @@
 
 
 	"previous_positions": [
+		{
+			"start": 2017,
+			"end": 2023,
+			"title": "Assistant Professor",
+			"department": "Department of Political Science and Statistics & Data Science",
+			"organization": "Yale University"
+		},
 		{
 			"start": 2019,
 			"end": 2020,
@@ -151,6 +163,60 @@
 
 	"publications": [
 		{
+			"id": "Savje2019Misspecified",
+			"title": "Causal inference with misspecified exposure mappings: separating definitions and assumptions",
+			"authors": [ "Fredrik Sävje" ],
+			"journal": "Biometrika",
+			"year": 2023,
+			"url": "https://doi.org/10.1093/biomet/asad019",
+			"inprint": true,
+			"selected": true,
+			"abstract": "Exposure mappings facilitate investigations of complex causal effects when units interact in experiments. Current methods require experimenters to use the same exposure mappings to define the effect of interest and to impose assumptions on the interference structure. However, the two roles rarely coincide in practice, and experimenters are forced to make the often questionable assumption that their exposures are correctly specified. This paper argues that the two roles exposure mappings currently serve can, and typically should, be separated, so that exposures are used to define effects without necessarily assuming that they are capturing the complete causal structure in the experiment. The paper shows that this approach is practically viable by providing conditions under which exposure effects can be precisely estimated when the exposures are misspecified. Some important questions remain open."
+		},
+		{
+			"id": "Harshaw2021Design",
+			"title": "Design and analysis of bipartite experiments under a linear exposure-response model",
+			"authors": [ "Christopher Harshaw", "Fredrik Sävje", "David Eisenstat", "Vahab Mirrokni", "Jean Pouget-Abadie" ],
+			"journal": "Electronic Journal of Statistics",
+			"year": 2023,
+			"volume": "17",
+			"number": "1",
+			"page_start": 464,
+			"page_end": 518,
+			"url": "https://doi.org/10.1214/23-EJS2111",
+			"doi": "10.1214/23-EJS2111",
+			"selected": true,
+			"abstract": "A bipartite experiment consists of one set of units being assigned treatments and another set of units for which we measure outcomes. The two sets of units are connected by a bipartite graph, governing how the treated units can affect the outcome units. In this paper, we consider estimation of the average total treatment effect in the bipartite experimental framework under a linear exposure-response model. We introduce the Exposure Reweighted Linear (ERL) estimator, and show that the estimator is unbiased, consistent and asymptotically normal, provided that the bipartite graph is sufficiently sparse. To facilitate inference, we introduce an unbiased and consistent estimator of the variance of the ERL point estimator. Finally, we introduce a cluster-based design, Exposure-Design, that uses heuristics to increase the precision of the ERL estimator by realizing a desirable exposure distribution."
+		},
+		{
+			"id": "Stommes2021Reliability",
+			"title": "On the reliability of published findings using the regression discontinuity design in political science",
+			"authors": [ "Drew Stommes", "P.M. Aronow", "Fredrik Sävje" ],
+			"journal": "Research & Politics",
+			"year": 2023,
+			"volume": "10",
+			"number": "2",
+			"url": "https://doi.org/10.1177/20531680231166457",
+			"doi": "10.1177/20531680231166457",
+			"selected": true,
+			"abstract": "The regression discontinuity (RD) design offers identification of causal effects under weak assumptions, earning it a position as a standard method in modern political science research. But identification does not necessarily imply that causal effects can be estimated accurately with limited data. In this paper, we highlight that estimation under the RD design involves serious statistical challenges and investigate how these challenges manifest themselves in the empirical literature in political science. We collect all RD-based findings published in top political science journals in the period 2009–2018. The distribution of published results exhibits pathological features; estimates tend to bunch just above the conventional level of statistical significance. A reanalysis of all studies with available data suggests that researcher discretion is not a major driver of these features. However, researchers tend to use inappropriate methods for inference, rendering standard errors artificially small. A retrospective power analysis reveals that most of these studies were underpowered to detect all but large effects. The issues we uncover, combined with well-documented selection pressures in academic publishing, cause concern that many published findings using the RD design may be exaggerated."
+		},
+		{
+			"id": "Savje2019Matchingwithoutreplacement",
+			"title": "On the inconsistency of matching without replacement",
+			"authors": [ "Fredrik Sävje" ],
+			"journal": "Biometrika",
+			"year": 2022,
+			"volume": "109",
+			"number": "2",
+			"page_start": 551,
+			"page_end": 558,
+			"url": "https://doi.org/10.1093/biomet/asab035",
+			"doi": "10.1093/biomet/asab035",
+			"selected": true,
+			"abstract": "The paper shows that matching without replacement on propensity scores produces estimators that generally are inconsistent for the average treatment effect of the treated. To achieve consistency, practitioners must either assume that no units exist with propensity scores greater than 1/2 or assume that there is no confounding among such units. The result is not driven by the use of propensity scores, and similar artifacts arise when matching on other scores as long as it is without replacement."
+		},
+		{
 			"id": "Savje2021RandomizationUnconfoundedness",
 			"title": "Randomization does not imply unconfoundedness",
 			"authors": [ "Fredrik Sävje" ],
@@ -159,17 +225,6 @@
 			"url": "https://arxiv.org/abs/2107.14197",
 			"other": true,
 			"abstract": "A common assumption in causal inference is that random treatment assignment ensures that potential outcomes are independent of treatment, or in one word, unconfoundedness. This paper highlights that randomization and unconfoundedness are separate properties, and neither implies the other. A study with random treatment assignment does not have to be unconfounded, and a study with deterministic assignment can still be unconfounded. A corollary is that a propensity score is not the same thing as a treatment assignment probability. These facts should not be taken as arguments against randomization. The moral of this paper is that randomization is useful only when investigators know or can reconstruct the assignment process."
-		},
-		{
-			"id": "Savje2019Matchingwithoutreplacement",
-			"title": "On the inconsistency of matching without replacement",
-			"authors": [ "Fredrik Sävje" ],
-			"journal": "Biometrika",
-			"year": 2021,
-			"url": "https://arxiv.org/abs/1907.07288",
-			"inprint": true,
-			"selected": true,
-			"abstract": "The paper shows that matching without replacement on propensity scores produces estimators that generally are inconsistent for the average treatment effect of the treated. To achieve consistency, practitioners must either assume that no units exist with propensity scores greater than one-half or assume that there is no confounding among such units. The result is not driven by the use of propensity scores, and similar artifacts arise when matching on other scores as long as it is without replacement."
 		},
 		{
 			"id": "Savje2021Generalized",
@@ -292,13 +347,6 @@
 			"abstract": "Unbiased and consistent variance estimators generally do not exist for design-based treatment effect estimators because experimenters never observe more than one potential outcome for any unit. The problem is exacerbated by interference and complex experimental designs. In this paper, we consider variance estimation for linear treatment effect estimators under interference and arbitrary experimental designs. Experimenters must accept conservative estimators in this setting, but they can strive to minimize the conservativeness. We show that this task can be interpreted as an optimization problem in which one aims to find the lowest estimable upper bound of the true variance given one's risk preference and knowledge of the potential outcomes. We characterize the set of admissible bounds in the class of quadratic forms, and we demonstrate that the optimization problem is a convex program for many natural objectives. This allows experimenters to construct less conservative variance estimators, making inferences about treatment effects more informative. The resulting estimators are guaranteed to be conservative regardless of whether the background knowledge used to construct the bound is correct, but the estimators are less conservative if the knowledge is reasonably accurate."
 		},
 		{
-			"id": "Stommes2021Reliability",
-			"title": "On the reliability of published findings using the regression discontinuity design in political science",
-			"authors": [ "Drew Stommes", "P.M. Aronow", "Fredrik Sävje" ],
-			"url": "https://arxiv.org/abs/2109.14526",
-			"abstract": "The regression discontinuity (RD) design offers identification of causal effects under weak assumptions, earning it the position as a standard method in modern political science research. But identification does not necessarily imply that the causal effects can be estimated accurately with limited data. In this paper, we highlight that estimation is particularly challenging with the RD design and investigate how these challenges manifest themselves in the empirical literature. We collect all RD-based findings published in top political science journals from 2009--2018. The findings exhibit pathological features; estimates tend to bunch just above the conventional level of statistical significance. A reanalysis of all studies with available data suggests that researcher's discretion is not a major driver of these pathological features, but researchers tend to use inappropriate methods for inference, rendering standard errors artificially small. A retrospective power analysis reveals that most of these studies were underpowered to detect all but large effects. The issues we uncover, combined with well-documented selection pressures in academic publishing, cause concern that many published findings using the RD design are exaggerated, if not entirely spurious."
-		},
-		{
 			"id": "Aronow2021Nonparametric",
 			"title": "Nonparametric identification is not enough, but randomized controlled trials are",
 			"authors": [ "P.M. Aronow", "James Robins", "Theo Saarinen", "Fredrik Sävje", "Jasjeet Sekhon" ],
@@ -306,25 +354,11 @@
 			"abstract": "We argue that randomized controlled trials (RCTs) are special even among settings where average treatment effects are identified by a nonparametric unconfoundedness assumption. This claim follows from two results of Robins and Ritov (1997): (1) with at least one continuous covariate control, no estimator of the average treatment effect exists which is uniformly consistent without further assumptions, (2) knowledge of the propensity score yields a uniformly consistent estimator and honest confidence intervals that shrink at parametric rates with increasing sample size, regardless of how complicated the propensity score function is. We emphasize the latter point, and note that successfully-conducted RCTs provide knowledge of the propensity score to the researcher. We discuss modern developments in covariate adjustment for RCTs, noting that statistical models and machine learning methods can be used to improve efficiency while preserving finite sample unbiasedness. We conclude that statistical inference has the potential to be fundamentally more difficult in observational settings than it is in RCTs, even when all confounders are measured."
 		},
 		{
-			"id": "Harshaw2021Design",
-			"title": "Design and analysis of bipartite experiments under a linear exposure-response model",
-			"authors": [ "Christopher Harshaw", "Fredrik Sävje", "David Eisenstat", "Vahab Mirrokni", "Jean Pouget-Abadie" ],
-			"url": "https://arxiv.org/abs/2103.06392",
-			"abstract": "In a bipartite experiment, units that are assigned treatments differ from the units for which we measure outcomes. The two groups of units are connected by a bipartite graph, governing how the treated units can affect the outcome units. Often motivated by experiments in marketplaces, the bipartite experimental framework has been used for example to investigate the causal effects of supply-side changes on demand-side behavior. In this paper, we consider the problem of estimating the average total treatment effect in the bipartite experimental framework under a linear exposure-response model. We introduce the Exposure Reweighted Linear (ERL) Estimator, an unbiased linear estimator of the average treatment effect in this setting. We show that the estimator is consistent and asymptotically normal, provided that the bipartite graph is sufficiently sparse. We derive a variance estimator which facilitates confidence intervals based on a normal approximation. In addition, we introduce Exposure-Design, a cluster-based design which aims to increase the precision of the ERL estimator by realizing desirable exposure distributions. Finally, we demonstrate the effectiveness of the described estimator and design with an application using a publicly available Amazon user-item review graph."
-		},
-		{
 			"id": "Harshaw2019Balancing",
 			"title": "Balancing covariates in randomized experiments using the Gram-Schmidt walk",
 			"authors": [ "Christopher Harshaw", "Fredrik Sävje", "Daniel Spielman", "Peng Zhang" ],
 			"url": "https://arxiv.org/abs/1911.03071",
 			"abstract": "The paper introduces a class of experimental designs that allows experimenters to control the robustness and efficiency of their experiments. The designs build on a recently introduced algorithm in discrepancy theory, the Gram-Schmidt walk. We provide a tight analysis of this algorithm, allowing us to prove important properties of the designs it produces. These designs aim to simultaneously balance all linear functions of the covariates, and the variance of an estimator of the average treatment effect is shown to be bounded by a quantity that is proportional to the loss function of a ridge regression of the potential outcomes on the covariates. No regression is actually conducted, and one may see the procedure as regression adjustment by design. The class of designs is parameterized so to give experimenters control over the worse case performance of the treatment effect estimator. Greater covariate balance is attained by allowing for a less robust design in terms of worst case variance. We argue that the trade-off between robustness and efficiency is an inherent aspect of experimental design. Finally, we provide non-asymptotic tail bounds for the treatment effect estimator under the class of designs we describe."
-		},
-		{
-			"id": "Savje2019Misspecified",
-			"title": "Causal inference with misspecified exposure mappings",
-			"authors": [ "Fredrik Sävje" ],
-			"url": "https://arxiv.org/abs/2103.06471",
-			"abstract": "Exposure mappings facilitate investigations of complex causal effects when units interact in experiments. Current methods assume that the exposures are correctly specified, but such an assumption cannot be verified, and its validity is often questionable. This paper describes conditions under which one can draw inferences about exposure effects when the exposures are misspecified. The main result is a proof of consistency under mild conditions on the errors introduced by the misspecification. The rate of convergence is determined by the dependence between units' specification errors, and consistency is achieved even if the errors are large as long as they are sufficiently weakly dependent. In other words, exposure effects can be precisely estimated also under misspecification as long as the units' exposures are not misspecified in the same way. The limiting distribution of the estimator is discussed. Asymptotic normality is achieved under stronger conditions than those needed for consistency. Similar conditions also facilitate conservative variance estimation."
 		},
 		{
 			"id": "Savje2015Incumbency",
@@ -355,6 +389,14 @@
 
 	"grants": [
 		{
+			"desc": "Planetary Solutions Project seed grant from the Climate Impact Innovation Fund and the Gordon Data and Environmental Sciences Research Grants, 2023--2024, USD 80,000",
+			"with": "with Megan Ayers and Luke Sanford"
+		},
+		{
+			"desc": "Best Paper Award at 2022 NeurIPS Workshop on Causal Machine Learning for Real-World Impact",
+			"with": "with Christopher Harshaw and Yitan Wang"
+		},
+		{
 			"desc": "Yale Junior Faculty Fellowship, 2019--2020"
 		},
 		{
@@ -384,16 +426,34 @@
 	"presentations": {
 		"invited": [
 			{
+				"what": "Methodology, Organization, and Management Workshop",
+				"where": "Harvard Business School",
+				"when": 2023
+			},
+			{
+				"what": "International Conference on Design of Experiments",
+				"where": "University of Memphis",
+				"when": 2023
+			},
+			{
+				"what": "Applied Statistics Workshop",
+				"where": "Harvard University",
+				"when": 2023
+			},
+			{
+				"what": "Department of Economics",
+				"where": "Yale University",
+				"when": 2023
+			},
+			{
 				"what": "Department of Economics",
 				"where": "Rutgers University",
-				"when": 2021,
-				"scheduled": true
+				"when": 2021
 			},
 			{
 				"what": "Econometrics and Statistics Colloquium",
 				"where": "University of Chicago Booth School of Business",
-				"when": 2021,
-				"scheduled": true
+				"when": 2021
 			},
 			{
 				"what": "Department of Political Science",
@@ -504,6 +564,37 @@
 
 		"contributed": [
 			{
+				"what": "Society for Political Methodology (PolMeth)",
+				"where": "Washington University",
+				"when": 2023,
+				"schedule": true
+			},
+			{
+				"what": "American Causal Inference Conference",
+				"where": "UT Austin",
+				"when": 2023
+			},
+			{
+				"what": "CMStatistics",
+				"where": "London",
+				"when": 2022
+			},
+			{
+				"what": "Latin American PolMeth",
+				"where": "Universidad de San Andr{\'e}s",
+				"when": 2022
+			},
+			{
+				"what": "Society for Political Methodology (PolMeth)",
+				"where": "Washington University",
+				"when": 2022
+			},
+			{
+				"what": "American Causal Inference Conference",
+				"where": "UC Berkeley",
+				"when": 2022
+			},
+			{
 				"what": "APSA Annual Meeting",
 				"where": "Seattle",
 				"when": 2021
@@ -574,6 +665,11 @@
 
 		"internal": [
 			{
+				"what": "Recht Research Group",
+				"where": "UC Berkeley",
+				"when": 2023
+			},
+			{
 				"what": "Sekhon Research Group",
 				"where": "UC Berkeley",
 				"when": 2016
@@ -612,10 +708,10 @@
 					"desc": "Data Science for Politics and Policy (undergrad). Spring 2018, 2019, 2021, 2022."
 				},
 				{
-					"desc": "Causal Inference and Research Design (grad). Spring 2021, Fall 2021."
+					"desc": "Causal Inference and Research Design (grad). Spring 2021, Fall 2021, 2022."
 				},
 				{
-					"desc": "Foundations of Statistical Inference (grad). Spring 2019, Fall 2020, 2021."
+					"desc": "Foundations of Statistical Inference (grad). Spring 2019, Fall 2020, 2021, 2022."
 				},
 				{
 					"desc": "Advanced Quantitative Methods (grad). Fall 2017, 2018."
@@ -643,6 +739,16 @@
 
 
 	"students": [
+		{
+			"role": "Dissertation committee chair",
+			"students": [
+				{
+					"name": "Amanda Weiss",
+					"department": "Political Science, Yale",
+					"when": "2022--present"
+				}
+			]
+		},
 		{
 			"role": "Dissertation committee member",
 			"students": [
@@ -695,9 +801,9 @@
 		{
 			"type": "Yale University",
 			"service": [
-				"Graduate Admissions Committee, 2020--2021",
+				"Graduate Admissions Committee, 2020--2021, 2022--2023",
 				"Quantitative Methods General Exam Committee, 2019, 2020, 2021, 2022",
-				"Organizer, MacMillan--CSAP Workshop on Quantitative Research Methods, 2018--2019, 2021--2022",
+				"Organizer, MacMillan--CSAP Workshop on Quantitative Research Methods, 2018--2019, 2021--2023",
 				"Social Science--Data Science Search Committee, 2018"
 			]
 		},
@@ -706,7 +812,7 @@
 			"service": [
 				"Committee member, Gosnell Prize for Excellence in Political Methodology, 2019",
 				"Reviewer, American Statistical Association Biometrics Section Travel Awards, 2018",
-				"Session organizer, Joint Statistical Meetings, 2018"
+				"Session organizer, Joint Statistical Meetings, 2018, 2023"
 			]
 		}
 	],
@@ -748,6 +854,7 @@
 		{ "journal": "Communications in Statistics - Theory & Methods" },
 		{ "journal": "Econometrica" },
 		{ "journal": "Electronic Journal of Statistics" },
+		{ "journal": "European Journal of Political Economy" },
 		{ "journal": "Journal of the American Statistical Association" },
 		{ "journal": "Journal of Causal Inference" },
 		{ "journal": "Journal of Economic Behavior & Organization" },
