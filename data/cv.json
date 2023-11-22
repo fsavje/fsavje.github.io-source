@@ -163,6 +163,18 @@
 
 	"publications": [
 		{
+			"id": "Harshaw2019Balancing",
+			"title": "Balancing Covariates in Randomized Experiments with the Gram–Schmidt Walk Design",
+			"authors": [ "Christopher Harshaw", "Fredrik Sävje", "Daniel Spielman", "Peng Zhang" ],
+			"journal": "Journal of the American Statistical Association",
+			"year": 2023,
+			"url": "https://doi.org/10.1080/01621459.2023.2285474",
+			"doi": "10.1080/01621459.2023.2285474",
+			"inprint": true,
+			"selected": true,
+			"abstract": "The design of experiments involves a compromise between covariate balance and robustness. This paper provides a formalization of this trade-off and describes an experimental design that allows experimenters to navigate it. The design is specified by a robustness parameter that bounds the worst-case mean squared error of an estimator of the average treatment effect. Subject to the experimenter’s desired level of robustness, the design aims to simultaneously balance all linear functions of potentially many covariates. Less robustness allows for more balance. We show that the mean squared error of the estimator is bounded in finite samples by the minimum of the loss function of an implicit ridge regression of the potential outcomes on the covariates. Asymptotically, the design perfectly balances all linear functions of a growing number of covariates with a diminishing reduction in robustness, effectively allowing experimenters to escape the compromise between balance and robustness in large samples. Finally, we describe conditions that ensure asymptotic normality and provide a conservative variance estimator, which facilitate the construction of asymptotically valid confidence intervals."
+		},
+		{
 			"id": "Savje2019Misspecified",
 			"title": "Causal inference with misspecified exposure mappings: separating definitions and assumptions",
 			"authors": [ "Fredrik Sävje" ],
@@ -213,7 +225,6 @@
 			"page_end": 558,
 			"url": "https://doi.org/10.1093/biomet/asab035",
 			"doi": "10.1093/biomet/asab035",
-			"selected": true,
 			"abstract": "The paper shows that matching without replacement on propensity scores produces estimators that generally are inconsistent for the average treatment effect of the treated. To achieve consistency, practitioners must either assume that no units exist with propensity scores greater than 1/2 or assume that there is no confounding among such units. The result is not driven by the use of propensity scores, and similar artifacts arise when matching on other scores as long as it is without replacement."
 		},
 		{
@@ -250,7 +261,6 @@
 			"number": "2",
 			"page_start": 673,
 			"page_end": 701,
-			"selected": true,
 			"url": "https://projecteuclid.org/journals/annals-of-statistics/volume-49/issue-2/Average-treatment-effects-in-the-presence-of-unknown-interference/10.1214/20-AOS1973.short",
 			"doi": "10.1214/20-AOS1973",
 			"abstract": "We investigate large-sample properties of treatment effect estimators under unknown interference in randomized experiments. The inferential target is a generalization of the average treatment effect estimand that marginalizes over potential spillover effects. We show that estimators commonly used to estimate treatment effects under no interference are consistent for the generalized estimand for several common experimental designs under limited but otherwise arbitrary and unknown interference. The rates of convergence depend on the growth rate of the unit-average amount of interference and the degree to which the interference aligns with dependencies in treatment assignment. Importantly for practitioners, the results imply that even if one erroneously assumes that units do not interfere in a setting with moderate interference, standard estimators are nevertheless likely to be close to an average treatment effect if the sample is sufficiently large. Conventional confidence statements may, however, not be accurate."
@@ -348,20 +358,6 @@
 			"authors": [ "P.M. Aronow", "James Robins", "Theo Saarinen", "Fredrik Sävje", "Jasjeet Sekhon" ],
 			"url": "https://arxiv.org/abs/2108.11342",
 			"abstract": "We argue that randomized controlled trials (RCTs) are special even among settings where average treatment effects are identified by a nonparametric unconfoundedness assumption. This claim follows from two results of Robins and Ritov (1997): (1) with at least one continuous covariate control, no estimator of the average treatment effect exists which is uniformly consistent without further assumptions, (2) knowledge of the propensity score yields a uniformly consistent estimator and honest confidence intervals that shrink at parametric rates with increasing sample size, regardless of how complicated the propensity score function is. We emphasize the latter point, and note that successfully-conducted RCTs provide knowledge of the propensity score to the researcher. We discuss modern developments in covariate adjustment for RCTs, noting that statistical models and machine learning methods can be used to improve efficiency while preserving finite sample unbiasedness. We conclude that statistical inference has the potential to be fundamentally more difficult in observational settings than it is in RCTs, even when all confounders are measured."
-		},
-		{
-			"id": "Harshaw2019Balancing",
-			"title": "Balancing covariates in randomized experiments using the Gram-Schmidt walk",
-			"authors": [ "Christopher Harshaw", "Fredrik Sävje", "Daniel Spielman", "Peng Zhang" ],
-			"url": "https://arxiv.org/abs/1911.03071",
-			"abstract": "The paper introduces a class of experimental designs that allows experimenters to control the robustness and efficiency of their experiments. The designs build on a recently introduced algorithm in discrepancy theory, the Gram-Schmidt walk. We provide a tight analysis of this algorithm, allowing us to prove important properties of the designs it produces. These designs aim to simultaneously balance all linear functions of the covariates, and the variance of an estimator of the average treatment effect is shown to be bounded by a quantity that is proportional to the loss function of a ridge regression of the potential outcomes on the covariates. No regression is actually conducted, and one may see the procedure as regression adjustment by design. The class of designs is parameterized so to give experimenters control over the worse case performance of the treatment effect estimator. Greater covariate balance is attained by allowing for a less robust design in terms of worst case variance. We argue that the trade-off between robustness and efficiency is an inherent aspect of experimental design. Finally, we provide non-asymptotic tail bounds for the treatment effect estimator under the class of designs we describe."
-		},
-		{
-			"id": "Savje2015Incumbency",
-			"title": "Defining and Identifying Incumbency Effects",
-			"authors": [ "Fredrik Sävje" ],
-			"url": "https://fredriksavje.com/papers/incumbency.pdf",
-			"abstract": "Recent studies of the effects of political incumbency on election outcomes have almost exclusively used regression discontinuity designs. This shift from the past methods has provided credible identification, but only for a specific type of incumbency effect: the effect for parties. The other effects in the literature, most notably the personal incumbency effect, have largely been abandoned together with the methods previously used to estimate them. This study aims at connecting the new methodical strides with the effects discussed in the past literature. A causal model is first introduced which allows for formal definitions of several effects that previously only been discussed informally. The model also allows previous methods to be revisited and derive how their estimated effects are related. Several strategies are then introduced which, under suitable assumptions, can identify some of the newly defined effects. Last, using these strategies, the incumbency effects in Brazilian mayoral elections are investigated."
 		}
 	],
 
@@ -379,6 +375,13 @@
 			"title": "Hypothesis testing with the Synthetic Control Method",
 			"authors": [ "Michihito Ando", "Fredrik Sävje" ],
 			"url": "https://fredriksavje.com/papers/Ando_Savje_synth_130605.pdf"
+		},
+		{
+			"id": "Savje2015Incumbency",
+			"title": "Defining and Identifying Incumbency Effects",
+			"authors": [ "Fredrik Sävje" ],
+			"url": "https://fredriksavje.com/papers/incumbency.pdf",
+			"abstract": "Recent studies of the effects of political incumbency on election outcomes have almost exclusively used regression discontinuity designs. This shift from the past methods has provided credible identification, but only for a specific type of incumbency effect: the effect for parties. The other effects in the literature, most notably the personal incumbency effect, have largely been abandoned together with the methods previously used to estimate them. This study aims at connecting the new methodical strides with the effects discussed in the past literature. A causal model is first introduced which allows for formal definitions of several effects that previously only been discussed informally. The model also allows previous methods to be revisited and derive how their estimated effects are related. Several strategies are then introduced which, under suitable assumptions, can identify some of the newly defined effects. Last, using these strategies, the incumbency effects in Brazilian mayoral elections are investigated."
 		}
 	],
 
@@ -408,7 +411,7 @@
 		},
 		{
 			"desc": "Swedish International Development Cooperation Agency, 2013--2015, SEK 2,595,000",
-			"with": "with Niklas Bengtsson, Eva Mörk and Jonas Poulsen"
+			"with": "with Niklas Bengtsson, Eva Mörk (PI) and Jonas Poulsen"
 		},
 		{
 			"desc": "The Jan Wallander and Tom Hedelius foundation, 2013--2014, SEK 321,000"
@@ -421,6 +424,30 @@
 
 	"presentations": {
 		"invited": [
+			{
+				"what": "Causal Working Group",
+				"where": "Harvard University",
+				"when": 2024,
+				"scheduled": true
+			},
+			{
+				"what": "Department of Economics",
+				"where": "European University Institute",
+				"when": 2024,
+				"scheduled": true
+			},
+			{
+				"what": "Department of Quantitative Theory and Methods",
+				"where": "Emory University",
+				"when": 2024,
+				"scheduled": true
+			},
+			{
+				"what": "Department of Mathematical Sciences",
+				"where": "University of Copenhagen",
+				"when": 2024,
+				"scheduled": true
+			},
 			{
 				"what": "Methodology, Organization, and Management Workshop",
 				"where": "Harvard Business School",
@@ -560,10 +587,15 @@
 
 		"contributed": [
 			{
+				"what": "ENAR",
+				"where": "Baltimore",
+				"when": 2024,
+				"scheduled": true
+			},
+			{
 				"what": "Society for Political Methodology (PolMeth)",
-				"where": "Washington University",
-				"when": 2023,
-				"schedule": true
+				"where": "Stanford University",
+				"when": 2023
 			},
 			{
 				"what": "American Causal Inference Conference",
@@ -742,6 +774,11 @@
 					"name": "Amanda Weiss",
 					"department": "Political Science, Yale",
 					"when": "2022--present"
+				},
+				{
+					"name": "Megan Ayers",
+					"department": "Statistics, Yale",
+					"when": "2023--present"
 				}
 			]
 		},
@@ -799,7 +836,7 @@
 			"service": [
 				"Graduate Admissions Committee, 2020--2021, 2022--2023",
 				"Quantitative Methods General Exam Committee, 2019, 2020, 2021, 2022",
-				"Organizer, MacMillan--CSAP Workshop on Quantitative Research Methods, 2018--2019, 2021--2023",
+				"Organizer, MacMillan--CSAP Workshop on Quantitative Research Methods, 2018, 2019, 2021, 2022, 2023",
 				"Social Science--Data Science Search Committee, 2018"
 			]
 		},
@@ -853,18 +890,23 @@
 		{ "journal": "European Journal of Political Economy" },
 		{ "journal": "Journal of the American Statistical Association" },
 		{ "journal": "Journal of Causal Inference" },
+		{ "journal": "Journal of Computational and Graphical Statistics" },
 		{ "journal": "Journal of Economic Behavior & Organization" },
 		{ "journal": "Journal of Health Economics" },
 		{ "journal": "Journal of Machine Learning Research" },
 		{ "journal": "Journal of the Royal Statistical Society: Series A" },
 		{ "journal": "Journal of the Royal Statistical Society: Series B" },
-		{ "journal": "National Science Foundation" },
 		{ "journal": "Political Analysis" },
 		{ "journal": "Political Science Research & Methods" },
 		{ "journal": "The R Journal" },
 		{ "journal": "Review of Economic Studies" },
 		{ "journal": "Statistics & Probability Letters" },
 		{ "journal": "Statistics & Public Policy" }
+	],
+
+
+	"funding-referee": [
+		{ "agency": "National Science Foundation" }
 	],
 
 
