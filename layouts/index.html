@@ -57,16 +57,11 @@
 
 		<img src="{{ .Site.Data.cv.personal.picture }}" class="img-responsive" alt="Picture of {{ .Site.Data.cv.personal.name }}">
 
-		<ul class="site-btns">
-			<li><a href="https://orcid.org/{{ .Site.Data.cv.online.orcid }}" alt="Link to ORCID" data-toggle="tooltip" title="ORCID"><i class="ai ai-orcid"></i></a></li>
-			<li><a href="https://scholar.google.com/citations?user={{ .Site.Data.cv.online.google_scholar }}" alt="Link to Google Scholar" data-toggle="tooltip" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
-			<li><a href="https://github.com/{{ .Site.Data.cv.online.github }}" alt="Link to GitHub" data-toggle="tooltip" title="GitHub"><i class="fa fa-github"></i></a></li>
-			<li><a href="https://arxiv.org/a/{{ .Site.Data.cv.online.arxiv }}.html" alt="Link to arXiv" data-toggle="tooltip" title="arXiv"><i class="ai ai-arxiv"></i></a></li>
-		</ul>
+		<h3>Contact me</h3>
 
-		<ul class="menu">
-			<li><a href="{{ .Site.Data.cv.personal.cv_pdf }}" onclick="ga('send', 'event', 'download-cv', 'download-cv');">Curriculum Vitae</a></li>
-		</ul>
+		<address class="contact">
+			<a href="mailto:{{ .Site.Data.cv.personal.email }}">{{ .Site.Data.cv.personal.email }}</a>
+		</address>
 
 		<h3>Office</h3>
 
@@ -74,12 +69,16 @@
 			{{ delimit .Site.Data.cv.personal.office " <br>\n			" }}
 		</address>
 
-		<h3>Contact me</h3>
+		<ul class="menu">
+			<li><a href="{{ .Site.Data.cv.personal.cv_pdf }}" onclick="ga('send', 'event', 'download-cv', 'download-cv');">Curriculum Vitae</a></li>
+		</ul>
 
-		<address class="contact">
-			{{ .Site.Data.cv.personal.phone }}<br>
-			<a href="mailto:{{ .Site.Data.cv.personal.email }}">{{ .Site.Data.cv.personal.email }}</a>
-		</address>
+		<ul class="site-btns">
+			<li><a href="https://orcid.org/{{ .Site.Data.cv.online.orcid }}" alt="Link to ORCID" data-toggle="tooltip" title="ORCID"><i class="ai ai-orcid"></i></a></li>
+			<li><a href="https://scholar.google.com/citations?user={{ .Site.Data.cv.online.google_scholar }}" alt="Link to Google Scholar" data-toggle="tooltip" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+			<li><a href="https://github.com/{{ .Site.Data.cv.online.github }}" alt="Link to GitHub" data-toggle="tooltip" title="GitHub"><i class="fa fa-github"></i></a></li>
+			<li><a href="https://arxiv.org/a/{{ .Site.Data.cv.online.arxiv }}.html" alt="Link to arXiv" data-toggle="tooltip" title="arXiv"><i class="ai ai-arxiv"></i></a></li>
+		</ul>
 
 		<ul style="display: none;">
 			<li><a href="{{ .Site.Data.cv.online.pgp_key }}">PGP</a></li>
@@ -103,7 +102,6 @@
 			<p><em>{{ .Site.Data.cv.announcement }}</em></p>
 			{{- end }}
 		</div>
-
 
 		<h2>Working papers</h2>
 
