@@ -49,6 +49,10 @@
 				<li>{{ . }}</li>
 			{{- end }}
 			</ul>
+			{{- if .Site.Data.cv.announcement }}
+			<br>
+			<p><em>{{ .Site.Data.cv.announcement }}</em></p>
+			{{- end }}
 		</div>
 
 		<img src="{{ .Site.Data.cv.personal.picture }}" class="img-responsive" alt="Picture of {{ .Site.Data.cv.personal.name }}">
@@ -94,6 +98,10 @@
 				<li>{{ . }}</li>
 				{{- end }}
 			</ul>
+			{{- if .Site.Data.cv.announcement }}
+			<br>
+			<p><em>{{ .Site.Data.cv.announcement }}</em></p>
+			{{- end }}
 		</div>
 
 
