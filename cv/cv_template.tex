@@ -128,8 +128,7 @@
 
 	\vspace{0.3in}
 
-
-	\section*{Appointments \& affiliations}
+	\section*{Current appointments \& affiliations}
 
 	\begin{infolist}
 		{%- for position in current_positions %}
@@ -140,7 +139,7 @@
 	\end{infolist}
 
 
-	\section*{Past appointments, affiliations \& visits}
+	\section*{Past appointments}
 
 	\begin{datelist}
 		{%- for position in previous_positions %}
@@ -272,11 +271,25 @@
 	\end{infolist}
 
 
-	\section*{Awards, grants \& fellowships}
+	\section*{Awards \& fellowships}
+
+	\begin{infolist}
+		{%- for award in awards %}
+		{% if award.url -%}
+			\infoitem{\href{{ award.url | lr_bracket }}{{ award.desc | l_bracket }}}
+		{%- else -%}
+			\infoitem{{ award.desc | l_bracket }}
+		{%- endif -%}
+		.}
+		{%- endfor %}
+	\end{infolist}
+
+
+	\section*{Grants}
 
 	\begin{infolist}
 		{%- for grant in grants %}
-		{%- if grant.url -%}
+		{% if grant.url -%}
 			\infoitem{\href{{ grant.url | lr_bracket }}{{ grant.desc | l_bracket }}}
 		{%- else -%}
 			\infoitem{{ grant.desc | l_bracket }}
@@ -290,6 +303,21 @@
 		}
 		{%- endfor %}
 	\end{infolist}
+
+
+	\section*{Research visits}
+
+	\begin{datelist}
+		{%- for visit in visits %}
+		{% if visit.start == visit.end -%}
+			\dateitem[{{ visit.start }}]{
+		{%- else -%}
+			\dateitem[{{ visit.start }}--{{ visit.end }}]{
+		{%- endif -%}
+		{%- if visit.department %}{{ visit.department | escape_latex }},{%- endif -%}
+		{{ visit.organization | l_space }}. {{ visit.duration }}.}
+		{%- endfor %}
+	\end{datelist}
 
 
 	\section*{Presentations}
@@ -319,6 +347,26 @@
 	\begin{singledatelist}
 		{%- set curr_year = [-1] -%}
 		{%- for pres in presentations.contributed %}
+		\dateitem
+		{%- if pres.when != curr_year[0] -%}
+		[{{ pres.when }}]
+		{%- set _ = curr_year.insert(0, pres.when) -%}
+		{%- endif -%}
+		{{ pres.what | l_bracket }}, {{ pres.where }}
+		{%- if pres.scheduled == true -%}
+			, scheduled.}
+		{%- else -%}
+			.}
+		{%- endif -%}
+		{%- endfor %}
+	\end{singledatelist}
+
+
+	\subsection*{Presentations as discussant}
+
+	\begin{singledatelist}
+		{%- set curr_year = [-1] -%}
+		{%- for pres in presentations.discussant %}
 		\dateitem
 		{%- if pres.when != curr_year[0] -%}
 		[{{ pres.when }}]
