@@ -1,4 +1,4 @@
 baseURL = "http://fredriksavje.com/"
 languageCode = "en-us"
 title = "Fredrik Sävje"
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
