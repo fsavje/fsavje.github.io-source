@@ -3,30 +3,28 @@
 		"name": "Fredrik Sävje",
 		"name_ascii": "Fredrik Savje",
 		"visitaddress": [
-			"Rosenkranz Hall",
-			"115 Prospect Street",
-			"New Haven, CT 06511"
+			"Ekonomikum",
+			"Kyrkogårdsgatan 10",
+			"Uppsala, Sweden"
 		],
 		"postaladdress": [
-			"Political Science",
-			"Yale University",
-			"PO Box 208301",
-			"New Haven, CT 06520-8301"
+			"Department of Economics",
+			"Uppsala University",
+			"PO Box Box 513",
+			"SE-75120, Uppsala, Sweden"
 		],
 		"office": [
-			"Room 226",
-			"Rosenkranz Hall",
-			"115 Prospect Street"
+			"Ekonomikum",
+			"Kyrkogårdsgatan 10"
 		],
-		"phone": "+1 (203) 432 4672",
-		"email": "mail@fredriksavje.com",
-		"school_email": "fredrik.savje@nek.uu.se",
+		"phone": "",
+		"email": "fredrik.savje@nek.uu.se",
 		"website": "https://fredriksavje.com",
 		"picture": "img/fredrik.jpg",
 		"cv_pdf": "fredrik-savje-cv.pdf"
 	},
 
-	"announcement" : "I will start as Associate Professor in Econometrics at Uppsala University in July, 2024.",
+	"announcement" : "",
 
 	"online": {
 		"orcid": "0000-0003-2544-8250",
@@ -37,29 +35,17 @@
 		"ssh_key": "fredrik-savje.pub"
 	},
 
-
 	"main_position": [
 		"Associate Professor",
-		"Political Science and Statistics & Data Science",
-		"Yale University"
+		"Econometrics",
+		"Uppsala University"
 	],
-
 
 	"current_positions": [
 		{
-			"title": "Associate Professor (starting July, 2024)",
+			"title": "Associate Professor",
 			"department": "Department of Economics",
 			"organization": "Uppsala University"
-		},
-		{
-			"title": "Associate Professor (untenured)",
-			"department": "Department of Political Science",
-			"organization": "Yale University"
-		},
-		{
-			"title": "Associate Professor (secondary)",
-			"department": "Department of Statistics & Data Science",
-			"organization": "Yale University"
 		},
 		{
 			"title": "Docent",
@@ -83,8 +69,21 @@
 		}
 	],
 
-
 	"previous_positions": [
+		{
+			"start": 2023,
+			"end": 2024,
+			"title": "Associate Professor (untenured)",
+			"department": "Department of Political Science",
+			"organization": "Yale University"
+		},
+		{
+			"start": 2023,
+			"end": 2024,
+			"title": "Associate Professor (secondary)",
+			"department": "Department of Statistics & Data Science",
+			"organization": "Yale University"
+		},
 		{
 			"start": 2017,
 			"end": 2023,
@@ -140,21 +139,21 @@
 			"end": 2024,
 			"department": "Data Science Lab",
 			"organization": "Hertie School",
-			"duration": "2 weeks (scheduled)"
+			"duration": "2 weeks"
 		},
 		{
 			"start": 2024,
 			"end": 2024,
 			"department": "Department of Economics",
 			"organization": "European University Institute",
-			"duration": "2 weeks (scheduled)"
+			"duration": "2 weeks"
 		},
 		{
 			"start": 2024,
 			"end": 2024,
 			"department": "Department of Mathematical Sciences",
 			"organization": "University of Copenhagen",
-			"duration": "3 weeks (scheduled)"
+			"duration": "3 weeks"
 		},
 		{
 			"start": 2024,
@@ -411,6 +410,7 @@
 		}
 	],
 
+
 	"working_papers": [
 		{
 			"id": "Harshaw2022DesignBased",
@@ -517,7 +517,8 @@
 			{
 				"what": "Department of Mathematical Sciences",
 				"where": "University of Copenhagen",
-				"when": 2024
+				"when": 2024,
+				"scheduled": true
 			},
 			{
 				"what": "Department of Quantitative Theory and Methods",
@@ -848,6 +849,17 @@
 
 	"teaching": [
 		{
+			"university": "Uppsala University",
+			"courses": [
+				{
+					"desc": "Econometrics I (grad). Fall 2024."
+				},
+				{
+					"desc": "Econometric Theory (master). Spring 2025."
+				}
+			]
+		},
+		{
 			"university": "Yale University",
 			"courses": [
 				{
@@ -866,7 +878,10 @@
 					"desc": "The Application of Quantitative Methods (grad). Spring 2018."
 				}
 			]
-		},
+		}
+	],
+
+	"unused_teaching": [
 		{
 			"university": "Uppsala University (teaching assistant)",
 			"courses": [
@@ -903,11 +918,6 @@
 		{
 			"role": "Dissertation committee member",
 			"students": [
-				{
-					"name": "Robin Wang",
-					"department": "Political Science, Yale",
-					"when": "2021--present"
-				},
 				{
 					"name": "Chris Harshaw",
 					"url": "http://www.chrisharshaw.com/",
