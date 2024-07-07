@@ -121,7 +121,7 @@
 		{%- endfor %}
 	\end{minipage}
 	\begin{minipage}[t]{0.495\textwidth}
-		{{ personal.phone }} \\
+		{%- if personal.phone %}{{ personal.phone }} \\{%- endif %}
 		\href{mailto:{{ personal.email }}}{\texttt{{ personal.email | lr_bracket }}} \\
 		\href{{ personal.website | lr_bracket }}{\texttt{{ personal.website | lr_bracket }}}
 	\end{minipage}
