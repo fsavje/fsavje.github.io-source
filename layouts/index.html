@@ -64,7 +64,7 @@
 		<h3>Office</h3>
 
 		<address>
-			{{ delimit .Site.Data.cv.personal.office " <br>\n			" }}
+			{{ delimit .Site.Data.cv.personal.office " <br>\n			" | safeHTML }}
 		</address>
 
 		<h3>Contact me</h3>
