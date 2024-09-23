@@ -429,7 +429,7 @@
 		{
 			"id": "Aronow2021Nonparametric",
 			"title": "Nonparametric identification is not enough, but randomized controlled trials are",
-			"authors": [ "P.M. Aronow", "James Robins", "Theo Saarinen", "Fredrik Sävje", "Jasjeet Sekhon" ],
+			"authors": [ "P.M. Aronow", "James Robins", "Theo Saarinen", "Fredrik Sävje", "Jasjeet Sekhon" ],	
 			"url": "https://arxiv.org/abs/2108.11342",
 			"abstract": "We argue that randomized controlled trials (RCTs) are special even among settings where average treatment effects are identified by a nonparametric unconfoundedness assumption. This claim follows from two results of Robins and Ritov (1997): (1) with at least one continuous covariate control, no estimator of the average treatment effect exists which is uniformly consistent without further assumptions, (2) knowledge of the propensity score yields a uniformly consistent estimator and honest confidence intervals that shrink at parametric rates with increasing sample size, regardless of how complicated the propensity score function is. We emphasize the latter point, and note that successfully-conducted RCTs provide knowledge of the propensity score to the researcher. We discuss modern developments in covariate adjustment for RCTs, noting that statistical models and machine learning methods can be used to improve efficiency while preserving finite sample unbiasedness. We conclude that statistical inference has the potential to be fundamentally more difficult in observational settings than it is in RCTs, even when all confounders are measured."
 		}
@@ -462,7 +462,10 @@
 
 	"grants": [
 		{
-			"desc": "Planetary Solutions Project seed grant from the Climate Impact Innovation Fund and the Gordon Data and Environmental Sciences Research Grants, 2023--2024, USD 80,000, as PI with Megan Ayers and Luke Sanford (co-PI)"
+			"desc": "NSF Methodology, Measurement, and Statistics Program, 2024--2027, USD 500,000, as Co-PI with Christopher Harshaw"
+		},
+		{
+			"desc": "Planetary Solutions Project seed grant from the Climate Impact Innovation Fund and the Gordon Data and Environmental Sciences Research Grants, 2023--2024, USD 80,000, as Co-PI with Megan Ayers and Luke Sanford"
 		},
 		{
 			"desc": "Swedish International Development Cooperation Agency, 2013--2015, SEK 2,595,000, with Niklas Bengtsson, Eva Mörk (PI) and Jonas Poulsen"
@@ -505,20 +508,17 @@
 			{
 				"what": "Data Science Lab",
 				"where": "Hertie School",
-				"when": 2024,
-				"scheduled": true
+				"when": 2024
 			},
 			{
 				"what": "Department of Economics",
 				"where": "European University Institute",
-				"when": 2024,
-				"scheduled": true
+				"when": 2024
 			},
 			{
 				"what": "Department of Mathematical Sciences",
 				"where": "University of Copenhagen",
-				"when": 2024,
-				"scheduled": true
+				"when": 2024
 			},
 			{
 				"what": "Department of Quantitative Theory and Methods",
@@ -995,6 +995,7 @@
 		{ "journal": "Electronic Journal of Statistics" },
 		{ "journal": "European Journal of Political Economy" },
 		{ "journal": "Journal of the American Statistical Association" },
+		{ "journal": "Journal of Business & Economic Statistics" },
 		{ "journal": "Journal of Causal Inference" },
 		{ "journal": "Journal of Computational and Graphical Statistics" },
 		{ "journal": "Journal of Economic Behavior & Organization" },
@@ -1002,6 +1003,7 @@
 		{ "journal": "Journal of Machine Learning Research" },
 		{ "journal": "Journal of the Royal Statistical Society: Series A" },
 		{ "journal": "Journal of the Royal Statistical Society: Series B" },
+		{ "journal": "Management Science" },
 		{ "journal": "Political Analysis" },
 		{ "journal": "Political Science Research & Methods" },
 		{ "journal": "The R Journal" },
