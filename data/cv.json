@@ -462,6 +462,9 @@
 
 	"grants": [
 		{
+			"desc": "Riksbankens Jubileumsfond, 2025--2027, SEK 3,122,255, as Co-PI with Christopher Harshaw"
+		},
+		{
 			"desc": "NSF Methodology, Measurement, and Statistics Program, 2024--2027, USD 500,000, as Co-PI with Christopher Harshaw"
 		},
 		{
@@ -505,6 +508,12 @@
 
 	"presentations": {
 		"invited": [
+			{
+				"what": "Statistical Laboratory",
+				"where": "University of Cambridge",
+				"when": 2025,
+				"scheduled": true
+			},
 			{
 				"what": "Data Science Lab",
 				"where": "Hertie School",
@@ -837,6 +846,11 @@
 
 		"internal": [ 
 			{
+				"what": "Department of Economics",
+				"where": "Uppsala University",
+				"when": 2024
+			},
+			{
 				"what": "Sekhon Group",
 				"where": "UC Berkeley",
 				"when": 2016
@@ -906,45 +920,75 @@
 				{
 					"name": "Amanda Weiss",
 					"department": "Political Science, Yale",
-					"when": "2022--present"
+					"when": "current"
 				},
 				{
 					"name": "Megan Ayers",
 					"department": "Statistics, Yale",
-					"when": "2023--present"
+					"when": "current"
 				}
 			]
 		},
+
 		{
 			"role": "Dissertation committee member",
 			"students": [
 				{
+					"name": "Brandon Chow",
+					"department": "Statistics, Yale",
+					"when": "2023",
+					"placement": "Microsoft"
+				},
+				{
 					"name": "Chris Harshaw",
 					"url": "http://www.chrisharshaw.com/",
 					"department": "Computer Science, Yale",
-					"when": "2020--2022"
-				},
-				{
-					"name": "Brandon Chow",
-					"department": "Statistics & Data Science, Yale",
-					"when": "2019--2023"
+					"when": "2022",
+					"placement": "MIT & UC Berkeley (post doc), Columbia (AP)"
 				},
 				{
 					"name": "Kyle Peyton",
 					"url": "https://kylepeyton.github.io",
 					"department": "Political Science, Yale",
-					"when": "2018--2020",
-					"placement": ""
+					"when": "2020",
+					"placement": "Australian Catholic University"
 				},
 				{
 					"name": "Molly Offer-Westort",
 					"url": "https://mollyow.github.io",
-					"department": "Political Science and Statistics & Data Science, Yale",
-					"when": "2017--2019",
-					"placement": ""
+					"department": "Political Science and Statistics, Yale",
+					"when": "2019",
+					"placement": "Stanford (post doc), U Chicago (AP)"
 				}
 			]
 		},
+
+		{
+			"role": "Dissertation grading committee member",
+			"students": [
+				{
+					"name": "Mohammad Ghasempour",
+					"department": "Statistics, Umeå University",
+					"when": "2024"
+				},
+				{
+					"name": "Lilla Orr",
+					"department": "Political Science, Yale University",
+					"when": "2021"
+				},
+				{
+					"name": "John Ternovski",
+					"department": "Political Science, Yale University",
+					"when": "2021"
+				},
+				{
+					"name": "Costanza Tortù",
+					"department": "Eocnomics, IMT School for Advanced Studies Lucca",
+					"when": "2020"
+				}
+			]
+		},
+
 		{
 			"role": "Dahl Research Scholar mentor",
 			"students": [
@@ -957,8 +1001,14 @@
 		}
 	],
 
-
 	"service": [
+		{
+			"type": "Uppsala University",
+			"service": [
+				"Subfield Coordinator, Econometrics, 2024--2025",
+				"Member of Department Board, 2024--2025"
+			]
+		},
 		{
 			"type": "Yale University",
 			"service": [
@@ -971,6 +1021,7 @@
 		{
 			"type": "Disciplinary Service",
 			"service": [
+				"Ad-hoc reviewer, Banff International Research Station, 2024",
 				"Ad-hoc reviewer, National Science Foundation, 2021, 2022",
 				"Committee member, Gosnell Prize for Excellence in Political Methodology, 2019",
 				"Reviewer, American Statistical Association Biometrics Section Travel Awards, 2018",
@@ -978,7 +1029,6 @@
 			]
 		}
 	],
-
 
 	"referee": [
 		{ "journal": "American Journal of Political Science" },
@@ -998,6 +1048,7 @@
 		{ "journal": "Journal of Business & Economic Statistics" },
 		{ "journal": "Journal of Causal Inference" },
 		{ "journal": "Journal of Computational and Graphical Statistics" },
+		{ "journal": "Journal of Econometrics" },
 		{ "journal": "Journal of Economic Behavior & Organization" },
 		{ "journal": "Journal of Health Economics" },
 		{ "journal": "Journal of Machine Learning Research" },
@@ -1008,6 +1059,7 @@
 		{ "journal": "Political Science Research & Methods" },
 		{ "journal": "The R Journal" },
 		{ "journal": "Review of Economic Studies" },
+		{ "journal": "Review of Economics and Statistics" },
 		{ "journal": "Statistics & Probability Letters" },
 		{ "journal": "Statistics & Public Policy" }
 	],
