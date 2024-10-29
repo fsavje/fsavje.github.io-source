@@ -290,9 +290,9 @@
 	\begin{infolist}
 		{%- for grant in grants %}
 		{% if grant.url -%}
-			\infoitem{\href{{ grant.url | lr_bracket }}{{ grant.desc | l_bracket }}}
+			\infoitem{\href{{ grant.url | lr_bracket }}{{ grant.desc | escape_latex | l_bracket }}}
 		{%- else -%}
-			\infoitem{{ grant.desc | l_bracket }}
+			\infoitem{{ grant.desc | escape_latex | l_bracket }}
 		{%- endif -%}
 		{%- if grant.with -%}
 			,
@@ -404,10 +404,14 @@
 		{%- for student in roletype.students %}
 		\infoitem
 		{%- if student.url -%}
-			{\href{{ student.url | lr_bracket }}{{ student.name | lr_bracket }}, {{ student.department | escape_latex }}, {{ student.when }}.}
+			{\href{{ student.url | lr_bracket }}{{ student.name | escape_latex | lr_bracket }}, {{ student.department | escape_latex }}, {{ student.when }}.
 		{%- else -%}
-			{{ student.name | l_bracket }}, {{ student.department | escape_latex }}, {{ student.when }}.}
+			{{ student.name | escape_latex | l_bracket }}, {{ student.department | escape_latex }}, {{ student.when }}.
 		{%- endif -%}
+		{%- if student.placement %}
+			Placement: {{ student.placement | escape_latex }}.
+		{%- endif -%}
+		}
 		{%- endfor %}
 	\end{infolist}
 	{%- endfor %}
