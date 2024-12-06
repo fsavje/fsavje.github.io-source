@@ -149,6 +149,17 @@
 		{%- endfor %}
 	\end{datelist}
 
+	
+	\section*{Past affiliations}
+
+	\begin{datelist}
+		{%- for position in previous_affiliations %}
+		\dateitem[{{ position.start }}--{{ position.end }}]{{ position.title | l_bracket }},
+		{%- if position.department %} {{ position.department | escape_latex }},{%- endif -%}
+		{{ position.organization | l_space }}.}
+		{%- endfor %}
+	\end{datelist}
+
 
 	\section*{Education}
 
@@ -409,7 +420,7 @@
 			{{ student.name | escape_latex | l_bracket }}, {{ student.department | escape_latex }}, {{ student.when }}.
 		{%- endif -%}
 		{%- if student.placement %}
-			Placement: {{ student.placement | escape_latex }}.
+			First job: {{ student.placement | escape_latex }}.
 		{%- endif -%}
 		}
 		{%- endfor %}
