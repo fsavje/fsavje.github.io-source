@@ -143,6 +143,13 @@
 
 	"visits": [
 		{
+			"start": 2025,
+			"end": 2025,
+			"department": "Department of Statistics",
+			"organization": "Columbia University",
+			"duration": "4 weeks"
+		},
+		{
 			"start": 2024,
 			"end": 2024,
 			"department": "Data Science Lab",
@@ -479,6 +486,12 @@
 			"desc": "NSF Methodology, Measurement, and Statistics Program, 2024--2027, USD 500,000, as Co-PI with Christopher Harshaw"
 		},
 		{
+			"desc": "Jan Wallanders och Tom Hedelius stiftelse samt Tore Browaldhs stiftelse, 2025--2027, SEK 1,395,000"
+		},
+		{
+			"desc": "Jan Wallanders och Tom Hedelius stiftelse samt Tore Browaldhs stiftelse, 2026, SEK 350,000"
+		},
+		{
 			"desc": "Planetary Solutions Project seed grant from the Climate Impact Innovation Fund and the Gordon Data and Environmental Sciences Research Grants, 2023--2024, USD 80,000, as Co-PI with Megan Ayers and Luke Sanford"
 		},
 		{
@@ -522,6 +535,12 @@
 			{
 				"what": "Statistical Laboratory",
 				"where": "University of Cambridge",
+				"when": 2025,
+				"scheduled": true
+			},
+			{
+				"what": "Department of Economics",
+				"where": "Northwestern University",
 				"when": 2025,
 				"scheduled": true
 			},
@@ -709,6 +728,11 @@
 
 		"contributed": [
 			{
+				"what": "European Causal Inference Meeting",
+				"where": "University of Copenhagen",
+				"when": 2024
+			},
+			{
 				"what": "Society for Political Methodology (PolMeth)",
 				"where": "Stanford University",
 				"when": 2023
@@ -813,6 +837,11 @@
 		],
 
 		"discussant": [
+			{
+				"what": "Online Causal Inference Seminar",
+				"where": "Stanford",
+				"when": 2025
+			},
 			{
 				"what": "Society for Political Methodology",
 				"where": "Stanford",
@@ -931,12 +960,14 @@
 				{
 					"name": "Amanda Weiss",
 					"department": "Political Science, Yale",
-					"when": "current"
+					"when": "2025 (expected)",
+					"placement": "Cornell University (AP)"
 				},
 				{
 					"name": "Megan Ayers",
 					"department": "Statistics, Yale",
-					"when": "current"
+					"when": "2025 (expected)",
+					"placement": "Reed College (AP)"
 				}
 			]
 		},
@@ -1021,7 +1052,7 @@
 				},
 				{
 					"name": "Costanza Tortù",
-					"department": "Eocnomics, IMT School for Advanced Studies Lucca",
+					"department": "Economics, IMT School for Advanced Studies Lucca",
 					"when": "2020"
 				}
 			]
